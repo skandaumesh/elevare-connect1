@@ -32,10 +32,9 @@ export default function Navbar() {
         style={{ paddingTop: scrolled ? "12px" : "20px", transition: "all 0.4s cubic-bezier(0.16, 1, 0.3, 1)" }}
       >
         <nav
-          className="pointer-events-auto flex items-center justify-between transition-all duration-500"
+          className="pointer-events-auto flex items-center justify-between transition-all duration-500 px-4 py-3 md:px-8 md:py-3"
           style={{
             width: "min(94vw, 1200px)",
-            padding: "12px 16px 12px 32px",
             borderRadius: "100px",
             background: "rgba(249, 248, 243, 0.85)", // #F9F8F3 with opacity
             backdropFilter: "blur(20px) saturate(180%)",
@@ -51,10 +50,8 @@ export default function Navbar() {
             <img
               src="/elevera.png"
               alt="Elevare Connect"
-              className="h-[55px] md:h-[65px] w-auto object-contain transition-transform duration-500 group-hover:scale-105"
+              className="h-[45px] md:h-[65px] w-auto object-contain transition-transform duration-500 group-hover:scale-105 my-[-8px] md:my-[-15px]"
               style={{
-                marginTop: "-15px",
-                marginBottom: "-15px",
                 mixBlendMode: "multiply",
               }}
             />
