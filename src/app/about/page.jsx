@@ -61,7 +61,7 @@ export default function AboutPage() {
                             We partner with institutions to unlock every student&apos;s potential — enhancing communication, leadership, and emotional intelligence.
                         </p>
 
-                        <div className="flex gap-12 md:gap-20 justify-center flex-wrap">
+                        <div className="flex gap-8 md:gap-20 justify-center flex-wrap">
                             {[{ v: "20+", l: "Partner Colleges" }, { v: "500+", l: "Students Trained" }, { v: "50+", l: "Workshops Delivered" }].map((s) => (
                                 <div key={s.l} className="flex flex-col items-center">
                                     <p className="font-instrument-serif text-[#2B124C] tracking-wide" style={{ fontSize: "40px" }}>{s.v}</p>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                             <div className="md:col-span-2 relative min-h-[500px] border-r border-[#2B124C]/10">
                                 <img src="/founder.jpeg" alt="Wilma Merina D'Sa" className="absolute inset-0 w-full h-full object-cover transition-all duration-1000" />
                             </div>
-                            <div className="md:col-span-3 p-10 lg:p-20 flex flex-col justify-center">
+                            <div className="md:col-span-3 p-8 md:p-10 lg:p-20 flex flex-col justify-center">
                                 <div className="inline-flex items-center gap-2 px-4 py-1.5 w-fit rounded-full bg-[#2B124C]/5 border border-[#2B124C]/10 text-[#2B124C] text-[10px] font-bold tracking-[0.2em] uppercase mb-8">
                                     THE VISIONARY
                                 </div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                     ].map((s, i) => {
                         const Icon = s.icon;
                         return (
-                            <div key={i} ref={r} className="reveal p-10 rounded-[32px] group hover:-translate-y-2 transition-all duration-500"
+                            <div key={i} ref={r} className="reveal p-8 md:p-10 rounded-[32px] group hover:-translate-y-2 transition-all duration-500"
                                 style={{
                                     background: 'rgba(249, 248, 243, 0.7)',
                                     backdropFilter: 'blur(16px)',

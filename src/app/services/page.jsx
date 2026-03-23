@@ -59,7 +59,7 @@ export default function ServicesPage() {
             <section className="px-6 py-24 max-w-7xl mx-auto grid md:grid-cols-2 gap-8 relative border-t border-[#2B124C]/5">
                 {services.map((s, idx) => {
                     const Icon = s.icon; return (
-                        <div key={idx} ref={addToRefs} className="reveal p-10 space-y-8 group hover:-translate-y-2 transition-all duration-500 rounded-[40px]"
+                        <div key={idx} ref={addToRefs} className="reveal p-8 md:p-10 space-y-8 group hover:-translate-y-2 transition-all duration-500 rounded-[40px]"
                             style={{
                                 background: 'rgba(255, 255, 255, 0.6)',
                                 backdropFilter: 'blur(20px)',
@@ -92,7 +92,7 @@ export default function ServicesPage() {
             {/* CTA */}
             <section ref={addToRefs} className="reveal px-6 max-w-5xl mx-auto pb-40 relative">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#2B124C]/5 rounded-full blur-[120px] pointer-events-none" />
-                <div className="relative overflow-hidden text-center justify-center flex flex-col items-center px-10 py-24 md:px-20 border-[#2B124C]/10 shadow-2xl rounded-[48px]"
+                <div className="relative overflow-hidden text-center justify-center flex flex-col items-center px-6 py-16 md:px-20 md:py-24 border-[#2B124C]/10 shadow-2xl rounded-[48px]"
                     style={{
                         background: 'rgba(255, 255, 255, 0.8)',
                         backdropFilter: 'blur(20px)',

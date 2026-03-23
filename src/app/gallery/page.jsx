@@ -89,7 +89,7 @@ export default function GalleryPage() {
 
             {/* CTA */}
             <section ref={addToRefs} className="reveal px-6 pb-40 relative">
-                <div className="max-w-4xl mx-auto relative overflow-hidden text-center flex flex-col items-center px-10 py-20 bg-white shadow-2xl rounded-[48px]"
+                <div className="max-w-4xl mx-auto relative overflow-hidden text-center flex flex-col items-center px-6 py-16 md:px-10 md:py-20 bg-white shadow-2xl rounded-[48px]"
                     style={{
                         background: 'rgba(255,255,255,0.7)',
                         backdropFilter: 'blur(20px)',

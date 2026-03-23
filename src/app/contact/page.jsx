@@ -56,7 +56,7 @@ export default function ContactPage() {
             </section>
 
             {/* Main Content */}
-            <section className="px-6 py-24 max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 lg:gap-32 items-start relative border-t border-[#2B124C]/5">
+            <section className="px-6 py-24 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-32 items-start relative border-t border-[#2B124C]/5">
                 {/* Left: Contact Info */}
                 <div ref={addToRefs} className="reveal space-y-12">
                     <div className="space-y-6">
@@ -106,7 +106,7 @@ export default function ContactPage() {
 
                 {/* Right: Form */}
                 <div ref={addToRefs} className="reveal delay-1">
-                    <form className="p-10 md:p-14 space-y-8 rounded-[40px] w-full max-w-[540px]"
+                    <form className="p-8 md:p-14 space-y-8 rounded-[40px] w-full max-w-[540px] mx-auto"
                         style={{
                             background: 'rgba(255, 255, 255, 0.7)',
                             backdropFilter: 'blur(20px)',
