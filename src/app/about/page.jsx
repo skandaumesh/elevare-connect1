@@ -21,7 +21,7 @@ export default function AboutPage() {
     useEffect(() => setM(true), []);
 
     return (
-        <div className="relative min-h-screen bg-[#F9F8F3]">
+        <div className="relative min-h-screen bg-[#F9F8F3] overflow-hidden">
             <style dangerouslySetInnerHTML={{
                 __html: `
                     @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');

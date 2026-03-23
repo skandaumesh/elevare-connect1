@@ -13,7 +13,7 @@ export default function ContactPage() {
     ];
 
     return (
-        <div className="relative bg-[#F9F8F3] min-h-screen">
+        <div className="relative bg-[#F9F8F3] min-h-screen overflow-hidden">
             <style dangerouslySetInnerHTML={{
                 __html: `
                     @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
