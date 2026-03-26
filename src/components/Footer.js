@@ -9,7 +9,7 @@ export default function Footer() {
                 {/* Col 1 */}
                 <div className="text-center md:text-left">
                     <Link href="/" className="flex items-center justify-center md:justify-start gap-2 text-2xl font-black text-white mb-6 font-['Roboto',sans-serif]">
-                        Elevare Academy
+                        Elevare Connect
                     </Link>
                     <p className="text-blue-100/60 leading-relaxed font-medium max-w-sm mx-auto md:mx-0">
                         While degrees open doors, skills and self-confidence hold the key. We shape the next generation of confident, career-ready professionals.
@@ -37,10 +37,6 @@ export default function Footer() {
                             <a href="mailto:info@elevareacademy.com" className="hover:text-white transition-colors">info@elevareacademy.com</a>
                         </li>
                         <li className="flex items-start justify-center md:justify-start gap-4 text-blue-100/60 font-medium">
-                            <Phone size={18} className="text-blue-400 mt-1 shrink-0" />
-                            <span>+91 XXXXX XXXXX</span>
-                        </li>
-                        <li className="flex items-start justify-center md:justify-start gap-4 text-blue-100/60 font-medium">
                             <MapPin size={18} className="text-blue-400 mt-1 shrink-0" />
                             <span>Bengaluru, Karnataka</span>
                         </li>
@@ -61,7 +57,7 @@ export default function Footer() {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 text-center text-blue-100/40 text-xs font-bold tracking-widest uppercase">
-                © {new Date().getFullYear()} Elevare Academy. All rights reserved.
+                © {new Date().getFullYear()} Elevare Connect. All rights reserved.
             </div>
         </footer>
     );

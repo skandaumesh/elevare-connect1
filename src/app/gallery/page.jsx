@@ -6,16 +6,20 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const galleryItems = [
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-06-at-17.50.34.jpeg", title: "Workshop Session", type: "Interactive Training" },
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-06-at-17.50.35-1.jpeg", title: "Training Program", type: "Skill Enhancement" },
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-06-at-17.50.35.jpeg", title: "Campus Engagement", type: "Institution Bridge" },
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-06-at-17.50.36.jpeg", title: "Interactive Session", type: "Peer Discussion" },
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-20.57.02.jpeg", title: "Mentoring Program", type: "1:1 Coaching" },
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-20.57.03-1.jpeg", title: "Leadership Workshop", type: "Career Readiness" },
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-20.57.03-2.jpeg", title: "Group Activity", type: "Team Building" },
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-20.57.03.jpeg", title: "Collaboration", type: "Impact Program" },
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-21.29.22.jpeg", title: "Student Engagement", type: "Campus Event" },
-    { src: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-07-at-21.29.23.jpeg", title: "Campus Event", type: "Institutional Bridge" },
+    { src: "/gallery/gallery1.jpeg", title: "Workshop Session", type: "Interactive Training" },
+    { src: "/gallery/gallery2.jpeg", title: "Training Program", type: "Skill Enhancement" },
+    { src: "/gallery/gallery3.jpeg", title: "Campus Engagement", type: "Institution Bridge" },
+    { src: "/gallery/gallery4.jpeg", title: "Interactive Session", type: "Peer Discussion" },
+    { src: "/gallery/gallery5.jpeg", title: "Mentoring Program", type: "1:1 Coaching" },
+    { src: "/gallery/gallery6.jpeg", title: "Leadership Workshop", type: "Career Readiness" },
+    { src: "/gallery/gallery7.jpeg", title: "Group Activity", type: "Team Building" },
+    { src: "/gallery/gallery8.jpeg", title: "Collaboration", type: "Impact Program" },
+    { src: "/gallery/gallery9.jpeg", title: "Student Engagement", type: "Campus Event" },
+    { src: "/gallery/gallery10.jpeg", title: "Campus Event", type: "Institutional Bridge" },
+    { src: "/gallery/gallery11.jpeg", title: "Peer Learning", type: "Knowledge Sharing" },
+    { src: "/gallery/gallery12.jpeg", title: "Innovation Lab", type: "Creative Thinking" },
+    { src: "/gallery/gallery13.jpeg", title: "Certification", type: "Achievements", position: "object-top" },
+    { src: "/gallery/gallery14.jpeg", title: "Future Leaders", type: "Empowerment" },
 ];
 
 const LowPolyBackground = () => (
@@ -87,7 +91,7 @@ export default function GalleryPage() {
                                 src={item.src}
                                 alt={item.title}
                                 fill
-                                className="object-cover transition-transform duration-[2s] ease-out group-hover:scale-110"
+                                className={`object-cover ${item.position || 'object-center'} transition-transform duration-[2s] ease-out group-hover:scale-110`}
                             />
 
                             {/* Hover Overlay */}
@@ -147,15 +151,16 @@ export default function GalleryPage() {
                             animate={{ scale: 1, opacity: 1 }}
                             exit={{ scale: 0.9, opacity: 0 }}
                             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                            className="relative max-w-6xl w-full h-auto max-h-[90vh] rounded-[24px] md:rounded-[48px] overflow-hidden shadow-2xl border-4 md:border-8 border-white bg-white"
+                            className="relative w-full max-w-5xl h-[70vh] md:h-[85vh] rounded-[24px] md:rounded-[48px] overflow-hidden shadow-2xl border-4 md:border-8 border-white bg-white"
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <div className="relative w-full h-full aspect-[4/3] md:aspect-auto">
+                            <div className="relative w-full h-full">
                                 <Image
                                     src={selectedImg}
                                     alt="Gallery View"
                                     fill
                                     className="object-contain"
+                                    priority
                                 />
                             </div>
 

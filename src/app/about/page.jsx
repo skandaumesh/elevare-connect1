@@ -89,23 +89,31 @@ export default function AboutPage() {
                             </div>
                         </motion.div>
 
-                        {/* RIGHT COLUMN: Floating Image Card */}
+                        {/* RIGHT COLUMN: Refined Oval Founder Portrait */}
                         <motion.div
-                            initial={{ opacity: 0, scale: 0.98, y: 30 }}
+                            initial={{ opacity: 0, scale: 0.95, y: 30 }}
                             whileInView={{ opacity: 1, scale: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 0.8, delay: 0.2 }}
-                            className="flex items-center justify-center lg:justify-end"
+                            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                            className="flex items-center justify-center lg:justify-end py-6"
                         >
-                            <div className="relative w-full max-w-[340px] md:max-w-md aspect-[4/5] rounded-[40px] md:rounded-[56px] overflow-hidden bg-white shadow-2xl border border-slate-100 p-3 md:p-4 group">
-                                <div className="absolute inset-0 bg-gradient-to-tr from-[#7C3AED]/5 to-transparent z-10 pointer-events-none" />
-                                <div className="relative w-full h-full rounded-[28px] md:rounded-[42px] overflow-hidden">
-                                    <Image
-                                        src="/founder.jpeg"
-                                        alt="Wilma Merina D'Sa"
-                                        fill
-                                        className="object-cover object-top transition-transform duration-1000 group-hover:scale-105"
-                                    />
+                            <div className="relative">
+                                {/* Clean Premium Outer Shadow/Glow */}
+                                <div className="absolute inset-0 bg-[#7C3AED]/10 rounded-full blur-[60px] transform translate-y-8" />
+
+                                {/* Pure Oval Container */}
+                                <div className="relative w-[260px] md:w-[340px] aspect-[1/1.5] rounded-full p-2 bg-white border border-slate-100 shadow-2xl overflow-hidden group">
+                                    <div className="relative w-full h-full rounded-full overflow-hidden border-[4px] border-white ring-1 ring-slate-100 shadow-inner group-hover:scale-105 transition-transform duration-1000 ease-out">
+                                        <Image
+                                            src="/founder.jpeg"
+                                            alt="Wilma Merina D'Sa"
+                                            fill
+                                            className="object-cover object-top grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000"
+                                            priority
+                                        />
+                                        {/* Subtle vignette for high-end look */}
+                                        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0D0D0D]/40 opacity-40 group-hover:opacity-20 transition-opacity duration-1000" />
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>

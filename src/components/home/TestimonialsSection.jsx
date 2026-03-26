@@ -8,25 +8,25 @@ export default function TestimonialsSection() {
       name: "Gouthami Shivakumar",
       role: "Placement Officer, MLA Academy of Higher Learning",
       quote: "Elevare Connect transformed our students' approach to interviews and professional grooming. The personalized mentorship is unmatched.",
-      img: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-12-at-15.18.21.jpeg",
+      img: "/testimonials/testimonial1.jpeg",
     },
     {
       name: "Dhruv Roy",
       role: "Voyager Sales, Marriott International",
       quote: "The soft skills and confidence I gained from Wilma's coaching sessions were exactly what I needed to break into the hospitality industry.",
-      img: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-14-at-11.08.46.jpeg",
+      img: "/testimonials/testimonial4.jpeg",
     },
     {
       name: "Yashika Singh",
       role: "Financial Analyst, ABM Indore Pvt Ltd",
       quote: "Bridging the gap between academics and actual industry expectations was challenging until I joined Elevare. Highly recommended!",
-      img: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-12-at-16.07.41.jpeg",
+      img: "/testimonials/testimonial2.jpeg",
     },
     {
       name: "Saksham Mathur",
       role: "Sr. Executive – Talent Acquisition, Wipro",
       quote: "As a recruiter, I consistently see higher quality candidates coming out of Elevare's rigorous training methodology.",
-      img: "https://elevareacademy.in/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-13-at-20.10.59.jpeg",
+      img: "/testimonials/testimonial3.jpeg",
     }
   ];
 

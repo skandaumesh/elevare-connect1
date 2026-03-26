@@ -12,7 +12,7 @@ export default function MissionVisionSection() {
       label: "Mission",
       title: "Elevate every student's potential.",
       desc: "Providing personalized coaching, interactive learning, and expert guidance that bridges academia and a thriving career.",
-      img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200",
+      img: "/mission.png",
       icon: <Target className="w-6 h-6" />,
       tag: "THE IMPACT"
     },

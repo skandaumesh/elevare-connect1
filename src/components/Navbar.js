@@ -43,7 +43,7 @@ export default function Navbar() {
               src="/elevare.png"
               alt="Elevare Academy"
               className={`transition-all duration-500 w-auto object-contain pointer-events-none drop-shadow-md
-                ${scrolled ? "h-20 md:h-24 translate-y-2" : "h-24 md:h-32 translate-y-3"}`}
+                ${scrolled ? "h-20 md:h-24" : "h-24 md:h-32"}`}
             />
           </Link>
 

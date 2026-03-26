@@ -5,16 +5,16 @@ import Image from "next/image";
 export default function CollaborationsSection() {
     const partners = [
         { name: "SRI IN5NET", src: "/sriin5net-logo.png" },
-        { name: "MLA Academy", src: "/elevera.png" },
+        { name: "MLA Academy", src: "/mlaahl.jpg" },
         { name: "INCODE", src: "/incode-logo.png" },
         { name: "Career Mantra", src: "/career-mantra.png" },
-        { name: "Logo 1", src: "/logo-1.jpg" },
+    
         // Duplicated set to ensure a seamless seamless scroll transition
         { name: "SRI IN5NET", src: "/sriin5net-logo.png" },
-        { name: "MLA Academy", src: "/elevera.png" },
+        { name: "MLA Academy", src: "/mlaahl.jpg" },
         { name: "INCODE", src: "/incode-logo.png" },
         { name: "Career Mantra", src: "/career-mantra.png" },
-        { name: "Logo 1", src: "/logo-1.jpg" }
+   
     ];
 
     return (

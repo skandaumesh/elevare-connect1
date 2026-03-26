@@ -8,7 +8,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('https://elevareacademy.in/wp-content/uploads/2026/02/george-van-gosh-5vK7nSavAjk-unsplash-2-3772x1551.jpg')", transform: "scale(1.05)" }}
+        style={{ backgroundImage: "url('/hero.jpg')", transform: "scale(1.05)" }}
       />
 
       {/* Dark overlay fading from left to right to ensure left text readability */}

@@ -1,42 +1,42 @@
 "use client";
 import { motion } from "framer-motion";
-import { FileText, Users, Mic, MonitorPlay, ClipboardCheck, Megaphone } from "lucide-react";
+import Image from "next/image";
 
 export default function ProgramAddOnsSection() {
     const addons = [
         {
             id: 1,
-            icon: <FileText size={48} strokeWidth={1.5} className="text-[#3b82f6] relative z-10" />,
+            img: "/addon1.png",
             label: "Placement Oriented\nPrograms",
             blob1: "bg-blue-100", blob2: "bg-blue-50"
         },
         {
             id: 2,
-            icon: <Users size={48} strokeWidth={1.5} className="text-[#8b5cf6] relative z-10" />,
+            img: "/addon2.png",
             label: "Interview\nPreparations",
             blob1: "bg-purple-100", blob2: "bg-purple-50"
         },
         {
             id: 3,
-            icon: <Mic size={48} strokeWidth={1.5} className="text-[#10b981] relative z-10" />,
+            img: "/addon3.png",
             label: "Industry Talks and\nGuest Lectures",
             blob1: "bg-emerald-100", blob2: "bg-emerald-50"
         },
         {
             id: 4,
-            icon: <MonitorPlay size={48} strokeWidth={1.5} className="text-[#f59e0b] relative z-10" />,
+            img: "/addon4.png",
             label: "Workshops and\nWebinars",
             blob1: "bg-amber-100", blob2: "bg-amber-50"
         },
         {
             id: 5,
-            icon: <ClipboardCheck size={48} strokeWidth={1.5} className="text-[#f43f5e] relative z-10" />,
+            img: "/addon5.png",
             label: "Job Description\nBased Training",
             blob1: "bg-rose-100", blob2: "bg-rose-50"
         },
         {
             id: 6,
-            icon: <Megaphone size={48} strokeWidth={1.5} className="text-[#06b6d4] relative z-10" />,
+            img: "/addon6.png",
             label: "Communication &\nPublic Speaking",
             blob1: "bg-cyan-100", blob2: "bg-cyan-50"
         }
@@ -59,11 +59,12 @@ export default function ProgramAddOnsSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-blue-600 text-xs font-bold tracking-[0.2em] uppercase bg-blue-50 rounded-full">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-[#0047AB] text-[10px] font-bold tracking-[0.25em] uppercase bg-blue-50/50 border border-blue-100/50 rounded-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#0047AB] animate-pulse"></span>
                         Enrichment Programs
                     </div>
-                    <h2 className="text-[#0f172a] text-4xl md:text-[42px] font-bold tracking-tight">
-                        Program Add-Ons & Enrichments
+                    <h2 className="text-[#0f172a] text-4xl md:text-[44px] font-bold tracking-tight">
+                        Program Add-Ons & <span className="text-[#0047AB]">Enrichments</span>
                     </h2>
                 </motion.div>
 
@@ -75,25 +76,30 @@ export default function ProgramAddOnsSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.5, delay: idx * 0.1 }}
-                            className="bg-white/80 backdrop-blur-md border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[32px] p-10 flex flex-col items-center justify-center text-center hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-300 group relative overflow-hidden"
+                            className="bg-white border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] rounded-[32px] p-8 flex flex-col items-center justify-center text-center hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-500 group relative overflow-hidden"
                         >
-                            {/* Card Decorative Accent */}
-                            <div className={`absolute top-0 right-0 w-24 h-24 translate-x-12 -translate-y-12 rounded-full opacity-10 group-hover:scale-150 transition-transform duration-700 ${item.blob1}`} />
-
-                            <div className="relative z-10">
-                                {/* Graphic Placeholder mimicking the illustration footprint */}
-                                <div className="relative w-32 h-28 flex items-center justify-center mb-8">
-                                    <div className={`absolute inset-0 ${item.blob1} rounded-[30%_70%_70%_30%/30%_30%_70%_70%] opacity-60 transform group-hover:rotate-12 transition-transform duration-700`}></div>
-                                    <div className={`absolute inset-2 ${item.blob2} rounded-[60%_40%_30%_70%/60%_30%_70%_40%] opacity-80 transform -rotate-6 group-hover:-rotate-12 transition-transform duration-700`}></div>
-                                    {item.icon}
+                            <div className="relative z-10 w-full">
+                                {/* Illustration Container */}
+                                <div className="relative w-full aspect-[4/3] mb-8 overflow-visible flex items-center justify-center">
+                                    {/* Subtle decorative background blob that reacts to hover */}
+                                    <div className={`absolute inset-0 ${item.blob1} opacity-[0.15] rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000`}></div>
+                                    
+                                    <div className="relative w-full h-full transform group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-700 ease-out">
+                                        <Image
+                                            src={item.img}
+                                            alt={item.label}
+                                            fill
+                                            className="object-contain"
+                                            sizes="(max-w-768px) 100vw, 33vw"
+                                        />
+                                    </div>
                                 </div>
 
-                                {/* Text */}
-                                <h3 className="text-[#0f172a] text-[19px] leading-snug font-bold">
+                                {/* Text content with improved typography */}
+                                <h3 className="text-[#0f172a] text-[19px] leading-tight font-bold tracking-tight">
                                     {item.label.split('\n').map((line, i) => (
-                                        <span key={i}>
+                                        <span key={i} className="block">
                                             {line}
-                                            {i !== item.label.split('\n').length - 1 && <br />}
                                         </span>
                                     ))}
                                 </h3>

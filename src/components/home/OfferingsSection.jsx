@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function OfferingsSection() {
     const offerings = [
         {
-            img: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800",
+            img: "/career_readiness.png",
             title: "Career Readiness",
             bullets: [
                 "Campus-to-Corporate transition workshops",
@@ -14,7 +14,7 @@ export default function OfferingsSection() {
             ],
         },
         {
-            img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800",
+            img: "/skill_enhancement.png",
             title: "Skill Enhancement",
             bullets: [
                 "Communication and Time Management",
@@ -23,7 +23,7 @@ export default function OfferingsSection() {
             ],
         },
         {
-            img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
+            img: "/academic_bridge.png",
             title: "Academic to Industry Bridge",
             bullets: [
                 "Industry guest lectures & Interactive sessions",
@@ -32,7 +32,7 @@ export default function OfferingsSection() {
             ],
         },
         {
-            img: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800",
+            img: "/mentorship.png",
             title: "Mentorship & Development",
             bullets: [
                 "1:1 and group mentorship programs",
