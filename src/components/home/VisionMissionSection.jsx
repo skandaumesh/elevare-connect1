@@ -47,7 +47,7 @@ export default function VisionMissionSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 0.6, delay: idx * 0.15 }}
-                            className="relative w-full aspect-video rounded-[24px] overflow-hidden shadow-lg group"
+                            className="relative w-full min-h-[440px] md:aspect-video rounded-[32px] overflow-hidden shadow-2xl group"
                         >
                             {/* Background Image */}
                             <div
@@ -55,15 +55,15 @@ export default function VisionMissionSection() {
                                 style={{ backgroundImage: `url(${card.img})` }}
                             ></div>
 
-                            {/* Dark Gradient Overlay starting from left side as shown in screenshot */}
-                            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+                            {/* Dark Gradient Overlay - Optimized for mobile top-to-bottom or left-to-right fade */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-r md:from-black/80 md:via-black/30 md:to-transparent"></div>
 
                             {/* Text Content */}
-                            <div className="absolute inset-0 p-10 flex flex-col justify-end max-w-2xl">
-                                <h3 className="text-white text-4xl font-bold mb-6 tracking-tight drop-shadow-md">
+                            <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end max-w-2xl">
+                                <h3 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 tracking-tight drop-shadow-md">
                                     {card.title}
                                 </h3>
-                                <p className="text-white/90 text-[17px] leading-relaxed font-medium drop-shadow-sm">
+                                <p className="text-white/90 text-sm md:text-lg leading-relaxed font-medium drop-shadow-sm max-w-lg">
                                     {card.desc}
                                 </p>
                             </div>

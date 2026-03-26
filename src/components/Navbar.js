@@ -88,6 +88,16 @@ export default function Navbar() {
             transition={{ type: "spring", damping: 30, stiffness: 200 }}
             className="fixed inset-0 z-[150] bg-white flex flex-col p-8 pt-24"
           >
+            <div className="absolute top-8 right-8 z-[160]">
+              <button
+                onClick={() => setMenuOpen(false)}
+                className="w-12 h-12 flex items-center justify-center text-slate-800 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors cursor-pointer"
+                aria-label="Close Menu"
+              >
+                <X size={28} />
+              </button>
+            </div>
+
             <div className="flex flex-col gap-5">
               {NAV_LINKS.map((link, idx) => {
                 const isActive = pathname === link.href;
@@ -117,7 +127,7 @@ export default function Navbar() {
               className="mt-auto pt-10 border-t border-slate-100 space-y-4"
             >
               <p className="text-slate-400 font-bold uppercase tracking-widest text-xs">Empowering Futures</p>
-              <h3 className="text-[#0047AB] text-xl font-black">Elevare Academy</h3>
+              <h3 className="text-[#0047AB] text-xl font-black">Elevare Connect</h3>
             </motion.div>
           </motion.div>
         )}
