@@ -3,19 +3,16 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function CollaborationsSection() {
-    const partners = [
+    const originalPartners = [
         { name: "SRI IN5NET", src: "/sriin5net-logo.png" },
         { name: "MLA Academy", src: "/mlaahl.jpg" },
-        { name: "INCODE", src: "/incode-logo.png" },
+        { name: "Onezerolabs", src: "/onezerolabs.png" },
         { name: "Career Mantra", src: "/career-mantra.png" },
-    
-        // Duplicated set to ensure a seamless seamless scroll transition
-        { name: "SRI IN5NET", src: "/sriin5net-logo.png" },
-        { name: "MLA Academy", src: "/mlaahl.jpg" },
-        { name: "INCODE", src: "/incode-logo.png" },
-        { name: "Career Mantra", src: "/career-mantra.png" },
-   
     ];
+    
+    // Duplicate 4 times to ensure it fills ultra-wide screens, 
+    // -50% translateX will perfectly loop after 2 sets.
+    const partners = [...originalPartners, ...originalPartners, ...originalPartners, ...originalPartners];
 
     return (
         <section id="collaborate" className="py-20 bg-[#F9F8F3] overflow-hidden">
@@ -33,13 +30,17 @@ export default function CollaborationsSection() {
 
             {/* Infinite Marquee Track */}
             <div className="relative flex w-full overflow-hidden">
+                {/* Add gradients for premium fading edges */}
+                <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#F9F8F3] to-transparent z-10 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#F9F8F3] to-transparent z-10 pointer-events-none" />
+                
                 <motion.div
-                    className="flex gap-10 whitespace-nowrap px-5 items-center"
+                    className="flex gap-10 whitespace-nowrap px-5 items-center w-max"
                     animate={{ x: ["0%", "-50%"] }}
                     transition={{
                         repeat: Infinity,
                         ease: "linear",
-                        duration: 25
+                        duration: 35
                     }}
                 >
                     {partners.map((partner, idx) => (

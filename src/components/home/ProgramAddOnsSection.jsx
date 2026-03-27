@@ -8,7 +8,7 @@ export default function ProgramAddOnsSection() {
             id: 1,
             img: "/addon1.png",
             label: "Placement Oriented\nPrograms",
-            blob1: "bg-blue-100", blob2: "bg-blue-50"
+            blob1: "bg-slate-100", blob2: "bg-slate-50"
         },
         {
             id: 2,
@@ -46,7 +46,7 @@ export default function ProgramAddOnsSection() {
         <section className="py-24 bg-[#F8FAFC] relative overflow-hidden">
             {/* Design Background Elements */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                <div className="absolute top-[10%] left-[-5%] w-[400px] h-[400px] bg-blue-500/[0.03] rounded-full blur-[120px]" />
+                <div className="absolute top-[10%] left-[-5%] w-[400px] h-[400px] bg-[#7C3AED]/[0.03] rounded-full blur-[120px]" />
                 <div className="absolute bottom-[10%] right-[-5%] w-[500px] h-[500px] bg-purple-500/[0.03] rounded-full blur-[140px]" />
                 <div className="absolute inset-0 opacity-[0.4]" style={{ backgroundImage: 'radial-gradient(#CBD5E1 0.8px, transparent 0.8px)', backgroundSize: '40px 40px' }} />
             </div>
@@ -59,12 +59,12 @@ export default function ProgramAddOnsSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-[#0047AB] text-[10px] font-bold tracking-[0.25em] uppercase bg-blue-50/50 border border-blue-100/50 rounded-full">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#0047AB] animate-pulse"></span>
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-[#7C3AED] text-[10px] font-bold tracking-[0.25em] uppercase bg-purple-50/50 border border-purple-100/50 rounded-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse"></span>
                         Enrichment Programs
                     </div>
                     <h2 className="text-[#0f172a] text-4xl md:text-[44px] font-bold tracking-tight">
-                        Program Add-Ons & <span className="text-[#0047AB]">Enrichments</span>
+                        Program Add-Ons & <span className="text-[#7C3AED]">Enrichments</span>
                     </h2>
                 </motion.div>
 

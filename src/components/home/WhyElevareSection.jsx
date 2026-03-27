@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { LibraryBig, Users, BrainCircuit } from "lucide-react";
+import { BookOpen, Users, Lightbulb } from "lucide-react";
 
 export default function WhyElevareSection() {
     const cards = [
         {
-            icon: <LibraryBig size={32} className="text-[#7C3AED]" />,
+            icon: <BookOpen size={32} className="text-[#7C3AED]" />,
             title: "Foundational Expertise",
             desc: "Led by Wilma Merina D'Sa, a seasoned HR Professional and Academician, bringing theory and practice into harmony."
         },
@@ -16,7 +16,7 @@ export default function WhyElevareSection() {
             desc: "We work individually and in groups, adapting to each student's unique personality and future career aspirations."
         },
         {
-            icon: <BrainCircuit size={32} className="text-[#7C3AED]" />,
+            icon: <Lightbulb size={32} className="text-[#7C3AED]" />,
             title: "Holistic Development",
             desc: "Our methods go beyond technical training to nurture emotional intelligence, critical thinking, and leadership presence."
         }
@@ -30,9 +30,9 @@ export default function WhyElevareSection() {
                 <div className="absolute top-0 left-0 w-full h-full opacity-[0.15]"
                     style={{
                         backgroundImage: `radial-gradient(at 0% 0%, #7C3AED 0, transparent 50%), 
-                              radial-gradient(at 100% 0%, #3B82F6 0, transparent 50%),
+                              radial-gradient(at 100% 0%, #7C3AED 0, transparent 50%),
                               radial-gradient(at 100% 100%, #7C3AED 0, transparent 50%),
-                              radial-gradient(at 0% 100%, #3B82F6 0, transparent 50%)`
+                              radial-gradient(at 0% 100%, #7C3AED 0, transparent 50%)`
                     }}
                 />
 
@@ -51,7 +51,7 @@ export default function WhyElevareSection() {
                         rotate: [0, -5, 0]
                     }}
                     transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute bottom-20 right-[10%] w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"
+                    className="absolute bottom-20 right-[10%] w-96 h-96 bg-[#7C3AED]/5 rounded-full blur-3xl"
                 />
 
                 {/* Subtle Decorative SVG Pattern */}
@@ -77,7 +77,7 @@ export default function WhyElevareSection() {
                         Why Choose Us
                     </div>
                     <h2 className="text-[#0f172a] text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
-                        Why Elevare Academy <br className="hidden md:block" /> Stands Out
+                        Why Elevare Connect <br className="hidden md:block" /> Stands Out
                     </h2>
                 </motion.div>
 
@@ -92,7 +92,7 @@ export default function WhyElevareSection() {
                             className="group bg-white/70 backdrop-blur-md border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[32px] p-8 hover:shadow-[0_20px_50px_rgba(124,58,237,0.1)] hover:-translate-y-2 transition-all duration-500 relative overflow-hidden"
                         >
                             {/* Subtle card hover accent */}
-                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#7C3AED] to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#7C3AED] to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
 
                             <div className="relative z-10">
                                 <div className="w-16 h-16 rounded-2xl bg-[#F5F3FF] flex items-center justify-center mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors duration-300">

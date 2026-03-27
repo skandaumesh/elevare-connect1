@@ -45,7 +45,7 @@ export default function MissionVisionSection() {
               Vision that Inspires.<br />Mission that Delivers.
             </h2>
             <p style={{ fontSize: "18px", color: "#525252", lineHeight: 1.5, fontWeight: 400, maxWidth: "640px" }}>
-              At Elevare Academy, our foundation is built on purpose—empowering future professionals through mentorship, mindset, and practical mastery.
+              At Elevare Connect, our foundation is built on purpose—empowering future professionals through mentorship, mindset, and practical mastery.
             </p>
           </div>
           <div style={{ position: "relative" }}>

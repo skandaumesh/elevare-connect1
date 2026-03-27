@@ -180,7 +180,7 @@ export default function ServicesPage() {
 
             {/* BENEFITS SECTION */}
             <section className="px-6 pb-16 md:pb-32 relative z-10">
-                <div className="max-w-7xl mx-auto overflow-hidden rounded-[32px] md:rounded-[48px] bg-[#0047AB] text-white p-8 md:p-20 shadow-2xl relative">
+                <div className="max-w-7xl mx-auto overflow-hidden rounded-[32px] md:rounded-[48px] bg-[#7C3AED] text-white p-8 md:p-20 shadow-2xl relative">
                     {/* Decorative Mesh */}
                     <div className="absolute top-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-white/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
 
@@ -190,7 +190,7 @@ export default function ServicesPage() {
                             <h2 className="text-3xl md:text-5xl font-black font-['Roboto',sans-serif] tracking-tight">
                                 Take the Next Step
                             </h2>
-                            <p className="text-blue-100 text-lg md:text-xl font-medium leading-relaxed max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
+                            <p className="text-purple-100 text-lg md:text-xl font-medium leading-relaxed max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
                                 Transform your career with expert-led training programs built to unlock your true potential. Whether you&apos;re a student, a professional, or an organization, we&apos;ll guide you towards growth and success.
                             </p>
                         </div>
@@ -199,7 +199,7 @@ export default function ServicesPage() {
                         <div className="space-y-8 md:space-y-10 pl-0 lg:pl-16 border-l-0 lg:border-l border-white/20">
                             <div className="space-y-6 md:space-y-8">
                                 <h3 className="text-2xl md:text-3xl font-black font-['Roboto',sans-serif] tracking-tight text-white text-center lg:text-left">
-                                    Is Elevare Academy Right for You?
+                                    Is Elevare Connect Right for You?
                                 </h3>
                                 <div className="space-y-4 md:space-y-5">
                                     {[
@@ -212,14 +212,14 @@ export default function ServicesPage() {
                                             <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-1">
                                                 <Check size={14} className="text-white" />
                                             </div>
-                                            <span className="text-blue-50 text-base md:text-lg font-bold">{benefit}</span>
+                                            <span className="text-purple-50 text-base md:text-lg font-bold">{benefit}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
 
                             <div className="flex justify-center lg:justify-start">
-                                <Link href="/contact" className="inline-flex items-center gap-3 px-8 md:px-10 py-4 md:py-5 rounded-full border-2 border-white/40 bg-white/10 text-white font-bold text-sm tracking-[0.2em] uppercase transition-all hover:bg-white hover:text-blue-800 backdrop-blur-md">
+                                <Link href="/contact" className="inline-flex items-center gap-3 px-8 md:px-10 py-4 md:py-5 rounded-full border-2 border-white/40 bg-white/10 text-white font-bold text-sm tracking-[0.2em] uppercase transition-all hover:bg-white hover:text-purple-800 backdrop-blur-md">
                                     Book A Session
                                 </Link>
                             </div>
@@ -243,7 +243,7 @@ export default function ServicesPage() {
                         <div className="relative z-10 max-w-xl mx-auto">
                             <h2 className="text-white text-3xl md:text-5xl font-bold tracking-tight mb-6 md:mb-8">
                                 Ready to <br className="hidden sm:block" />
-                                Join <span className="text-[#7C3AED]">Elevare?</span>
+                                Join <span className="text-[#7C3AED]">Elevare Connect?</span>
                             </h2>
                             <p className="text-slate-400 text-base md:text-lg font-medium mb-10 md:mb-12 leading-relaxed">
                                 Connect with our experts to design a tailored roadmap for your institution.

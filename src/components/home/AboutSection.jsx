@@ -33,14 +33,10 @@ export default function AboutSection() {
                         <h2 className="text-[#0D0D0D] text-3xl md:text-5xl font-bold mb-6 tracking-tight leading-tight font-['Roboto',sans-serif]">
                             Paving Path to Professional Excellence
                         </h2>
-                        <p className="text-[#52525B] text-base md:text-lg leading-relaxed mb-6">
-                            Elevare Academy is a training and development initiative committed to shaping confident, capable, and career-ready individuals. Founded by Ms. Wilma Merina D&apos;Sa, an astute professional with over two decades of experience in corporate and academia, we focus on developing soft skills, enhancing professional grooming, and providing campus-to-career mentoring tailored for students and young professionals.
+                        <p className="text-[#52525B] text-base md:text-lg leading-relaxed mb-8 md:mb-10">
+                            With over 20 years of experience across corporate and academic environments, including her tenure at IBM, Wilma Merina D&apos;sa brings a practical, industry-driven approach to skill development. She has delivered 100+ workshops and worked with students across multiple institutions, focusing on communication, confidence, leadership, and employability skills. With a strong background in Human Resources, she ensures every session goes beyond theory and equips students with skills they can actually apply. Her work directly aligns with Elevare Connect&apos;s mission of bridging the gap between academic learning and real-world expectations, helping institutions build students who are not just qualified, but truly prepared.
                         </p>
-                        <blockquote className="border-l-4 border-[#7C3AED] pl-6 py-2 mb-8 md:mb-10">
-                            <p className="text-[#0D0D0D] text-lg md:text-xl font-medium italic">
-                                &quot;While degrees open doors, skills and self-confidence hold the key to success.&quot;
-                            </p>
-                        </blockquote>
+
 
                         {/* Founder Card */}
                         <div className="flex items-center gap-4 bg-white px-5 md:px-6 py-3 md:py-4 rounded-2xl w-max border border-slate-100 shadow-sm">

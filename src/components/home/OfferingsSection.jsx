@@ -23,7 +23,7 @@ export default function OfferingsSection() {
             ],
         },
         {
-            img: "/academic_bridge.png",
+            img: "/Academic_bridge.png",
             title: "Academic to Industry Bridge",
             bullets: [
                 "Industry guest lectures & Interactive sessions",
@@ -62,7 +62,7 @@ export default function OfferingsSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-[#0f172a] text-4xl md:text-5xl font-medium tracking-tight">
+                    <h2 className="text-[#0f172a] text-4xl md:text-5xl font-bold tracking-tight">
                         Our Key Offerings
                     </h2>
                 </motion.div>

@@ -6,10 +6,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const galleryItems = [
-    { src: "/gallery/gallery1.jpeg", title: "Workshop Session", type: "Interactive Training" },
-    { src: "/gallery/gallery2.jpeg", title: "Training Program", type: "Skill Enhancement" },
+    { src: "/gallery/gallery18.jpg", title: "Workshop Session", type: "Interactive Training" },
+    { src: "/gallery/gallery16.jpg", title: "Training Program", type: "Skill Enhancement" },
     { src: "/gallery/gallery3.jpeg", title: "Campus Engagement", type: "Institution Bridge" },
-    { src: "/gallery/gallery4.jpeg", title: "Interactive Session", type: "Peer Discussion" },
+    { src: "/gallery/gallery2.jpeg", title: "Interactive Session", type: "Peer Discussion" },
     { src: "/gallery/gallery5.jpeg", title: "Mentoring Program", type: "1:1 Coaching" },
     { src: "/gallery/gallery6.jpeg", title: "Leadership Workshop", type: "Career Readiness" },
     { src: "/gallery/gallery7.jpeg", title: "Group Activity", type: "Team Building" },
@@ -20,6 +20,10 @@ const galleryItems = [
     { src: "/gallery/gallery12.jpeg", title: "Innovation Lab", type: "Creative Thinking" },
     { src: "/gallery/gallery13.jpeg", title: "Certification", type: "Achievements", position: "object-top" },
     { src: "/gallery/gallery14.jpeg", title: "Future Leaders", type: "Empowerment" },
+    { src: "/gallery/gallery15.jpg", title: "Skill Building", type: "Professional Grooming" },
+    { src: "/gallery/gallery4.jpeg", title: "Practical Session", type: "Real-world Learning" },
+    { src: "/gallery/gallery17.jpeg", title: "Group Discussion", type: "Communication Skills" },
+    { src: "/gallery/gallery1.jpeg", title: "Program Finale", type: "Transformation Complete" },
 ];
 
 const LowPolyBackground = () => (

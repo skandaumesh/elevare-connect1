@@ -13,7 +13,7 @@ export default function AboutPage() {
             <div className="absolute inset-0 z-0 pointer-events-none">
                 {/* Mesh Gradient Accents */}
                 <div className="absolute top-[5%] left-[-5%] w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#7C3AED]/5 rounded-full blur-[100px] md:blur-[160px]" />
-                <div className="absolute bottom-[5%] right-[-5%] w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-blue-500/5 rounded-full blur-[100px] md:blur-[160px]" />
+                <div className="absolute bottom-[5%] right-[-5%] w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#7C3AED]/5 rounded-full blur-[100px] md:blur-[160px]" />
 
                 {/* Subtle Modern Grid Overlay */}
                 <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'linear-gradient(#7C3AED 1px, transparent 1px), linear-gradient(90deg, #7C3AED 1px, transparent 1px)', backgroundSize: '100px 100px' }} />
@@ -31,7 +31,7 @@ export default function AboutPage() {
                     >
                         <div className="inline-flex items-center gap-2 px-4 md:px-5 py-1.5 md:py-2 mb-6 md:mb-8 rounded-full bg-[#7C3AED]/10 text-[#7C3AED] text-[10px] md:text-sm font-bold tracking-widest uppercase">
                             <span className="w-2 h-2 rounded-full bg-[#7C3AED] animate-pulse"></span>
-                            ABOUT ELEVARE ACADEMY
+                            ABOUT ELEVARE CONNECT
                         </div>
                         <h1 className="text-[#0D0D0D] text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             Empowering with <br className="hidden md:block" />
@@ -71,12 +71,12 @@ export default function AboutPage() {
                         >
                             <h2 className="text-[#0f172a] text-3xl md:text-[46px] font-bold mb-8 md:mb-10 tracking-tight leading-[1.2] font-['Roboto',sans-serif]">
                                 The Heart <br className="hidden md:block" />
-                                <span className="text-[#7C3AED]">Behind Elevare Academy</span>
+                                <span className="text-[#7C3AED]">Behind Elevare Connect</span>
                             </h2>
 
                             <div className="space-y-6 text-[#475569] text-base md:text-lg font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
                                 <p>
-                                    At Elevare Academy, we are passionate about partnering with institutions that share our vision of holistic student development. With a strong foundation in HR and academia, I founded Elevare Academy to support colleges in preparing students not just for jobs, but for confident, impactful careers.
+                                    At Elevare Connect, we are passionate about partnering with institutions that share our vision of holistic student development. With a strong foundation in HR and academia, I founded Elevare Connect to support colleges in preparing students not just for jobs, but for confident, impactful careers.
                                 </p>
                                 <p>
                                     I warmly invite your institution to collaborate with us in equipping students with the essential soft skills, professional grooming, and career readiness they need to thrive beyond campus.
@@ -105,7 +105,7 @@ export default function AboutPage() {
                                 <div className="relative w-[260px] md:w-[340px] aspect-[1/1.5] rounded-full p-2 bg-white border border-slate-100 shadow-2xl overflow-hidden group">
                                     <div className="relative w-full h-full rounded-full overflow-hidden border-[4px] border-white ring-1 ring-slate-100 shadow-inner group-hover:scale-105 transition-transform duration-1000 ease-out">
                                         <Image
-                                            src="/founder.jpeg"
+                                            src="/Founder.jpeg"
                                             alt="Wilma Merina D'Sa"
                                             fill
                                             className="object-cover object-top grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000"
@@ -122,8 +122,22 @@ export default function AboutPage() {
             </section>
 
             {/* ─── SECTION 3: PHILOSOPHY ─── */}
-            <section className="px-6 py-20 md:py-32 relative bg-[#F9F8F3]">
-                <div className="max-w-7xl mx-auto">
+            <section className="px-6 py-20 md:py-32 relative bg-[#F9F8F3] overflow-hidden">
+                {/* Decorative Background Elements */}
+                <div className="absolute inset-0 pointer-events-none z-0">
+                    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#7C3AED]/5 rounded-full blur-[100px] md:blur-[150px]" />
+                    <div className="absolute bottom-0 left-[-10%] w-[500px] h-[500px] bg-[#7C3AED]/[0.08] rounded-full blur-[120px]" />
+                    <svg className="absolute inset-0 w-full h-full opacity-[0.03]" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="dot-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                                <circle cx="2" cy="2" r="1.5" fill="#7C3AED" />
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#dot-pattern)" />
+                    </svg>
+                </div>
+
+                <div className="max-w-7xl mx-auto relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -131,10 +145,11 @@ export default function AboutPage() {
                         transition={{ duration: 0.8 }}
                         className="text-center max-w-3xl mx-auto mb-16 md:mb-20"
                     >
-                        <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full bg-[#7C3AED]/10 text-[#7C3AED] text-[10px] md:text-sm font-bold tracking-widest uppercase">
+                        <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full bg-[#7C3AED]/10 text-[#7C3AED] text-[10px] md:text-sm font-bold tracking-widest uppercase shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse"></span>
                             OUR PHILOSOPHY
                         </div>
-                        <h2 className="text-[#0D0D0D] text-3xl md:text-6xl font-black tracking-tight mb-6 font-['Roboto',sans-serif]">
+                        <h2 className="text-[#0D0D0D] text-4xl md:text-6xl font-black tracking-tight mb-6 font-['Roboto',sans-serif]">
                             Why <span className="text-[#7C3AED]">Elevare.</span>
                         </h2>
                         <p className="text-[#52525B] text-lg md:text-xl font-medium leading-relaxed">
@@ -155,15 +170,22 @@ export default function AboutPage() {
                                     key={i}
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
+                                    whileHover={{ y: -8 }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.5, delay: i * 0.1 }}
-                                    className="p-8 md:p-10 rounded-3xl bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
+                                    className="group relative p-8 md:p-10 rounded-3xl bg-white/80 backdrop-blur-xl border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(124,58,237,0.1)] transition-all duration-500 overflow-hidden"
                                 >
-                                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center bg-[#F5F3FF] text-[#7C3AED] mb-6 md:mb-8 shadow-inner">
-                                        <Icon className="w-6 h-6 md:w-8 md:h-8" strokeWidth={1.5} />
+                                    {/* Hover gradient line */}
+                                    <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#7C3AED] to-purple-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                                    
+                                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center bg-[#F5F3FF] text-[#7C3AED] mb-6 md:mb-8 shadow-inner group-hover:bg-[#7C3AED] group-hover:text-white transition-colors duration-500 relative z-10">
+                                        <Icon className="w-6 h-6 md:w-8 md:h-8 transition-transform duration-500 group-hover:scale-110" strokeWidth={1.5} />
                                     </div>
-                                    <h4 className="font-bold text-xl md:text-[22px] tracking-tight text-[#0D0D0D] mb-4 font-['Roboto',sans-serif]">{s.title}</h4>
-                                    <p className="text-[#52525B] text-sm md:text-[15px] font-medium leading-relaxed">{s.desc}</p>
+                                    <h4 className="font-bold text-xl md:text-[22px] tracking-tight text-[#0D0D0D] mb-4 font-['Roboto',sans-serif] relative z-10">{s.title}</h4>
+                                    <p className="text-[#52525B] text-sm md:text-[15px] font-medium leading-relaxed relative z-10">{s.desc}</p>
+                                    
+                                    {/* Decorative background shape in card */}
+                                    <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#F5F3FF] rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
                                 </motion.div>
                             );
                         })}
