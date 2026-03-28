@@ -53,8 +53,8 @@ export default function ContactPage() {
                             <h3 className="text-[#0f172a] text-xl md:text-2xl font-bold font-['Roboto',sans-serif]">
                                 Email ID
                             </h3>
-                            <a href="mailto:info@elevareconnect.com" className="text-[#7C3AED] text-lg md:text-xl font-medium hover:underline break-all">
-                                info@elevareconnect.com
+                            <a href="mailto:info@elevareconnect.in" className="text-[#7C3AED] text-lg md:text-xl font-medium hover:underline break-all">
+                                info@elevareconnect.in
                             </a>
                         </div>
                     </motion.div>

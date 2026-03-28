@@ -1,15 +1,23 @@
 "use client";
 import { motion } from "framer-motion";
 
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <section className="relative w-full h-[100vh] min-h-[600px] flex items-center overflow-hidden bg-white">
       
-      {/* Background Image - Neutral Premium Style (Softened) */}
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-[85%] md:bg-center bg-no-repeat opacity-60"
-        style={{ backgroundImage: "url('/hero_premium.png')", transform: "scale(1.05)" }}
-      />
+      {/* Background Image - Neutral Premium Style (Softened) optimized for LCP */}
+      <div className="absolute inset-0 z-0 opacity-60">
+        <Image
+          src="/hero_premium.png"
+          alt="Elevare Connect Professional Mentorship background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[85%] md:object-center scale-105"
+        />
+      </div>
 
       {/* Modern Gradient Accents for Depth */}
       <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-[#7C3AED]/5 rounded-full blur-[120px] pointer-events-none" />

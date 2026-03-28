@@ -77,7 +77,7 @@ export default function WhyElevareSection() {
                         Why Choose Us
                     </div>
                     <h2 className="text-[#0f172a] text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
-                        Why Elevare Connect <br className="hidden md:block" /> Stands Out
+                        Why <span className="text-[#7C3AED]">Elevare Connect.</span>
                     </h2>
                 </motion.div>
 

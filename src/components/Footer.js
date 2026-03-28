@@ -19,13 +19,15 @@ export default function Footer() {
                 {/* Col 2 */}
                 <div className="text-center md:text-left">
                     <h4 className="text-lg font-bold mb-6 text-white tracking-widest uppercase text-sm">Quick Menu</h4>
-                    <ul className="space-y-4">
-                        <li><Link href="/" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">Home</Link></li>
-                        <li><Link href="/about" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">About Us</Link></li>
-                        <li><Link href="/services" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">Our Services</Link></li>
-                        <li><Link href="/gallery" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">Gallery</Link></li>
-                        <li><Link href="/contact" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">Collaborate with Us</Link></li>
-                    </ul>
+                    <nav aria-label="Footer Navigation">
+                        <ul className="space-y-4">
+                            <li><Link href="/" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">Home</Link></li>
+                            <li><Link href="/about" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">About Us</Link></li>
+                            <li><Link href="/services" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">Our Services</Link></li>
+                            <li><Link href="/gallery" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">Gallery</Link></li>
+                            <li><Link href="/contact" className="text-white/60 hover:text-white transition-colors font-bold text-sm tracking-wide">Collaborate with Us</Link></li>
+                        </ul>
+                    </nav>
                 </div>
 
                 {/* Col 3 */}
@@ -34,7 +36,7 @@ export default function Footer() {
                     <ul className="space-y-4 mb-8">
                         <li className="flex items-start justify-center md:justify-start gap-4 text-white/60 font-medium">
                             <Mail size={18} className="text-[#7C3AED] mt-1 shrink-0" />
-                            <a href="mailto:info@elevareconnect.com" className="hover:text-white transition-colors">info@elevareconnect.com</a>
+                            <a href="mailto:info@elevareconnect.in" className="hover:text-white transition-colors">info@elevareconnect.in</a>
                         </li>
                         <li className="flex items-start justify-center md:justify-start gap-4 text-white/60 font-medium">
                             <MapPin size={18} className="text-[#7C3AED] mt-1 shrink-0" />
@@ -43,10 +45,10 @@ export default function Footer() {
                     </ul>
 
                     <div className="flex justify-center md:justify-start gap-5">
-                        <a href="https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#7C3AED] transition-all border border-white/10" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#7C3AED] transition-all border border-white/10" aria-label="LinkedIn">
                             <Linkedin size={18} />
                         </a>
-                        <a href="https://www.instagram.com/skandaumesh/" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#7C3AED] transition-all border border-white/10" aria-label="Instagram">
+                        <a href="https://www.instagram.com/skandaumesh/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#7C3AED] transition-all border border-white/10" aria-label="Instagram">
                             <Instagram size={18} />
                         </a>
                         <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#7C3AED] transition-all border border-white/10" aria-label="Facebook">

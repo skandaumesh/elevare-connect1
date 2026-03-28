@@ -150,7 +150,7 @@ export default function AboutPage() {
                             OUR PHILOSOPHY
                         </div>
                         <h2 className="text-[#0D0D0D] text-4xl md:text-6xl font-black tracking-tight mb-6 font-['Roboto',sans-serif]">
-                            Why <span className="text-[#7C3AED]">Elevare.</span>
+                            Why <span className="text-[#7C3AED]">Elevare Connect.</span>
                         </h2>
                         <p className="text-[#52525B] text-lg md:text-xl font-medium leading-relaxed">
                             High-performance methodology combined with deep academic empathy.

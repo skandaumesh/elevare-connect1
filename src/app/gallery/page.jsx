@@ -6,46 +6,34 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const galleryItems = [
-    { src: "/gallery/gallery18.jpg", title: "Workshop Session", type: "Interactive Training" },
-    { src: "/gallery/gallery16.jpg", title: "Training Program", type: "Skill Enhancement" },
-    { src: "/gallery/gallery3.jpeg", title: "Campus Engagement", type: "Institution Bridge" },
-    { src: "/gallery/gallery2.jpeg", title: "Interactive Session", type: "Peer Discussion" },
-    { src: "/gallery/gallery5.jpeg", title: "Mentoring Program", type: "1:1 Coaching" },
-    { src: "/gallery/gallery6.jpeg", title: "Leadership Workshop", type: "Career Readiness" },
-    { src: "/gallery/gallery7.jpeg", title: "Group Activity", type: "Team Building" },
-    { src: "/gallery/gallery8.jpeg", title: "Collaboration", type: "Impact Program" },
-    { src: "/gallery/gallery9.jpeg", title: "Student Engagement", type: "Campus Event" },
-    { src: "/gallery/gallery10.jpeg", title: "Campus Event", type: "Institutional Bridge" },
-    { src: "/gallery/gallery11.jpeg", title: "Peer Learning", type: "Knowledge Sharing" },
-    { src: "/gallery/gallery12.jpeg", title: "Innovation Lab", type: "Creative Thinking" },
-    { src: "/gallery/gallery13.jpeg", title: "Certification", type: "Achievements", position: "object-top" },
-    { src: "/gallery/gallery14.jpeg", title: "Future Leaders", type: "Empowerment" },
-    { src: "/gallery/gallery15.jpg", title: "Skill Building", type: "Professional Grooming" },
-    { src: "/gallery/gallery4.jpeg", title: "Practical Session", type: "Real-world Learning" },
-    { src: "/gallery/gallery17.jpeg", title: "Group Discussion", type: "Communication Skills" },
-    { src: "/gallery/gallery1.jpeg", title: "Program Finale", type: "Transformation Complete" },
+    { src: "/gallery/gallery19.jpg", title: "Personalized Coaching", type: "1:1 Mentorship", position: "object-top" },
+    { src: "/gallery/gallery20.jpg", title: "Interactive Workshop", type: "Skill Development" },
+    { src: "/gallery/gallery17.jpeg", title: "Immersive Learning", type: "Impact Session" },
+    { src: "/gallery/gallery18.jpg", title: "Practical Application", type: "Knowledge Transfer" },
+    { src: "/gallery/gallery1.jpeg", title: "Batch Convocation", type: "Program Finale" },
+    { src: "/gallery/gallery3.jpeg", title: "Corporate Bridge", type: "Industry Readiness" },
+    { src: "/gallery/gallery6.jpeg", title: "Leadership Series", type: "Executive Coaching" },
+    { src: "/gallery/gallery7.jpeg", title: "Team Dynamics", type: "Collaborative Learning" },
+    { src: "/gallery/gallery13.jpeg", title: "Achievement Awards", type: "Certification", position: "object-top" },
+    { src: "/gallery/gallery14.jpeg", title: "Dynamic Future", type: "Empowerment Program" },
+    { src: "/gallery/gallery15.jpg", title: "Professional Grooming", type: "Career Polish" },
+    { src: "/gallery/gallery9.jpeg", title: "Institutional Impact", type: "Campus Drive" },
+    { src: "/gallery/gallery11.jpeg", title: "Peer Empowerment", type: "Collaborative Growth" },
+    { src: "/gallery/gallery5.jpeg", title: "Mentorship Circle", type: "Guided Growth" },
+    { src: "/gallery/gallery8.jpeg", title: "Strategic Vision", type: "Impact Planning" },
 ];
 
-const LowPolyBackground = () => (
-    <div className="absolute inset-0 z-0 opacity-[0.4] pointer-events-none overflow-hidden">
-        <svg width="100%" height="100%" viewBox="0 0 1000 1000" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <g fill="none" stroke="#E2E8F0" strokeWidth="0.5">
-                <path d="M0,0 L300,200 L100,400 L0,300 Z" fill="#F8FAFC" />
-                <path d="M300,200 L600,0 L800,300 L300,200 Z" fill="#FFFFFF" />
-                <path d="M600,0 L1000,0 L800,300 L600,0 Z" fill="#F1F5F9" />
-                <path d="M800,300 L1000,0 L1000,500 L800,300 Z" fill="#F8FAFC" />
-                <path d="M300,200 L800,300 L500,600 L300,200 Z" fill="#FBFDFF" />
-                <path d="M100,400 L300,200 L500,600 L100,400 Z" fill="#F1F5F9" />
-                <path d="M0,300 L100,400 L0,700 Z" fill="#FFFFFF" />
-                <path d="M100,400 L500,600 L300,800 L100,400 Z" fill="#F8FAFC" />
-                <path d="M500,600 L800,300 L1000,500 L500,600 Z" fill="#FFFFFF" />
-                <path d="M800,300 L1000,500 L1000,800 L800,300 Z" fill="#F1F5F9" />
-                <path d="M500,600 L1000,800 L700,1000 L500,600 Z" fill="#F8FAFC" />
-                <path d="M300,800 L500,600 L700,1000 L300,800 Z" fill="#FFFFFF" />
-                <path d="M100,400 L300,800 L0,1000 L0,700 Z" fill="#F1F5F9" />
-                <path d="M300,800 L700,1000 L0,1000 L300,800 Z" fill="#F8FAFC" />
-                <path d="M700,1000 L1000,800 L1000,1000 L700,1000 Z" fill="#FFFFFF" />
-            </g>
+const PremiumBackground = () => (
+    <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-0 left-[-10%] w-[40%] h-[40%] bg-purple-100/30 blur-[120px] rounded-full" />
+        <div className="absolute bottom-[20%] right-[-5%] w-[35%] h-[35%] bg-blue-50/40 blur-[100px] rounded-full" />
+        <svg className="w-full h-full opacity-[0.03]" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+                <pattern id="grid" width="2" height="2" patternUnits="userSpaceOnUse">
+                    <path d="M 2 0 L 0 0 0 2" fill="none" stroke="currentColor" strokeWidth="0.05"/>
+                </pattern>
+            </defs>
+            <rect width="100" height="100" fill="url(#grid)" />
         </svg>
     </div>
 );
@@ -57,7 +45,7 @@ export default function GalleryPage() {
         <div className="relative bg-[#F8FAFC] min-h-screen overflow-hidden pt-20 md:pt-28">
             {/* HERO SECTION with Textured Poly Background */}
             <section className="relative pt-16 md:pt-20 pb-12 md:pb-16 px-6 overflow-hidden border-b border-slate-100">
-                <LowPolyBackground />
+                <PremiumBackground />
                 <div className="max-w-5xl mx-auto text-center relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -126,15 +114,15 @@ export default function GalleryPage() {
                         transition={{ duration: 0.8 }}
                         className="rounded-[40px] md:rounded-[56px] bg-white border border-slate-100 p-10 md:p-24 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.04)]"
                     >
-                        <h2 className="text-[#0f172a] text-3xl md:text-6xl font-bold tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
-                            Want us at <br className="hidden sm:block" />
-                            <span className="text-[#7C3AED]">Your Campus?</span>
+                        <h2 className="text-[#0f172a] text-3xl md:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                            Bring the Impact to <br className="hidden sm:block" />
+                            <span className="text-[#7C3AED]">Your Campus.</span>
                         </h2>
-                        <p className="text-[#475569] text-base md:text-xl font-medium max-w-lg mx-auto mb-10 md:mb-12">
-                            Let&apos;s create more impactful moments together and empower your students for the future.
+                        <p className="text-[#475569] text-base md:text-xl font-medium max-w-lg mx-auto mb-10 md:mb-12 leading-relaxed">
+                            Empower your students with industry-standard skills and professional grooming. Let&apos;s build the future together.
                         </p>
-                        <Link href="/contact" className="inline-flex items-center gap-3 px-8 md:px-12 py-4 md:py-5 rounded-full bg-[#7C3AED] text-white font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#6D28D9] group shadow-xl shadow-[#7C3AED]/30">
-                            Connect with us <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1" />
+                        <Link href="/contact" className="inline-flex items-center gap-4 px-10 md:px-14 py-5 md:py-6 rounded-2xl bg-[#0f172a] text-white font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#7C3AED] hover:-translate-y-1 group shadow-2xl shadow-slate-200">
+                            Get in Touch <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-2" />
                         </Link>
                     </motion.div>
                 </div>

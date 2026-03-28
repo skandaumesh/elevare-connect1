@@ -65,7 +65,7 @@ export default function ContactSection() {
                             <div>
                                 <div className="text-[#0D0D0D] font-bold text-xl mb-1">Email Us</div>
                                 <p className="text-[#52525B] font-medium leading-relaxed">Drop us a line and we&apos;ll get back to you immediately.</p>
-                                <a href="mailto:info@elevareconnect.com" className="text-[#7C3AED] font-bold block mt-2 hover:underline">info@elevareconnect.com</a>
+                                <a href="mailto:info@elevareconnect.in" className="text-[#7C3AED] font-bold block mt-2 hover:underline">info@elevareconnect.in</a>
                             </div>
                         </div>
 
