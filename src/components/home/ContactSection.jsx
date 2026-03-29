@@ -23,28 +23,28 @@ export default function ContactSection() {
                             <div className="grid sm:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-bold text-[#0D0D0D] mb-2">Name</label>
-                                    <input type="text" className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#7C3AED] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors" placeholder="John Doe" />
+                                    <input type="text" className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#662483] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors" placeholder="John Doe" />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-bold text-[#0D0D0D] mb-2">Email</label>
-                                    <input type="email" className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#7C3AED] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors" placeholder="john@example.com" />
+                                    <input type="email" className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#662483] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors" placeholder="john@example.com" />
                                 </div>
                             </div>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-bold text-[#0D0D0D] mb-2">Phone</label>
-                                    <input type="tel" className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#7C3AED] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors" placeholder="+91 XXXXX XXXXX" />
+                                    <input type="tel" className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#662483] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors" placeholder="+91 XXXXX XXXXX" />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-bold text-[#0D0D0D] mb-2">College / Organisation</label>
-                                    <input type="text" className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#7C3AED] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors" placeholder="Institution Name" />
+                                    <input type="text" className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#662483] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors" placeholder="Institution Name" />
                                 </div>
                             </div>
                             <div>
                                 <label className="block text-sm font-bold text-[#0D0D0D] mb-2">Message</label>
-                                <textarea rows={4} className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#7C3AED] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors resize-none" placeholder="How can we help you?" />
+                                <textarea rows={4} className="w-full bg-[#F5F3FF] border border-transparent focus:border-[#662483] focus:ring-0 rounded-xl px-4 py-3 outline-none transition-colors resize-none" placeholder="How can we help you?" />
                             </div>
-                            <button type="submit" className="w-full flex justify-center items-center gap-2 bg-[#7C3AED] text-white font-bold rounded-xl px-6 py-4 hover:bg-[#6D28D9] transition-all transform hover:scale-[1.02] shadow-md">
+                            <button type="submit" className="w-full flex justify-center items-center gap-2 bg-[#662483] text-white font-bold rounded-xl px-6 py-4 hover:bg-[#4A1561] transition-all transform hover:scale-[1.02] shadow-md">
                                 <Send size={18} /> Send Message
                             </button>
                         </form>
@@ -59,29 +59,29 @@ export default function ContactSection() {
                         className="flex flex-col justify-center gap-6"
                     >
                         <div className="bg-white p-8 rounded-3xl shadow-sm border border-[rgba(0,0,0,0.07)] flex items-start gap-6 hover:shadow-md transition-shadow">
-                            <div className="w-14 h-14 bg-[#F5F3FF] rounded-2xl flex items-center justify-center flex-shrink-0 text-[#7C3AED]">
+                            <div className="w-14 h-14 bg-[#F5F3FF] rounded-2xl flex items-center justify-center flex-shrink-0 text-[#662483]">
                                 <Mail size={24} />
                             </div>
                             <div>
                                 <div className="text-[#0D0D0D] font-bold text-xl mb-1">Email Us</div>
                                 <p className="text-[#52525B] font-medium leading-relaxed">Drop us a line and we&apos;ll get back to you immediately.</p>
-                                <a href="mailto:info@elevareconnect.in" className="text-[#7C3AED] font-bold block mt-2 hover:underline">info@elevareconnect.in</a>
+                                <a href="mailto:info@elevareconnect.in" className="text-[#662483] font-bold block mt-2 hover:underline">info@elevareconnect.in</a>
                             </div>
                         </div>
 
                         <div className="bg-white p-8 rounded-3xl shadow-sm border border-[rgba(0,0,0,0.07)] flex items-start gap-6 hover:shadow-md transition-shadow">
-                            <div className="w-14 h-14 bg-[#F5F3FF] rounded-2xl flex items-center justify-center flex-shrink-0 text-[#7C3AED]">
+                            <div className="w-14 h-14 bg-[#F5F3FF] rounded-2xl flex items-center justify-center flex-shrink-0 text-[#662483]">
                                 <Phone size={24} />
                             </div>
                             <div>
                                 <div className="text-[#0D0D0D] font-bold text-xl mb-1">Call Us</div>
                                 <p className="text-[#52525B] font-medium leading-relaxed">We&apos;re available Monday to Friday, 9:00 AM - 6:00 PM.</p>
-                                <a href="tel:+919999999999" className="text-[#7C3AED] font-bold block mt-2 hover:underline">+91 XXXXX XXXXX</a>
+                                <a href="tel:+919999999999" className="text-[#662483] font-bold block mt-2 hover:underline">+91 XXXXX XXXXX</a>
                             </div>
                         </div>
 
                         <div className="bg-white p-8 rounded-3xl shadow-sm border border-[rgba(0,0,0,0.07)] flex items-start gap-6 hover:shadow-md transition-shadow">
-                            <div className="w-14 h-14 bg-[#F5F3FF] rounded-2xl flex items-center justify-center flex-shrink-0 text-[#7C3AED]">
+                            <div className="w-14 h-14 bg-[#F5F3FF] rounded-2xl flex items-center justify-center flex-shrink-0 text-[#662483]">
                                 <MapPin size={24} />
                             </div>
                             <div>

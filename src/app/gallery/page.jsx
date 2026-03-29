@@ -52,12 +52,12 @@ export default function GalleryPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#7C3AED]/10 text-[#7C3AED] text-[10px] font-bold tracking-[0.3em] uppercase">
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#662483]/10 text-[#662483] text-[10px] font-bold tracking-[0.3em] uppercase">
                             Visual Impact
                         </div>
                         <h1 className="text-[#0f172a] text-3xl md:text-5xl lg:text-7xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             A Glimpse into <br className="hidden md:block" />
-                            <span className="text-[#7C3AED]">Our Impact.</span>
+                            <span className="text-[#662483]">Our Impact.</span>
                         </h1>
                         <p className="text-[#475569] text-base md:text-xl lg:text-2xl font-medium max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12">
                             From vibrant workshops to campus engagements, each snapshot tells a story of transformation, collaboration, and growth.
@@ -116,12 +116,12 @@ export default function GalleryPage() {
                     >
                         <h2 className="text-[#0f172a] text-3xl md:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             Bring the Impact to <br className="hidden sm:block" />
-                            <span className="text-[#7C3AED]">Your Campus.</span>
+                            <span className="text-[#662483]">Your Campus.</span>
                         </h2>
                         <p className="text-[#475569] text-base md:text-xl font-medium max-w-lg mx-auto mb-10 md:mb-12 leading-relaxed">
                             Empower your students with industry-standard skills and professional grooming. Let&apos;s build the future together.
                         </p>
-                        <Link href="/contact" className="inline-flex items-center gap-4 px-10 md:px-14 py-5 md:py-6 rounded-2xl bg-[#0f172a] text-white font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#7C3AED] hover:-translate-y-1 group shadow-2xl shadow-slate-200">
+                        <Link href="/contact" className="inline-flex items-center gap-4 px-10 md:px-14 py-5 md:py-6 rounded-2xl bg-[#2B0E38] text-white font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#662483] hover:-translate-y-1 group shadow-2xl shadow-slate-200">
                             Get in Touch <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-2" />
                         </Link>
                     </motion.div>
@@ -157,7 +157,7 @@ export default function GalleryPage() {
                             </div>
 
                             <button
-                                className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#0f172a] text-white flex items-center justify-center hover:bg-[#7C3AED] hover:scale-110 transition-all shadow-2xl cursor-pointer pointer-events-auto"
+                                className="absolute top-4 right-4 md:top-8 md:right-8 w-10 h-10 md:w-16 md:h-16 rounded-full bg-[#2B0E38] text-white flex items-center justify-center hover:bg-[#662483] hover:scale-110 transition-all shadow-2xl cursor-pointer pointer-events-auto"
                                 onClick={() => setSelectedImg(null)}
                             >
                                 <X size={24} className="md:w-7 md:h-7" />

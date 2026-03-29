@@ -12,11 +12,11 @@ export default function AboutPage() {
             {/* Premium BG Design Layer */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 {/* Mesh Gradient Accents */}
-                <div className="absolute top-[5%] left-[-5%] w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#7C3AED]/5 rounded-full blur-[100px] md:blur-[160px]" />
-                <div className="absolute bottom-[5%] right-[-5%] w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#7C3AED]/5 rounded-full blur-[100px] md:blur-[160px]" />
+                <div className="absolute top-[5%] left-[-5%] w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#662483]/5 rounded-full blur-[100px] md:blur-[160px]" />
+                <div className="absolute bottom-[5%] right-[-5%] w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#662483]/5 rounded-full blur-[100px] md:blur-[160px]" />
 
                 {/* Subtle Modern Grid Overlay */}
-                <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'linear-gradient(#7C3AED 1px, transparent 1px), linear-gradient(90deg, #7C3AED 1px, transparent 1px)', backgroundSize: '100px 100px' }} />
+                <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'linear-gradient(#662483 1px, transparent 1px), linear-gradient(90deg, #662483 1px, transparent 1px)', backgroundSize: '100px 100px' }} />
             </div>
 
             {/* ─── SECTION 1: HERO ─── */}
@@ -29,13 +29,13 @@ export default function AboutPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-flex items-center gap-2 px-4 md:px-5 py-1.5 md:py-2 mb-6 md:mb-8 rounded-full bg-[#7C3AED]/10 text-[#7C3AED] text-[10px] md:text-sm font-bold tracking-widest uppercase">
-                            <span className="w-2 h-2 rounded-full bg-[#7C3AED] animate-pulse"></span>
+                        <div className="inline-flex items-center gap-2 px-4 md:px-5 py-1.5 md:py-2 mb-6 md:mb-8 rounded-full bg-[#662483]/10 text-[#662483] text-[10px] md:text-sm font-bold tracking-widest uppercase">
+                            <span className="w-2 h-2 rounded-full bg-[#662483] animate-pulse"></span>
                             ABOUT ELEVARE CONNECT
                         </div>
                         <h1 className="text-[#0D0D0D] text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             Empowering with <br className="hidden md:block" />
-                            <span className="text-[#7C3AED]">Human-Centric Skills.</span>
+                            <span className="text-[#662483]">Human-Centric Skills.</span>
                         </h1>
                         <p className="text-[#52525B] text-base md:text-xl font-medium mb-10 md:mb-16 leading-relaxed max-w-2xl mx-auto">
                             We partner with institutions to unlock every student&apos;s potential — enhancing communication, leadership, and emotional intelligence.
@@ -49,7 +49,7 @@ export default function AboutPage() {
                             ].map((s, idx) => (
                                 <div key={idx} className="flex flex-col items-center">
                                     <p className="text-[#0D0D0D] text-4xl md:text-6xl font-black tracking-tight mb-1 md:mb-2">{s.v}</p>
-                                    <p className="text-[#7C3AED] font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase">{s.l}</p>
+                                    <p className="text-[#662483] font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase">{s.l}</p>
                                 </div>
                             ))}
                         </div>
@@ -71,7 +71,7 @@ export default function AboutPage() {
                         >
                             <h2 className="text-[#0f172a] text-3xl md:text-[46px] font-bold mb-8 md:mb-10 tracking-tight leading-[1.2] font-['Roboto',sans-serif]">
                                 The Heart <br className="hidden md:block" />
-                                <span className="text-[#7C3AED]">Behind Elevare Connect</span>
+                                <span className="text-[#662483]">Behind Elevare Connect</span>
                             </h2>
 
                             <div className="space-y-6 text-[#475569] text-base md:text-lg font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -84,7 +84,7 @@ export default function AboutPage() {
                             </div>
 
                             <div className="mt-8 md:mt-10 pt-6 md:pt-8 border-t border-slate-100 flex items-center justify-center lg:justify-start gap-4">
-                                <div className="hidden md:block w-10 h-[2px] bg-[#7C3AED]" />
+                                <div className="hidden md:block w-10 h-[2px] bg-[#662483]" />
                                 <p className="text-[#0f172a] text-base md:text-lg font-bold">Wilma Merina D’Sa, <span className="text-slate-500 font-medium ml-1 text-sm md:text-base">Founder</span></p>
                             </div>
                         </motion.div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
                         >
                             <div className="relative">
                                 {/* Clean Premium Outer Shadow/Glow */}
-                                <div className="absolute inset-0 bg-[#7C3AED]/10 rounded-full blur-[60px] transform translate-y-8" />
+                                <div className="absolute inset-0 bg-[#662483]/10 rounded-full blur-[60px] transform translate-y-8" />
 
                                 {/* Pure Oval Container */}
                                 <div className="relative w-[260px] md:w-[340px] aspect-[1/1.5] rounded-full p-2 bg-white border border-slate-100 shadow-2xl overflow-hidden group">
@@ -125,12 +125,12 @@ export default function AboutPage() {
             <section className="px-6 py-20 md:py-32 relative bg-[#F9F8F3] overflow-hidden">
                 {/* Decorative Background Elements */}
                 <div className="absolute inset-0 pointer-events-none z-0">
-                    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#7C3AED]/5 rounded-full blur-[100px] md:blur-[150px]" />
-                    <div className="absolute bottom-0 left-[-10%] w-[500px] h-[500px] bg-[#7C3AED]/[0.08] rounded-full blur-[120px]" />
+                    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#662483]/5 rounded-full blur-[100px] md:blur-[150px]" />
+                    <div className="absolute bottom-0 left-[-10%] w-[500px] h-[500px] bg-[#662483]/[0.08] rounded-full blur-[120px]" />
                     <svg className="absolute inset-0 w-full h-full opacity-[0.03]" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <pattern id="dot-pattern" width="30" height="30" patternUnits="userSpaceOnUse">
-                                <circle cx="2" cy="2" r="1.5" fill="#7C3AED" />
+                                <circle cx="2" cy="2" r="1.5" fill="#662483" />
                             </pattern>
                         </defs>
                         <rect width="100%" height="100%" fill="url(#dot-pattern)" />
@@ -145,12 +145,12 @@ export default function AboutPage() {
                         transition={{ duration: 0.8 }}
                         className="text-center max-w-3xl mx-auto mb-16 md:mb-20"
                     >
-                        <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full bg-[#7C3AED]/10 text-[#7C3AED] text-[10px] md:text-sm font-bold tracking-widest uppercase shadow-sm">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse"></span>
+                        <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full bg-[#662483]/10 text-[#662483] text-[10px] md:text-sm font-bold tracking-widest uppercase shadow-sm">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#662483] animate-pulse"></span>
                             OUR PHILOSOPHY
                         </div>
                         <h2 className="text-[#0D0D0D] text-4xl md:text-6xl font-black tracking-tight mb-6 font-['Roboto',sans-serif]">
-                            Why <span className="text-[#7C3AED]">Elevare Connect.</span>
+                            Why <span className="text-[#662483]">Elevare Connect.</span>
                         </h2>
                         <p className="text-[#52525B] text-lg md:text-xl font-medium leading-relaxed">
                             High-performance methodology combined with deep academic empathy.
@@ -176,9 +176,9 @@ export default function AboutPage() {
                                     className="group relative p-8 md:p-10 rounded-3xl bg-white/80 backdrop-blur-xl border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_50px_rgba(124,58,237,0.1)] transition-all duration-500 overflow-hidden"
                                 >
                                     {/* Hover gradient line */}
-                                    <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#7C3AED] to-purple-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                                    <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#662483] to-purple-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                                     
-                                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center bg-[#F5F3FF] text-[#7C3AED] mb-6 md:mb-8 shadow-inner group-hover:bg-[#7C3AED] group-hover:text-white transition-colors duration-500 relative z-10">
+                                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center bg-[#F5F3FF] text-[#662483] mb-6 md:mb-8 shadow-inner group-hover:bg-[#662483] group-hover:text-white transition-colors duration-500 relative z-10">
                                         <Icon className="w-6 h-6 md:w-8 md:h-8 transition-transform duration-500 group-hover:scale-110" strokeWidth={1.5} />
                                     </div>
                                     <h4 className="font-bold text-xl md:text-[22px] tracking-tight text-[#0D0D0D] mb-4 font-['Roboto',sans-serif] relative z-10">{s.title}</h4>
@@ -195,7 +195,7 @@ export default function AboutPage() {
 
             {/* ─── SECTION 4: CTA ─── */}
             <section className="px-6 py-24 md:py-40 bg-white relative overflow-hidden">
-                <div className="absolute top-0 right-[-10%] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#7C3AED]/10 rounded-full blur-[100px] md:blur-[140px] pointer-events-none" />
+                <div className="absolute top-0 right-[-10%] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#662483]/10 rounded-full blur-[100px] md:blur-[140px] pointer-events-none" />
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
@@ -205,16 +205,16 @@ export default function AboutPage() {
                 >
                     <h2 className="text-[#0D0D0D] text-4xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                         Collaborate <br />
-                        <span className="text-[#7C3AED]">with us today.</span>
+                        <span className="text-[#662483]">with us today.</span>
                     </h2>
                     <p className="text-[#52525B] font-medium text-lg md:text-xl leading-relaxed max-w-lg mx-auto mb-12">
                         Let&apos;s shape the next generation of confident, career-ready professionals together.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-5">
-                        <Link href="/contact" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 rounded-full bg-[#7C3AED] text-white font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#6D28D9] group shadow-xl shadow-[#7C3AED]/20">
+                        <Link href="/contact" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 rounded-full bg-[#662483] text-white font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#4A1561] group shadow-xl shadow-[#662483]/20">
                             Get Started <ArrowRight className="inline-block ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                         </Link>
-                        <Link href="/services" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 rounded-full bg-white border border-slate-200 text-[#0D0D0D] font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:border-[#7C3AED] hover:text-[#7C3AED]">
+                        <Link href="/services" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 rounded-full bg-white border border-slate-200 text-[#0D0D0D] font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:border-[#662483] hover:text-[#662483]">
                             Our Services
                         </Link>
                     </div>

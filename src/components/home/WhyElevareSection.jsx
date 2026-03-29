@@ -6,17 +6,17 @@ import { BookOpen, Users, Lightbulb } from "lucide-react";
 export default function WhyElevareSection() {
     const cards = [
         {
-            icon: <BookOpen size={32} className="text-[#7C3AED]" />,
+            icon: <BookOpen size={32} className="text-[#662483]" />,
             title: "Foundational Expertise",
             desc: "Led by Wilma Merina D'Sa, a seasoned HR Professional and Academician, bringing theory and practice into harmony."
         },
         {
-            icon: <Users size={32} className="text-[#7C3AED]" />,
+            icon: <Users size={32} className="text-[#662483]" />,
             title: "Personalized Approach",
             desc: "We work individually and in groups, adapting to each student's unique personality and future career aspirations."
         },
         {
-            icon: <Lightbulb size={32} className="text-[#7C3AED]" />,
+            icon: <Lightbulb size={32} className="text-[#662483]" />,
             title: "Holistic Development",
             desc: "Our methods go beyond technical training to nurture emotional intelligence, critical thinking, and leadership presence."
         }
@@ -29,10 +29,10 @@ export default function WhyElevareSection() {
                 {/* Soft Mesh Gradient */}
                 <div className="absolute top-0 left-0 w-full h-full opacity-[0.15]"
                     style={{
-                        backgroundImage: `radial-gradient(at 0% 0%, #7C3AED 0, transparent 50%), 
-                              radial-gradient(at 100% 0%, #7C3AED 0, transparent 50%),
-                              radial-gradient(at 100% 100%, #7C3AED 0, transparent 50%),
-                              radial-gradient(at 0% 100%, #7C3AED 0, transparent 50%)`
+                        backgroundImage: `radial-gradient(at 0% 0%, #662483 0, transparent 50%), 
+                              radial-gradient(at 100% 0%, #662483 0, transparent 50%),
+                              radial-gradient(at 100% 100%, #662483 0, transparent 50%),
+                              radial-gradient(at 0% 100%, #662483 0, transparent 50%)`
                     }}
                 />
 
@@ -43,7 +43,7 @@ export default function WhyElevareSection() {
                         rotate: [0, 5, 0]
                     }}
                     transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute top-20 left-[10%] w-64 h-64 bg-[#7C3AED]/5 rounded-full blur-3xl"
+                    className="absolute top-20 left-[10%] w-64 h-64 bg-[#662483]/5 rounded-full blur-3xl"
                 />
                 <motion.div
                     animate={{
@@ -51,7 +51,7 @@ export default function WhyElevareSection() {
                         rotate: [0, -5, 0]
                     }}
                     transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-                    className="absolute bottom-20 right-[10%] w-96 h-96 bg-[#7C3AED]/5 rounded-full blur-3xl"
+                    className="absolute bottom-20 right-[10%] w-96 h-96 bg-[#662483]/5 rounded-full blur-3xl"
                 />
 
                 {/* Subtle Decorative SVG Pattern */}
@@ -73,11 +73,11 @@ export default function WhyElevareSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-block px-4 py-1.5 mb-4 text-[#7C3AED] text-xs font-bold tracking-[0.2em] uppercase bg-[#7C3AED]/10 rounded-full">
+                    <div className="inline-block px-4 py-1.5 mb-4 text-[#662483] text-xs font-bold tracking-[0.2em] uppercase bg-[#662483]/10 rounded-full">
                         Why Choose Us
                     </div>
                     <h2 className="text-[#0f172a] text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
-                        Why <span className="text-[#7C3AED]">Elevare Connect.</span>
+                        Why <span className="text-[#662483]">Elevare Connect.</span>
                     </h2>
                 </motion.div>
 
@@ -92,10 +92,10 @@ export default function WhyElevareSection() {
                             className="group bg-white/70 backdrop-blur-md border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-[32px] p-8 hover:shadow-[0_20px_50px_rgba(124,58,237,0.1)] hover:-translate-y-2 transition-all duration-500 relative overflow-hidden"
                         >
                             {/* Subtle card hover accent */}
-                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#7C3AED] to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#662483] to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
 
                             <div className="relative z-10">
-                                <div className="w-16 h-16 rounded-2xl bg-[#F5F3FF] flex items-center justify-center mb-6 group-hover:bg-[#7C3AED] group-hover:text-white transition-colors duration-300">
+                                <div className="w-16 h-16 rounded-2xl bg-[#F5F3FF] flex items-center justify-center mb-6 group-hover:bg-[#662483] group-hover:text-white transition-colors duration-300">
                                     {React.cloneElement(card.icon, { className: "group-hover:text-white transition-colors duration-300" })}
                                 </div>
                                 <h3 className="text-2xl font-bold text-[#0f172a] mb-4 tracking-tight">{card.title}</h3>

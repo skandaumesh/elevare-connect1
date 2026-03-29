@@ -8,12 +8,12 @@ export default function AboutSection() {
             {/* Elegant Minimalist BG */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 {/* Soft Gradient Accent */}
-                <div className="absolute top-[20%] right-[-10%] w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#7C3AED]/[0.02] rounded-full blur-[80px] md:blur-[120px]" />
+                <div className="absolute top-[20%] right-[-10%] w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#662483]/[0.02] rounded-full blur-[80px] md:blur-[120px]" />
 
                 {/* Minimalist Pattern */}
                 <div className="absolute inset-0 opacity-[0.03]"
                     style={{
-                        backgroundImage: 'radial-gradient(#7C3AED 0.8px, transparent 0.8px)',
+                        backgroundImage: 'radial-gradient(#662483 0.8px, transparent 0.8px)',
                         backgroundSize: '40px 40px'
                     }}
                 />
@@ -29,7 +29,7 @@ export default function AboutSection() {
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="text-[#7C3AED] text-xs md:text-sm font-bold tracking-widest uppercase mb-4">About Us</div>
+                        <div className="text-[#662483] text-xs md:text-sm font-bold tracking-widest uppercase mb-4">About Us</div>
                         <h2 className="text-[#0D0D0D] text-3xl md:text-5xl font-bold mb-6 tracking-tight leading-tight font-['Roboto',sans-serif]">
                             Paving Path to Professional Excellence
                         </h2>
@@ -42,7 +42,7 @@ export default function AboutSection() {
                         <div className="flex items-center gap-4 bg-white px-5 md:px-6 py-3 md:py-4 rounded-2xl w-max border border-slate-100 shadow-sm">
                             <div>
                                 <div className="text-[#0D0D0D] font-bold text-base md:text-lg">Wilma Merina D&apos;Sa</div>
-                                <div className="text-[#7C3AED] text-[10px] md:text-sm font-bold uppercase tracking-widest">Founder</div>
+                                <div className="text-[#662483] text-[10px] md:text-sm font-bold uppercase tracking-widest">Founder</div>
                             </div>
                         </div>
                     </motion.div>

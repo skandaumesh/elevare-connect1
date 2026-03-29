@@ -113,7 +113,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <meta name="theme-color" content="#7C3AED" />
+        <meta name="theme-color" content="#662483" />
       </head>
       <body className={`flex flex-col min-h-screen antialiased overflow-x-hidden font-sans bg-[#F9F8F3] text-[#52525B] ${dmSans.variable} ${roboto.variable} ${instrumentSerif.variable}`}>
         {/* Organization Schema */}

@@ -33,7 +33,7 @@ const TestimonialCard = ({ test, onReadMore }) => {
       <div className="mt-auto pt-6 flex flex-col gap-8">
         <button 
           onClick={() => onReadMore(test)} 
-          className="text-[#7C3AED] text-sm font-bold hover:underline focus:outline-none text-left"
+          className="text-[#662483] text-sm font-bold hover:underline focus:outline-none text-left"
         >
           Read More
         </button>
@@ -43,7 +43,7 @@ const TestimonialCard = ({ test, onReadMore }) => {
           </div>
           <div>
             <h4 className="text-[#0D0D0D] font-bold">{test.name}</h4>
-            <p className="text-[#7C3AED] text-sm font-medium">{test.role}</p>
+            <p className="text-[#662483] text-sm font-medium">{test.role}</p>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@ export default function TestimonialsSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <div className="text-[#7C3AED] text-sm font-bold tracking-widest uppercase mb-4">Testimonials</div>
+          <div className="text-[#662483] text-sm font-bold tracking-widest uppercase mb-4">Testimonials</div>
           <h2 className="text-[#0D0D0D] text-4xl md:text-5xl font-bold tracking-tight">
             What People Are Saying
           </h2>
@@ -162,7 +162,7 @@ export default function TestimonialsSection() {
                 </div>
                 <div>
                   <h4 className="text-[#0D0D0D] text-xl font-bold">{selectedTestimonial.name}</h4>
-                  <p className="text-[#7C3AED] text-sm md:text-base font-medium">{selectedTestimonial.role}</p>
+                  <p className="text-[#662483] text-sm md:text-base font-medium">{selectedTestimonial.role}</p>
                 </div>
               </div>
 

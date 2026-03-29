@@ -20,8 +20,8 @@ export default function HeroSection() {
       </div>
 
       {/* Modern Gradient Accents for Depth */}
-      <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-[#7C3AED]/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 -right-20 w-[400px] h-[400px] bg-[#7C3AED]/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-[#662483]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 -right-20 w-[400px] h-[400px] bg-[#662483]/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
         <motion.div
@@ -32,7 +32,7 @@ export default function HeroSection() {
         >
           {/* Eyebrow - High-Impact Highlighted Badge */}
           <div className="inline-flex mb-8">
-            <span className="px-5 py-2.5 rounded-full bg-[#7C3AED] text-white text-[10px] md:text-sm font-black tracking-[0.15em] uppercase shadow-xl shadow-[#7C3AED]/20">
+            <span className="px-5 py-2.5 rounded-full bg-[#662483] text-white text-[10px] md:text-sm font-black tracking-[0.15em] uppercase shadow-xl shadow-[#662483]/20">
               Elevare Connect
             </span>
           </div>
@@ -40,7 +40,7 @@ export default function HeroSection() {
           {/* Scaled Back Heading */}
           <h1 className="text-[#0D0D0D] text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] uppercase [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
             Where Ambition Finds <br className="hidden sm:block" />
-            <span className="text-[#7C3AED]">its Direction.</span>
+            <span className="text-[#662483]">its Direction.</span>
           </h1>
 
           {/* Subheading - Refined Spacing */}
@@ -50,7 +50,7 @@ export default function HeroSection() {
 
           {/* CTAs - Scaled Down */}
           <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 md:gap-6">
-            <a href="/services" className="w-full sm:w-auto px-8 md:px-10 py-3.5 md:py-4 bg-[#7C3AED] text-white font-bold rounded-xl hover:bg-[#6D28D9] transition-all text-center tracking-wide uppercase text-xs md:text-sm shadow-xl hover:-translate-y-0.5">
+            <a href="/services" className="w-full sm:w-auto px-8 md:px-10 py-3.5 md:py-4 bg-[#662483] text-white font-bold rounded-xl hover:bg-[#4A1561] transition-all text-center tracking-wide uppercase text-xs md:text-sm shadow-xl hover:-translate-y-0.5">
               Discover More
             </a>
             <a href="/contact" className="w-full sm:w-auto px-8 md:px-10 py-3.5 md:py-4 bg-white text-[#0D0D0D] font-bold rounded-xl border border-slate-200 hover:border-[#0D0D0D] transition-all text-center tracking-wide uppercase text-xs md:text-sm shadow-sm group">
