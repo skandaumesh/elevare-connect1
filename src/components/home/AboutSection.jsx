@@ -30,7 +30,7 @@ export default function AboutSection() {
                         transition={{ duration: 0.8 }}
                     >
                         <div className="text-[#6E2690] text-xs md:text-sm font-bold tracking-widest uppercase mb-4">About Us</div>
-                        <h2 className="text-[#0D0D0D] text-3xl md:text-5xl font-bold mb-6 tracking-tight leading-tight font-['Roboto',sans-serif]">
+                        <h2 className="text-[#6E2690] text-3xl md:text-5xl font-bold mb-6 tracking-tight leading-tight font-['Roboto',sans-serif]">
                             Paving Path to Professional Excellence
                         </h2>
                         <p className="text-[#52525B] text-base md:text-lg leading-relaxed mb-8 md:mb-10">
@@ -41,7 +41,7 @@ export default function AboutSection() {
                         {/* Founder Card */}
                         <div className="flex items-center gap-4 bg-white px-5 md:px-6 py-3 md:py-4 rounded-2xl w-max border border-slate-100 shadow-sm">
                             <div>
-                                <div className="text-[#0D0D0D] font-bold text-base md:text-lg">Wilma Merina D&apos;Sa</div>
+                                <div className="text-[#6E2690] font-bold text-base md:text-lg">Wilma Merina D&apos;Sa</div>
                                 <div className="text-[#6E2690] text-[10px] md:text-sm font-bold uppercase tracking-widest">Founder</div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ export default function AboutSection() {
                         className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full mt-12 lg:mt-0"
                     >
                         {/* Main Image (Large, Left) */}
-                        <div className="absolute top-0 left-0 w-[85%] h-[85%] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl z-10 bg-[#F5F3FF] border-2 md:border-4 border-white">
+                        <div className="absolute top-0 left-0 w-[85%] h-[85%] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl z-10 bg-[#FDFBFF] border-2 md:border-4 border-white">
                             <Image src="https://elevareacademy.in/wp-content/uploads/2025/08/2151585308.jpg" alt="Training Session" fill className="object-cover" />
                         </div>
 

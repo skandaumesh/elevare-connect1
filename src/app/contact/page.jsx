@@ -41,7 +41,7 @@ export default function ContactPage() {
                         className="space-y-8 md:space-y-12"
                     >
                         <div className="space-y-6">
-                            <h1 className="text-[#0f172a] text-3xl md:text-5xl font-bold tracking-tight leading-[1.1] font-['Roboto',sans-serif]">
+                            <h1 className="text-[#6E2690] text-3xl md:text-5xl font-bold tracking-tight leading-[1.1] font-['Roboto',sans-serif]">
                                 Get in Touch With Us
                             </h1>
                             <p className="text-[#475569] text-lg md:text-xl font-medium leading-relaxed max-w-lg">
@@ -50,7 +50,7 @@ export default function ContactPage() {
                         </div>
 
                         <div className="space-y-2">
-                            <h3 className="text-[#0f172a] text-xl md:text-2xl font-bold font-['Roboto',sans-serif]">
+                            <h3 className="text-[#6E2690] text-xl md:text-2xl font-bold font-['Roboto',sans-serif]">
                                 Email ID
                             </h3>
                             <a href="mailto:info@elevareconnect.in" className="text-[#6E2690] text-lg md:text-xl font-medium hover:underline break-all">

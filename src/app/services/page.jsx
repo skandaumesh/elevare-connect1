@@ -81,7 +81,7 @@ export default function ServicesPage() {
                         <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#6E2690] text-[10px] font-bold tracking-[0.3em] uppercase">
                             Impact Programs
                         </div>
-                        <h1 className="text-[#0f172a] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                        <h1 className="text-[#6E2690] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             Elevating <br className="hidden md:block" />
                             <span className="text-[#6E2690]">Professional</span> Futures.
                         </h1>
@@ -136,7 +136,7 @@ export default function ServicesPage() {
                                     viewport={{ once: true }}
                                     className="space-y-4"
                                 >
-                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-[#0f172a] leading-[1.2] font-['Roboto',sans-serif]">
+                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-[#6E2690] leading-[1.2] font-['Roboto',sans-serif]">
                                         {s.title}
                                     </h2>
                                     <p className="text-[#475569] text-base md:text-lg font-medium leading-relaxed">

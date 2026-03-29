@@ -9,7 +9,7 @@ const HighlightText = ({ text }) => {
     <>
       {parts.map((part, i) => 
         /Ms\. Wilma Merina D['’]sa/i.test(part) ? (
-          <strong key={i} className="font-bold text-[#0D0D0D]">{part}</strong>
+          <strong key={i} className="font-bold text-[#6E2690]">{part}</strong>
         ) : (
           part
         )
@@ -42,7 +42,7 @@ const TestimonialCard = ({ test, onReadMore }) => {
             <img src={test.img} alt={test.name} className="w-full h-full object-cover" />
           </div>
           <div>
-            <h4 className="text-[#0D0D0D] font-bold">{test.name}</h4>
+            <h4 className="text-[#6E2690] font-bold">{test.name}</h4>
             <p className="text-[#6E2690] text-sm font-medium">{test.role}</p>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.8 }}
         >
           <div className="text-[#6E2690] text-sm font-bold tracking-widest uppercase mb-4">Testimonials</div>
-          <h2 className="text-[#0D0D0D] text-4xl md:text-5xl font-bold tracking-tight">
+          <h2 className="text-[#6E2690] text-4xl md:text-5xl font-bold tracking-tight">
             What People Are Saying
           </h2>
         </motion.div>
@@ -150,7 +150,7 @@ export default function TestimonialsSection() {
             >
               <button 
                 onClick={() => setSelectedTestimonial(null)}
-                className="absolute top-6 right-6 p-2 bg-slate-100 rounded-full text-slate-500 hover:text-[#0D0D0D] hover:bg-slate-200 transition-colors"
+                className="absolute top-6 right-6 p-2 bg-slate-100 rounded-full text-slate-500 hover:text-[#6E2690] hover:bg-slate-200 transition-colors"
                 aria-label="Close modal"
               >
                 <X size={20} />
@@ -161,7 +161,7 @@ export default function TestimonialsSection() {
                   <img src={selectedTestimonial.img} alt={selectedTestimonial.name} className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <h4 className="text-[#0D0D0D] text-xl font-bold">{selectedTestimonial.name}</h4>
+                  <h4 className="text-[#6E2690] text-xl font-bold">{selectedTestimonial.name}</h4>
                   <p className="text-[#6E2690] text-sm md:text-base font-medium">{selectedTestimonial.role}</p>
                 </div>
               </div>

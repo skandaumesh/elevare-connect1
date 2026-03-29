@@ -18,7 +18,7 @@ export default function CollaborationsSection() {
         <section id="collaborate" className="py-20 bg-[#FFFFFF] overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 mb-12">
                 <motion.h2
-                    className="text-center text-3xl font-medium text-[#0D0D0D] tracking-tight"
+                    className="text-center text-3xl font-medium text-[#6E2690] tracking-tight"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}

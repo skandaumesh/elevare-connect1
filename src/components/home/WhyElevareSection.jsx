@@ -23,7 +23,7 @@ export default function WhyElevareSection() {
     ];
 
     return (
-        <section className="py-24 bg-[#F8FAFC] relative overflow-hidden">
+        <section className="py-24 bg-[#FFFFFF] relative overflow-hidden">
             {/* Dynamic Background Elements */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 {/* Soft Mesh Gradient */}
@@ -76,7 +76,7 @@ export default function WhyElevareSection() {
                     <div className="inline-block px-4 py-1.5 mb-4 text-[#6E2690] text-xs font-bold tracking-[0.2em] uppercase bg-[#6E2690]/10 rounded-full">
                         Why Choose Us
                     </div>
-                    <h2 className="text-[#0f172a] text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
+                    <h2 className="text-[#6E2690] text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
                         Why <span className="text-[#6E2690]">Elevare Connect.</span>
                     </h2>
                 </motion.div>
@@ -95,10 +95,10 @@ export default function WhyElevareSection() {
                             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#6E2690] to-[#9B59B6] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
 
                             <div className="relative z-10">
-                                <div className="w-16 h-16 rounded-2xl bg-[#F5F3FF] flex items-center justify-center mb-6 group-hover:bg-[#6E2690] group-hover:text-white transition-colors duration-300">
+                                <div className="w-16 h-16 rounded-2xl bg-[#FDFBFF] flex items-center justify-center mb-6 group-hover:bg-[#6E2690] group-hover:text-white transition-colors duration-300">
                                     {React.cloneElement(card.icon, { className: "group-hover:text-white transition-colors duration-300" })}
                                 </div>
-                                <h3 className="text-2xl font-bold text-[#0f172a] mb-4 tracking-tight">{card.title}</h3>
+                                <h3 className="text-2xl font-bold text-[#6E2690] mb-4 tracking-tight">{card.title}</h3>
                                 <p className="text-[#64748b] leading-relaxed font-medium">
                                     {card.desc}
                                 </p>

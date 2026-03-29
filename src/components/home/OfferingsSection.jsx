@@ -62,7 +62,7 @@ export default function OfferingsSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-[#0f172a] text-4xl md:text-5xl font-bold tracking-tight">
+                    <h2 className="text-[#6E2690] text-4xl md:text-5xl font-bold tracking-tight">
                         Our Key Offerings
                     </h2>
                 </motion.div>
@@ -89,7 +89,7 @@ export default function OfferingsSection() {
 
                             {/* Text Area */}
                             <div className="px-4 pb-6 flex-grow flex flex-col">
-                                <h3 className="text-xl font-bold text-[#0f172a] text-center tracking-tight mb-5">
+                                <h3 className="text-xl font-bold text-[#6E2690] text-center tracking-tight mb-5">
                                     {offering.title}
                                 </h3>
                                 <ul className="space-y-3">

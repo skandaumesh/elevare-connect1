@@ -42,7 +42,7 @@ export default function GalleryPage() {
     const [selectedImg, setSelectedImg] = useState(null);
 
     return (
-        <div className="relative bg-[#F8FAFC] min-h-screen overflow-hidden pt-20 md:pt-28">
+        <div className="relative bg-[#FFFFFF] min-h-screen overflow-hidden pt-20 md:pt-28">
             {/* HERO SECTION with Textured Poly Background */}
             <section className="relative pt-16 md:pt-20 pb-12 md:pb-16 px-6 overflow-hidden border-b border-slate-100">
                 <PremiumBackground />
@@ -55,7 +55,7 @@ export default function GalleryPage() {
                         <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#6E2690] text-[10px] font-bold tracking-[0.3em] uppercase">
                             Visual Impact
                         </div>
-                        <h1 className="text-[#0f172a] text-3xl md:text-5xl lg:text-7xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                        <h1 className="text-[#6E2690] text-3xl md:text-5xl lg:text-7xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             A Glimpse into <br className="hidden md:block" />
                             <span className="text-[#6E2690]">Our Impact.</span>
                         </h1>
@@ -114,7 +114,7 @@ export default function GalleryPage() {
                         transition={{ duration: 0.8 }}
                         className="rounded-[40px] md:rounded-[56px] bg-white border border-slate-100 p-10 md:p-24 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.04)]"
                     >
-                        <h2 className="text-[#0f172a] text-3xl md:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                        <h2 className="text-[#6E2690] text-3xl md:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             Bring the Impact to <br className="hidden sm:block" />
                             <span className="text-[#6E2690]">Your Campus.</span>
                         </h2>

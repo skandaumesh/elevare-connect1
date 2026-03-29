@@ -38,13 +38,13 @@ export default function HeroSection() {
           </div>
 
           {/* Scaled Back Heading */}
-          <h1 className="text-[#0D0D0D] text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] uppercase [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
+          <h1 className="text-[#6E2690] text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] uppercase [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
             Where Ambition Finds <br className="hidden sm:block" />
             <span className="text-[#6E2690]">its Direction.</span>
           </h1>
 
           {/* Subheading - Refined Spacing */}
-          <p className="text-[#0D0D0D] md:text-[#52525B] text-base md:text-lg font-bold md:font-medium mb-10 leading-relaxed max-w-xl border-l-[3px] border-slate-200 pl-6 [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
+          <p className="text-[#6E2690] md:text-[#52525B] text-base md:text-lg font-bold md:font-medium mb-10 leading-relaxed max-w-xl border-l-[3px] border-slate-200 pl-6 [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
             Expert-led soft skills, campus-to-career mentoring and professional grooming for students and young professionals.
           </p>
 
@@ -53,7 +53,7 @@ export default function HeroSection() {
             <a href="/services" className="w-full sm:w-auto px-8 md:px-10 py-3.5 md:py-4 bg-[#6E2690] text-white font-bold rounded-xl hover:bg-[#6E2690] transition-all text-center tracking-wide uppercase text-xs md:text-sm shadow-xl hover:-translate-y-0.5">
               Discover More
             </a>
-            <a href="/contact" className="w-full sm:w-auto px-8 md:px-10 py-3.5 md:py-4 bg-white text-[#0D0D0D] font-bold rounded-xl border border-slate-200 hover:border-[#0D0D0D] transition-all text-center tracking-wide uppercase text-xs md:text-sm shadow-sm group">
+            <a href="/contact" className="w-full sm:w-auto px-8 md:px-10 py-3.5 md:py-4 bg-white text-[#6E2690] font-bold rounded-xl border border-slate-200 hover:border-[#0D0D0D] transition-all text-center tracking-wide uppercase text-xs md:text-sm shadow-sm group">
               Contact Us <span className="inline-block transition-transform group-hover:translate-x-1 ml-1">→</span>
             </a>
           </div>

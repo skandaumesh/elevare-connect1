@@ -14,7 +14,7 @@ export default function ProgramAddOnsSection() {
             id: 2,
             img: "/addon2.png",
             label: "Interview\nPreparations",
-            blob1: "bg-purple-100", blob2: "bg-purple-50"
+            blob1: "bg-purple-100", blob2: "bg-[#FDFBFF]"
         },
         {
             id: 3,
@@ -43,11 +43,11 @@ export default function ProgramAddOnsSection() {
     ];
 
     return (
-        <section className="py-24 bg-[#F8FAFC] relative overflow-hidden">
+        <section className="py-24 bg-[#FFFFFF] relative overflow-hidden">
             {/* Design Background Elements */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 <div className="absolute top-[10%] left-[-5%] w-[400px] h-[400px] bg-[#6E2690]/[0.03] rounded-full blur-[120px]" />
-                <div className="absolute bottom-[10%] right-[-5%] w-[500px] h-[500px] bg-purple-500/[0.03] rounded-full blur-[140px]" />
+                <div className="absolute bottom-[10%] right-[-5%] w-[500px] h-[500px] bg-[#FDFBFF]0/[0.03] rounded-full blur-[140px]" />
                 <div className="absolute inset-0 opacity-[0.4]" style={{ backgroundImage: 'radial-gradient(#CBD5E1 0.8px, transparent 0.8px)', backgroundSize: '40px 40px' }} />
             </div>
 
@@ -59,11 +59,11 @@ export default function ProgramAddOnsSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-[#6E2690] text-[10px] font-bold tracking-[0.25em] uppercase bg-purple-50/50 border border-purple-100/50 rounded-full">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-[#6E2690] text-[10px] font-bold tracking-[0.25em] uppercase bg-[#FDFBFF]/50 border border-purple-100/50 rounded-full">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#6E2690] animate-pulse"></span>
                         Enrichment Programs
                     </div>
-                    <h2 className="text-[#0f172a] text-4xl md:text-[44px] font-bold tracking-tight">
+                    <h2 className="text-[#6E2690] text-4xl md:text-[44px] font-bold tracking-tight">
                         Program Add-Ons & <span className="text-[#6E2690]">Enrichments</span>
                     </h2>
                 </motion.div>
@@ -96,7 +96,7 @@ export default function ProgramAddOnsSection() {
                                 </div>
 
                                 {/* Text content with improved typography */}
-                                <h3 className="text-[#0f172a] text-[19px] leading-tight font-bold tracking-tight">
+                                <h3 className="text-[#6E2690] text-[19px] leading-tight font-bold tracking-tight">
                                     {item.label.split('\n').map((line, i) => (
                                         <span key={i} className="block">
                                             {line}
