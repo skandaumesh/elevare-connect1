@@ -120,10 +120,18 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "EducationalOrganization",
-              "name": "Elevare Connect",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Elevare Connect",
+                "alternateName": "Elevare Academy",
+                "url": "https://elevareconnect.in"
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "EducationalOrganization",
+                "name": "Elevare Connect",
               "alternateName": "Elevare Academy",
               "url": "https://elevareconnect.in",
               "logo": "https://elevareconnect.in/elevare.png",
@@ -167,7 +175,8 @@ export default function RootLayout({ children }) {
                 "@type": "QuantitativeValue",
                 "value": "1-10"
               }
-            }),
+              }
+            ])
           }}
         />
         {/* SiteNavigationElement Schema */}
