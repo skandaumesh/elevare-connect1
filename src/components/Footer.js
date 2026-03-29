@@ -3,7 +3,7 @@ import { Facebook, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react
 
 export default function Footer() {
     return (
-        <footer className="bg-[#2B0E38] text-white pt-16 md:pt-24 pb-12">
+        <footer className="bg-[#3D154F] text-white pt-16 md:pt-24 pb-12">
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-24 mb-16">
 
                 {/* Col 1 */}
@@ -35,23 +35,23 @@ export default function Footer() {
                     <h4 className="text-lg font-bold mb-6 text-white tracking-widest uppercase text-sm">Contact Us</h4>
                     <ul className="space-y-4 mb-8">
                         <li className="flex items-start justify-center md:justify-start gap-4 text-white/60 font-medium">
-                            <Mail size={18} className="text-[#662483] mt-1 shrink-0" />
+                            <Mail size={18} className="text-[#8E44AD] mt-1 shrink-0" />
                             <a href="mailto:info@elevareconnect.in" className="hover:text-white transition-colors">info@elevareconnect.in</a>
                         </li>
                         <li className="flex items-start justify-center md:justify-start gap-4 text-white/60 font-medium">
-                            <MapPin size={18} className="text-[#662483] mt-1 shrink-0" />
+                            <MapPin size={18} className="text-[#8E44AD] mt-1 shrink-0" />
                             <span>Bengaluru, Karnataka</span>
                         </li>
                     </ul>
 
                     <div className="flex justify-center md:justify-start gap-5">
-                        <a href="https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#662483] transition-all border border-white/10" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#8E44AD] transition-all border border-white/10" aria-label="LinkedIn">
                             <Linkedin size={18} />
                         </a>
-                        <a href="https://www.instagram.com/skandaumesh/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#662483] transition-all border border-white/10" aria-label="Instagram">
+                        <a href="https://www.instagram.com/skandaumesh/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#8E44AD] transition-all border border-white/10" aria-label="Instagram">
                             <Instagram size={18} />
                         </a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#662483] transition-all border border-white/10" aria-label="Facebook">
+                        <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#8E44AD] transition-all border border-white/10" aria-label="Facebook">
                             <Facebook size={18} />
                         </a>
                     </div>

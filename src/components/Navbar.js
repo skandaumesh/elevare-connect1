@@ -57,8 +57,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`text-[14px] xl:text-[15px] font-bold transition-all duration-300 no-underline
                     ${isActive
-                      ? "text-[#662483]"
-                      : "text-slate-600 hover:text-[#662483]"
+                      ? "text-[#8E44AD]"
+                      : "text-slate-600 hover:text-[#8E44AD]"
                     }`}
                 >
                   {link.name}
@@ -111,7 +111,7 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       className={`text-[28px] md:text-[36px] font-black no-underline transition-colors block
-                        ${isActive ? "text-[#662483]" : "text-slate-400"}`}
+                        ${isActive ? "text-[#8E44AD]" : "text-slate-400"}`}
                     >
                       {link.name}
                     </Link>
@@ -127,7 +127,7 @@ export default function Navbar() {
               className="mt-auto pt-10 border-t border-slate-100 space-y-4"
             >
               <p className="text-slate-400 font-bold uppercase tracking-widest text-xs">Empowering Futures</p>
-              <h3 className="text-[#662483] text-xl font-black">Elevare Connect</h3>
+              <h3 className="text-[#8E44AD] text-xl font-black">Elevare Connect</h3>
             </motion.div>
           </motion.div>
         )}
