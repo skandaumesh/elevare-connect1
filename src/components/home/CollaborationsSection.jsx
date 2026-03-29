@@ -15,7 +15,7 @@ export default function CollaborationsSection() {
     const partners = [...originalPartners, ...originalPartners, ...originalPartners, ...originalPartners];
 
     return (
-        <section id="collaborate" className="py-20 bg-[#F9F8F3] overflow-hidden">
+        <section id="collaborate" className="py-20 bg-[#FFFFFF] overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 mb-12">
                 <motion.h2
                     className="text-center text-3xl font-medium text-[#0D0D0D] tracking-tight"
@@ -31,8 +31,8 @@ export default function CollaborationsSection() {
             {/* Infinite Marquee Track */}
             <div className="relative flex w-full overflow-hidden">
                 {/* Add gradients for premium fading edges */}
-                <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#F9F8F3] to-transparent z-10 pointer-events-none" />
-                <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#F9F8F3] to-transparent z-10 pointer-events-none" />
+                <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#FFFFFF] to-transparent z-10 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#FFFFFF] to-transparent z-10 pointer-events-none" />
                 
                 <motion.div
                     className="flex gap-10 whitespace-nowrap px-5 items-center w-max"

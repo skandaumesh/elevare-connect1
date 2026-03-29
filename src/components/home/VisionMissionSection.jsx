@@ -16,7 +16,7 @@ export default function VisionMissionSection() {
     ];
 
     return (
-        <section className="py-24 bg-[#F9F8F3] relative overflow-hidden">
+        <section className="py-24 bg-[#FFFFFF] relative overflow-hidden">
 
             {/* Decorative textured visual background similar to the reference screenshot */}
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#6E2690] via-transparent to-transparent"></div>

@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
     return (
-        <div className="relative min-h-screen bg-[#F9F8F3] overflow-hidden pt-20 md:pt-28">
+        <div className="relative min-h-screen bg-[#FFFFFF] overflow-hidden pt-20 md:pt-28">
 
             {/* Premium BG Design Layer */}
             <div className="absolute inset-0 z-0 pointer-events-none">
@@ -122,7 +122,7 @@ export default function AboutPage() {
             </section>
 
             {/* ─── SECTION 3: PHILOSOPHY ─── */}
-            <section className="px-6 py-20 md:py-32 relative bg-[#F9F8F3] overflow-hidden">
+            <section className="px-6 py-20 md:py-32 relative bg-[#FFFFFF] overflow-hidden">
                 {/* Decorative Background Elements */}
                 <div className="absolute inset-0 pointer-events-none z-0">
                     <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#6E2690]/5 rounded-full blur-[100px] md:blur-[150px]" />

@@ -27,7 +27,7 @@ export default function MissionVisionSection() {
   ];
 
   return (
-    <section ref={ref} className="pt-16 pb-32 bg-[#F9F8F3] relative overflow-hidden">
+    <section ref={ref} className="pt-16 pb-32 bg-[#FFFFFF] relative overflow-hidden">
       <style dangerouslySetInnerHTML={{
         __html: `
           @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');

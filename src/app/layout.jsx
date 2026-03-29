@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="theme-color" content="#6E2690" />
       </head>
-      <body className={`flex flex-col min-h-screen antialiased overflow-x-hidden font-sans bg-[#F9F8F3] text-[#52525B] ${dmSans.variable} ${roboto.variable} ${instrumentSerif.variable}`}>
+      <body className={`flex flex-col min-h-screen antialiased overflow-x-hidden font-sans bg-[#FFFFFF] text-[#52525B] ${dmSans.variable} ${roboto.variable} ${instrumentSerif.variable}`}>
         {/* Organization Schema */}
         <script
           type="application/ld+json"
