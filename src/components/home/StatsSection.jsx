@@ -48,7 +48,7 @@ export default function StatsSection() {
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#6E2690]/10 rounded-full blur-[100px]" />
         
         {/* Modern Geometric Line Design (Sine Waves) */}
-        <svg className="absolute top-0 right-0 w-full md:w-2/3 h-full text-[#6E2690]/20" viewBox="0 0 400 400" preserveAspectRatio="none">
+        <svg className="absolute top-0 right-0 w-full md:w-2/3 h-full text-[#1E293B]/20" viewBox="0 0 400 400" preserveAspectRatio="none">
           <path d="M0,100 C150,200 250,0 400,100 V400 H0 Z" fill="none" stroke="currentColor" strokeWidth="0.5" />
           <path d="M0,150 C150,250 250,50 400,150 V400 H0 Z" fill="none" stroke="currentColor" strokeWidth="1.5" />
           <path d="M0,200 C150,300 250,100 400,200 V400 H0 Z" fill="none" stroke="currentColor" strokeWidth="0.5" />

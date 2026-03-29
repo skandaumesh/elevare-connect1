@@ -78,10 +78,10 @@ export default function ServicesPage() {
                         transition={{ duration: 0.8 }}
                         className="flex flex-col items-center"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#6E2690] text-[10px] font-bold tracking-[0.3em] uppercase">
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] font-bold tracking-[0.3em] uppercase">
                             Impact Programs
                         </div>
-                        <h1 className="text-[#6E2690] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                        <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             Elevating <br className="hidden md:block" />
                             <span className="text-[#6E2690]">Professional</span> Futures.
                         </h1>
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/60 via-[#0f172a]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
 
                                 {/* Badge Icon */}
-                                <div className="absolute top-6 left-6 md:top-10 md:left-10 w-12 h-12 md:w-16 md:h-16 rounded-[16px] md:rounded-[24px] bg-white/95 backdrop-blur-3xl flex items-center justify-center text-[#6E2690] shadow-2xl transition-transform duration-700 group-hover:scale-110">
+                                <div className="absolute top-6 left-6 md:top-10 md:left-10 w-12 h-12 md:w-16 md:h-16 rounded-[16px] md:rounded-[24px] bg-white/95 backdrop-blur-3xl flex items-center justify-center text-[#1E293B] shadow-2xl transition-transform duration-700 group-hover:scale-110">
                                     <Icon className="w-6 h-6 md:w-8 md:h-8" strokeWidth={1.2} />
                                 </div>
                             </motion.div>
@@ -136,7 +136,7 @@ export default function ServicesPage() {
                                     viewport={{ once: true }}
                                     className="space-y-4"
                                 >
-                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-[#6E2690] leading-[1.2] font-['Roboto',sans-serif]">
+                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-[#1E293B] leading-[1.2] font-['Roboto',sans-serif]">
                                         {s.title}
                                     </h2>
                                     <p className="text-[#475569] text-base md:text-lg font-medium leading-relaxed">
@@ -168,7 +168,7 @@ export default function ServicesPage() {
                                     transition={{ duration: 1, delay: 0.8 }}
                                     viewport={{ once: true }}
                                 >
-                                    <Link href="/contact" className="inline-flex items-center gap-3 text-[#6E2690] font-bold text-lg hover:gap-6 transition-all duration-500 group">
+                                    <Link href="/contact" className="inline-flex items-center gap-3 text-[#1E293B] font-bold text-lg hover:gap-6 transition-all duration-500 group">
                                         Partner with us <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-500" />
                                     </Link>
                                 </motion.div>

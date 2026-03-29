@@ -35,11 +35,11 @@ export default function Footer() {
                     <h4 className="text-lg font-bold mb-6 text-white tracking-widest uppercase text-sm">Contact Us</h4>
                     <ul className="space-y-4 mb-8">
                         <li className="flex items-start justify-center md:justify-start gap-4 text-white/60 font-medium">
-                            <Mail size={18} className="text-[#6E2690] mt-1 shrink-0" />
+                            <Mail size={18} className="text-[#1E293B] mt-1 shrink-0" />
                             <a href="mailto:info@elevareconnect.in" className="hover:text-white transition-colors">info@elevareconnect.in</a>
                         </li>
                         <li className="flex items-start justify-center md:justify-start gap-4 text-white/60 font-medium">
-                            <MapPin size={18} className="text-[#6E2690] mt-1 shrink-0" />
+                            <MapPin size={18} className="text-[#1E293B] mt-1 shrink-0" />
                             <span>Bengaluru, Karnataka</span>
                         </li>
                     </ul>

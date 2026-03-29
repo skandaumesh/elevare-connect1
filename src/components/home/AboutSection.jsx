@@ -29,8 +29,8 @@ export default function AboutSection() {
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="text-[#6E2690] text-xs md:text-sm font-bold tracking-widest uppercase mb-4">About Us</div>
-                        <h2 className="text-[#6E2690] text-3xl md:text-5xl font-bold mb-6 tracking-tight leading-tight font-['Roboto',sans-serif]">
+                        <div className="text-[#1E293B] text-xs md:text-sm font-bold tracking-widest uppercase mb-4">About Us</div>
+                        <h2 className="text-[#1E293B] text-3xl md:text-5xl font-bold mb-6 tracking-tight leading-tight font-['Roboto',sans-serif]">
                             Paving Path to Professional Excellence
                         </h2>
                         <p className="text-[#52525B] text-base md:text-lg leading-relaxed mb-8 md:mb-10">
@@ -41,8 +41,8 @@ export default function AboutSection() {
                         {/* Founder Card */}
                         <div className="flex items-center gap-4 bg-white px-5 md:px-6 py-3 md:py-4 rounded-2xl w-max border border-slate-100 shadow-sm">
                             <div>
-                                <div className="text-[#6E2690] font-bold text-base md:text-lg">Wilma Merina D&apos;Sa</div>
-                                <div className="text-[#6E2690] text-[10px] md:text-sm font-bold uppercase tracking-widest">Founder</div>
+                                <div className="text-[#1E293B] font-bold text-base md:text-lg">Wilma Merina D&apos;Sa</div>
+                                <div className="text-[#1E293B] text-[10px] md:text-sm font-bold uppercase tracking-widest">Founder</div>
                             </div>
                         </div>
                     </motion.div>

@@ -59,11 +59,11 @@ export default function ProgramAddOnsSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-[#6E2690] text-[10px] font-bold tracking-[0.25em] uppercase bg-[#FDFBFF]/50 border border-purple-100/50 rounded-full">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-[#1E293B] text-[10px] font-bold tracking-[0.25em] uppercase bg-[#FDFBFF]/50 border border-purple-100/50 rounded-full">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#6E2690] animate-pulse"></span>
                         Enrichment Programs
                     </div>
-                    <h2 className="text-[#6E2690] text-4xl md:text-[44px] font-bold tracking-tight">
+                    <h2 className="text-[#1E293B] text-4xl md:text-[44px] font-bold tracking-tight">
                         Program Add-Ons & <span className="text-[#6E2690]">Enrichments</span>
                     </h2>
                 </motion.div>
@@ -96,7 +96,7 @@ export default function ProgramAddOnsSection() {
                                 </div>
 
                                 {/* Text content with improved typography */}
-                                <h3 className="text-[#6E2690] text-[19px] leading-tight font-bold tracking-tight">
+                                <h3 className="text-[#1E293B] text-[19px] leading-tight font-bold tracking-tight">
                                     {item.label.split('\n').map((line, i) => (
                                         <span key={i} className="block">
                                             {line}

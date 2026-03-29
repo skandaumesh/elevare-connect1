@@ -30,7 +30,7 @@ export default function VisionMissionSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-[#6E2690] text-4xl md:text-[44px] font-medium mb-6 tracking-tight">
+                    <h2 className="text-[#1E293B] text-4xl md:text-[44px] font-medium mb-6 tracking-tight">
                         Vision that Inspires Mission that Delivers
                     </h2>
                     <p className="text-[#52525B] text-lg leading-relaxed">

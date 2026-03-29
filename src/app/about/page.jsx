@@ -29,11 +29,11 @@ export default function AboutPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-flex items-center gap-2 px-4 md:px-5 py-1.5 md:py-2 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#6E2690] text-[10px] md:text-sm font-bold tracking-widest uppercase">
+                        <div className="inline-flex items-center gap-2 px-4 md:px-5 py-1.5 md:py-2 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] md:text-sm font-bold tracking-widest uppercase">
                             <span className="w-2 h-2 rounded-full bg-[#6E2690] animate-pulse"></span>
                             ABOUT ELEVARE CONNECT
                         </div>
-                        <h1 className="text-[#6E2690] text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                        <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             Empowering with <br className="hidden md:block" />
                             <span className="text-[#6E2690]">Human-Centric Skills.</span>
                         </h1>
@@ -48,8 +48,8 @@ export default function AboutPage() {
                                 { v: "50+", l: "Workshops Delivered" }
                             ].map((s, idx) => (
                                 <div key={idx} className="flex flex-col items-center">
-                                    <p className="text-[#6E2690] text-4xl md:text-6xl font-black tracking-tight mb-1 md:mb-2">{s.v}</p>
-                                    <p className="text-[#6E2690] font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase">{s.l}</p>
+                                    <p className="text-[#1E293B] text-4xl md:text-6xl font-black tracking-tight mb-1 md:mb-2">{s.v}</p>
+                                    <p className="text-[#1E293B] font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase">{s.l}</p>
                                 </div>
                             ))}
                         </div>
@@ -69,7 +69,7 @@ export default function AboutPage() {
                             transition={{ duration: 0.8 }}
                             className="flex flex-col justify-center text-center lg:text-left"
                         >
-                            <h2 className="text-[#6E2690] text-3xl md:text-[46px] font-bold mb-8 md:mb-10 tracking-tight leading-[1.2] font-['Roboto',sans-serif]">
+                            <h2 className="text-[#1E293B] text-3xl md:text-[46px] font-bold mb-8 md:mb-10 tracking-tight leading-[1.2] font-['Roboto',sans-serif]">
                                 The Heart <br className="hidden md:block" />
                                 <span className="text-[#6E2690]">Behind Elevare Connect</span>
                             </h2>
@@ -85,7 +85,7 @@ export default function AboutPage() {
 
                             <div className="mt-8 md:mt-10 pt-6 md:pt-8 border-t border-slate-100 flex items-center justify-center lg:justify-start gap-4">
                                 <div className="hidden md:block w-10 h-[2px] bg-[#6E2690]" />
-                                <p className="text-[#6E2690] text-base md:text-lg font-bold">Wilma Merina D’Sa, <span className="text-slate-500 font-medium ml-1 text-sm md:text-base">Founder</span></p>
+                                <p className="text-[#1E293B] text-base md:text-lg font-bold">Wilma Merina D’Sa, <span className="text-slate-500 font-medium ml-1 text-sm md:text-base">Founder</span></p>
                             </div>
                         </motion.div>
 
@@ -145,11 +145,11 @@ export default function AboutPage() {
                         transition={{ duration: 0.8 }}
                         className="text-center max-w-3xl mx-auto mb-16 md:mb-20"
                     >
-                        <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full bg-[#6E2690]/10 text-[#6E2690] text-[10px] md:text-sm font-bold tracking-widest uppercase shadow-sm">
+                        <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] md:text-sm font-bold tracking-widest uppercase shadow-sm">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#6E2690] animate-pulse"></span>
                             OUR PHILOSOPHY
                         </div>
-                        <h2 className="text-[#6E2690] text-4xl md:text-6xl font-black tracking-tight mb-6 font-['Roboto',sans-serif]">
+                        <h2 className="text-[#1E293B] text-4xl md:text-6xl font-black tracking-tight mb-6 font-['Roboto',sans-serif]">
                             Why <span className="text-[#6E2690]">Elevare Connect.</span>
                         </h2>
                         <p className="text-[#52525B] text-lg md:text-xl font-medium leading-relaxed">
@@ -178,10 +178,10 @@ export default function AboutPage() {
                                     {/* Hover gradient line */}
                                     <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[#6E2690] to-purple-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                                     
-                                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center bg-[#FDFBFF] text-[#6E2690] mb-6 md:mb-8 shadow-inner group-hover:bg-[#6E2690] group-hover:text-white transition-colors duration-500 relative z-10">
+                                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center bg-[#FDFBFF] text-[#1E293B] mb-6 md:mb-8 shadow-inner group-hover:bg-[#6E2690] group-hover:text-white transition-colors duration-500 relative z-10">
                                         <Icon className="w-6 h-6 md:w-8 md:h-8 transition-transform duration-500 group-hover:scale-110" strokeWidth={1.5} />
                                     </div>
-                                    <h4 className="font-bold text-xl md:text-[22px] tracking-tight text-[#6E2690] mb-4 font-['Roboto',sans-serif] relative z-10">{s.title}</h4>
+                                    <h4 className="font-bold text-xl md:text-[22px] tracking-tight text-[#1E293B] mb-4 font-['Roboto',sans-serif] relative z-10">{s.title}</h4>
                                     <p className="text-[#52525B] text-sm md:text-[15px] font-medium leading-relaxed relative z-10">{s.desc}</p>
                                     
                                     {/* Decorative background shape in card */}
@@ -203,7 +203,7 @@ export default function AboutPage() {
                     transition={{ duration: 0.8 }}
                     className="max-w-4xl mx-auto text-center relative z-10"
                 >
-                    <h2 className="text-[#6E2690] text-4xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                    <h2 className="text-[#1E293B] text-4xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                         Collaborate <br />
                         <span className="text-[#6E2690]">with us today.</span>
                     </h2>
@@ -214,7 +214,7 @@ export default function AboutPage() {
                         <Link href="/contact" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 rounded-full bg-[#6E2690] text-white font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#6E2690] group shadow-xl shadow-[#6E2690]/20">
                             Get Started <ArrowRight className="inline-block ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                         </Link>
-                        <Link href="/services" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 rounded-full bg-white border border-slate-200 text-[#6E2690] font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:border-[#6E2690] hover:text-[#6E2690]">
+                        <Link href="/services" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 rounded-full bg-white border border-slate-200 text-[#1E293B] font-bold text-xs md:text-sm tracking-[0.2em] uppercase transition-all hover:border-[#6E2690] hover:text-[#1E293B]">
                             Our Services
                         </Link>
                     </div>

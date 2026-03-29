@@ -41,7 +41,7 @@ export default function ContactPage() {
                         className="space-y-8 md:space-y-12"
                     >
                         <div className="space-y-6">
-                            <h1 className="text-[#6E2690] text-3xl md:text-5xl font-bold tracking-tight leading-[1.1] font-['Roboto',sans-serif]">
+                            <h1 className="text-[#1E293B] text-3xl md:text-5xl font-bold tracking-tight leading-[1.1] font-['Roboto',sans-serif]">
                                 Get in Touch With Us
                             </h1>
                             <p className="text-[#475569] text-lg md:text-xl font-medium leading-relaxed max-w-lg">
@@ -50,10 +50,10 @@ export default function ContactPage() {
                         </div>
 
                         <div className="space-y-2">
-                            <h3 className="text-[#6E2690] text-xl md:text-2xl font-bold font-['Roboto',sans-serif]">
+                            <h3 className="text-[#1E293B] text-xl md:text-2xl font-bold font-['Roboto',sans-serif]">
                                 Email ID
                             </h3>
-                            <a href="mailto:info@elevareconnect.in" className="text-[#6E2690] text-lg md:text-xl font-medium hover:underline break-all">
+                            <a href="mailto:info@elevareconnect.in" className="text-[#1E293B] text-lg md:text-xl font-medium hover:underline break-all">
                                 info@elevareconnect.in
                             </a>
                         </div>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="bg-white/80 backdrop-blur-xl rounded-[32px] md:rounded-[40px] p-6 md:p-12 shadow-[0_40px_100px_-20px_rgba(15,23,42,0.1)] border border-white/50"
                     >
-                        <h2 className="text-[#6E2690] text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 font-['Roboto',sans-serif]">
+                        <h2 className="text-[#1E293B] text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 font-['Roboto',sans-serif]">
                             Fill Out the Form to Connect
                         </h2>
 
@@ -136,7 +136,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            <button className="w-full py-4 md:py-5 bg-[#6E2690] text-white font-bold text-lg md:text-xl rounded-2xl hover:bg-purple-800 transition-all shadow-lg hover:shadow-purple-200">
+                            <button className="w-full py-4 md:py-5 bg-[#6E2690] text-white font-bold text-lg md:text-xl rounded-2xl hover:bg-[#4A1561] transition-all shadow-lg hover:shadow-purple-200">
                                 Send
                             </button>
                         </form>

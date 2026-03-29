@@ -76,7 +76,7 @@ export default function WhyElevareSection() {
                     <div className="inline-block px-4 py-1.5 mb-4 text-[#6E2690] text-xs font-bold tracking-[0.2em] uppercase bg-[#6E2690]/10 rounded-full">
                         Why Choose Us
                     </div>
-                    <h2 className="text-[#6E2690] text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
+                    <h2 className="text-[#1E293B] text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
                         Why <span className="text-[#6E2690]">Elevare Connect.</span>
                     </h2>
                 </motion.div>
@@ -98,7 +98,7 @@ export default function WhyElevareSection() {
                                 <div className="w-16 h-16 rounded-2xl bg-[#FDFBFF] flex items-center justify-center mb-6 group-hover:bg-[#6E2690] group-hover:text-white transition-colors duration-300">
                                     {React.cloneElement(card.icon, { className: "group-hover:text-white transition-colors duration-300" })}
                                 </div>
-                                <h3 className="text-2xl font-bold text-[#6E2690] mb-4 tracking-tight">{card.title}</h3>
+                                <h3 className="text-2xl font-bold text-[#1E293B] mb-4 tracking-tight">{card.title}</h3>
                                 <p className="text-[#64748b] leading-relaxed font-medium">
                                     {card.desc}
                                 </p>
