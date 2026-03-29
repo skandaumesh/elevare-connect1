@@ -46,7 +46,7 @@ export default function ProgramAddOnsSection() {
         <section className="py-24 bg-[#F8FAFC] relative overflow-hidden">
             {/* Design Background Elements */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                <div className="absolute top-[10%] left-[-5%] w-[400px] h-[400px] bg-[#8E44AD]/[0.03] rounded-full blur-[120px]" />
+                <div className="absolute top-[10%] left-[-5%] w-[400px] h-[400px] bg-[#6E2690]/[0.03] rounded-full blur-[120px]" />
                 <div className="absolute bottom-[10%] right-[-5%] w-[500px] h-[500px] bg-purple-500/[0.03] rounded-full blur-[140px]" />
                 <div className="absolute inset-0 opacity-[0.4]" style={{ backgroundImage: 'radial-gradient(#CBD5E1 0.8px, transparent 0.8px)', backgroundSize: '40px 40px' }} />
             </div>
@@ -59,12 +59,12 @@ export default function ProgramAddOnsSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-[#8E44AD] text-[10px] font-bold tracking-[0.25em] uppercase bg-purple-50/50 border border-purple-100/50 rounded-full">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#8E44AD] animate-pulse"></span>
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 text-[#6E2690] text-[10px] font-bold tracking-[0.25em] uppercase bg-purple-50/50 border border-purple-100/50 rounded-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#6E2690] animate-pulse"></span>
                         Enrichment Programs
                     </div>
                     <h2 className="text-[#0f172a] text-4xl md:text-[44px] font-bold tracking-tight">
-                        Program Add-Ons & <span className="text-[#8E44AD]">Enrichments</span>
+                        Program Add-Ons & <span className="text-[#6E2690]">Enrichments</span>
                     </h2>
                 </motion.div>
 

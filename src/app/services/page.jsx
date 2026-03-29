@@ -78,12 +78,12 @@ export default function ServicesPage() {
                         transition={{ duration: 0.8 }}
                         className="flex flex-col items-center"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#8E44AD]/10 text-[#8E44AD] text-[10px] font-bold tracking-[0.3em] uppercase">
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#6E2690] text-[10px] font-bold tracking-[0.3em] uppercase">
                             Impact Programs
                         </div>
                         <h1 className="text-[#0f172a] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
                             Elevating <br className="hidden md:block" />
-                            <span className="text-[#8E44AD]">Professional</span> Futures.
+                            <span className="text-[#6E2690]">Professional</span> Futures.
                         </h1>
                         <p className="text-[#475569] text-base md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
                             A comprehensive roadmap designed to align institutional potential with global industry standards.
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/60 via-[#0f172a]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
 
                                 {/* Badge Icon */}
-                                <div className="absolute top-6 left-6 md:top-10 md:left-10 w-12 h-12 md:w-16 md:h-16 rounded-[16px] md:rounded-[24px] bg-white/95 backdrop-blur-3xl flex items-center justify-center text-[#8E44AD] shadow-2xl transition-transform duration-700 group-hover:scale-110">
+                                <div className="absolute top-6 left-6 md:top-10 md:left-10 w-12 h-12 md:w-16 md:h-16 rounded-[16px] md:rounded-[24px] bg-white/95 backdrop-blur-3xl flex items-center justify-center text-[#6E2690] shadow-2xl transition-transform duration-700 group-hover:scale-110">
                                     <Icon className="w-6 h-6 md:w-8 md:h-8" strokeWidth={1.2} />
                                 </div>
                             </motion.div>
@@ -154,7 +154,7 @@ export default function ServicesPage() {
                                             viewport={{ once: true }}
                                             className="flex gap-3 items-center bg-slate-50/50 p-4 rounded-xl md:rounded-2xl border border-slate-100 group/item hover:bg-white hover:shadow-lg hover:border-transparent transition-all duration-300"
                                         >
-                                            <div className="w-6 h-6 rounded-lg bg-[#8E44AD]/10 flex items-center justify-center flex-shrink-0 transition-colors duration-300 group-hover/item:bg-[#8E44AD] group-hover/item:text-white">
+                                            <div className="w-6 h-6 rounded-lg bg-[#6E2690]/10 flex items-center justify-center flex-shrink-0 transition-colors duration-300 group-hover/item:bg-[#6E2690] group-hover/item:text-white">
                                                 <Check size={14} className="transition-transform duration-500 group-hover/item:scale-110" />
                                             </div>
                                             <span className="text-[#1e293b] font-bold text-sm md:text-base leading-snug">{p}</span>
@@ -168,7 +168,7 @@ export default function ServicesPage() {
                                     transition={{ duration: 1, delay: 0.8 }}
                                     viewport={{ once: true }}
                                 >
-                                    <Link href="/contact" className="inline-flex items-center gap-3 text-[#8E44AD] font-bold text-lg hover:gap-6 transition-all duration-500 group">
+                                    <Link href="/contact" className="inline-flex items-center gap-3 text-[#6E2690] font-bold text-lg hover:gap-6 transition-all duration-500 group">
                                         Partner with us <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-500" />
                                     </Link>
                                 </motion.div>
@@ -180,7 +180,7 @@ export default function ServicesPage() {
 
             {/* BENEFITS SECTION */}
             <section className="px-6 pb-16 md:pb-32 relative z-10">
-                <div className="max-w-7xl mx-auto overflow-hidden rounded-[32px] md:rounded-[48px] bg-[#8E44AD] text-white p-8 md:p-20 shadow-2xl relative">
+                <div className="max-w-7xl mx-auto overflow-hidden rounded-[32px] md:rounded-[48px] bg-[#6E2690] text-white p-8 md:p-20 shadow-2xl relative">
                     {/* Decorative Mesh */}
                     <div className="absolute top-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-white/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
 
@@ -236,19 +236,19 @@ export default function ServicesPage() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="relative overflow-hidden rounded-[40px] md:rounded-[56px] bg-[#3D154F] p-10 md:p-24"
+                        className="relative overflow-hidden rounded-[40px] md:rounded-[56px] bg-[#4A1561] p-10 md:p-24"
                     >
-                        <div className="absolute top-0 right-0 w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#8E44AD]/10 rounded-full blur-[80px] md:blur-[140px] pointer-events-none" />
+                        <div className="absolute top-0 right-0 w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#6E2690]/10 rounded-full blur-[80px] md:blur-[140px] pointer-events-none" />
 
                         <div className="relative z-10 max-w-xl mx-auto">
                             <h2 className="text-white text-3xl md:text-5xl font-bold tracking-tight mb-6 md:mb-8">
                                 Ready to <br className="hidden sm:block" />
-                                Join <span className="text-[#8E44AD]">Elevare Connect?</span>
+                                Join <span className="text-[#6E2690]">Elevare Connect?</span>
                             </h2>
                             <p className="text-slate-400 text-base md:text-lg font-medium mb-10 md:mb-12 leading-relaxed">
                                 Connect with our experts to design a tailored roadmap for your institution.
                             </p>
-                            <Link href="/contact" className="inline-flex items-center gap-3 px-8 md:px-10 py-4 md:py-5 rounded-full bg-[#8E44AD] text-white font-bold text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#662483] hover:-translate-y-1 hover:shadow-2xl shadow-[#8E44AD]/40">
+                            <Link href="/contact" className="inline-flex items-center gap-3 px-8 md:px-10 py-4 md:py-5 rounded-full bg-[#6E2690] text-white font-bold text-sm tracking-[0.2em] uppercase transition-all hover:bg-[#6E2690] hover:-translate-y-1 hover:shadow-2xl shadow-[#6E2690]/40">
                                 Connect with us <ArrowRight size={20} />
                             </Link>
                         </div>
