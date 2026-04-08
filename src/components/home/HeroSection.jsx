@@ -8,22 +8,24 @@ export default function HeroSection() {
     <section className="relative w-full h-[100vh] min-h-[600px] flex items-center overflow-hidden bg-white">
       
       {/* Background Image - Neutral Premium Style (Softened) optimized for LCP */}
-      <div className="absolute inset-0 z-0 opacity-60">
+      <div className="absolute inset-0 z-0">
         <Image
-          src="/hero_premium.png"
+          src="/Hero_ultra_wide_students.png"
           alt="Elevare Connect Professional Mentorship background"
           fill
           priority
           sizes="100vw"
           className="object-cover object-[85%] md:object-center scale-105"
         />
+        {/* Gradient overlay for text readability */ }
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent sm:via-white/60 sm:to-transparent w-full md:w-3/4" />
       </div>
 
       {/* Modern Gradient Accents for Depth */}
       <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-[#6E2690]/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 -right-20 w-[400px] h-[400px] bg-[#6E2690]/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 mt-20 lg:mt-32">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}

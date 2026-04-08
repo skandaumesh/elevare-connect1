@@ -28,6 +28,7 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
+  applicationName: "Elevare Connect",
   title: {
     default: "Elevare Connect | Professional Mentorship & Career Readiness",
     template: "%s | Elevare Connect"
@@ -125,8 +126,16 @@ export default function RootLayout({ children }) {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
                 "name": "Elevare Connect",
-                "alternateName": "Elevare Academy",
-                "url": "https://elevareconnect.in"
+                "alternateName": ["Elevare Academy"],
+                "url": "https://elevareconnect.in/",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://elevareconnect.in/search?q={search_term_string}"
+                  },
+                  "query-input": "required name=search_term_string"
+                }
               },
               {
                 "@context": "https://schema.org",
