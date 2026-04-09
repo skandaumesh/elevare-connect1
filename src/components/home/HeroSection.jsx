@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[100vh] min-h-[600px] flex items-center overflow-hidden bg-white">
+    <section className="relative w-full h-[100dvh] min-h-[600px] flex items-center overflow-hidden bg-white">
       
       {/* Background Image - Neutral Premium Style (Softened) optimized for LCP */}
       <div className="absolute inset-0 z-0">
@@ -14,11 +14,13 @@ export default function HeroSection() {
           alt="Elevare Connect Professional Mentorship background"
           fill
           priority
-          sizes="100vw"
-          className="object-cover object-[85%] md:object-center scale-105"
+          sizes="(max-width: 768px) 100vw, 100vw"
+          className="object-cover object-[75%] sm:object-[85%] md:object-center scale-105"
         />
-        {/* Gradient overlay for text readability */ }
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent sm:via-white/60 sm:to-transparent w-full md:w-3/4" />
+        {/* Gradient overlay for text readability optimized for mobile to desktop */ }
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-transparent sm:from-white sm:via-white/70 w-full md:w-3/4" />
+        {/* Additional mobile bottom fade to ensure text readability if it wraps */ }
+        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-white/80 to-transparent sm:hidden" />
       </div>
 
       {/* Modern Gradient Accents for Depth */}

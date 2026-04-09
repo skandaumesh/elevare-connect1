@@ -57,7 +57,7 @@ export default function AboutSection() {
                     >
                         {/* Main Image (Large, Left) */}
                         <div className="absolute top-0 left-0 w-[85%] h-[85%] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl z-10 bg-[#FDFBFF] border-2 md:border-4 border-white">
-                            <Image src="https://elevareacademy.in/wp-content/uploads/2025/08/2151585308.jpg" alt="Training Session" fill className="object-cover" />
+                            <Image src="/aboutbg.jpg" alt="Training Session" fill className="object-cover" />
                         </div>
 
                         {/* Overlapping Image (Smaller, Bottom Right) */}
