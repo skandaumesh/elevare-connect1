@@ -105,7 +105,7 @@ export default function AboutPage() {
                                 <div className="relative w-[260px] md:w-[340px] aspect-[1/1.5] rounded-full p-2 bg-white border border-slate-100 shadow-2xl overflow-hidden group">
                                     <div className="relative w-full h-full rounded-full overflow-hidden border-[4px] border-white ring-1 ring-slate-100 shadow-inner group-hover:scale-105 transition-transform duration-1000 ease-out">
                                         <Image
-                                            src="/Founder.jpeg"
+                                            src="/founder.jpeg"
                                             alt="Wilma Merina D'Sa"
                                             fill
                                             className="object-cover object-top grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000"
