@@ -81,7 +81,7 @@ export default function ServicesPage() {
                         <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] font-bold tracking-[0.3em] uppercase">
                             Impact Programs
                         </div>
-                        <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                        <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-roboto">
                             Elevating <br className="hidden md:block" />
                             <span className="text-[#6E2690]">Professional</span> Futures.
                         </h1>
@@ -118,7 +118,7 @@ export default function ServicesPage() {
                                     alt={s.title}
                                     fill
                                     className="object-cover transition-transform duration-[3s] ease-out group-hover:scale-110"
-                                />
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/60 via-[#0f172a]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
 
                                 {/* Badge Icon */}
@@ -136,7 +136,7 @@ export default function ServicesPage() {
                                     viewport={{ once: true }}
                                     className="space-y-4"
                                 >
-                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-[#1E293B] leading-[1.2] font-['Roboto',sans-serif]">
+                                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-black tracking-tight text-[#1E293B] leading-[1.2] font-roboto">
                                         {s.title}
                                     </h2>
                                     <p className="text-[#475569] text-base md:text-lg font-medium leading-relaxed">
@@ -187,7 +187,7 @@ export default function ServicesPage() {
                     <div className="grid lg:grid-cols-2 gap-10 md:gap-16 lg:gap-32 items-center relative z-10">
                         {/* Left Column */}
                         <div className="space-y-6 md:space-y-8 text-center lg:text-left">
-                            <h2 className="text-3xl md:text-5xl font-black font-['Roboto',sans-serif] tracking-tight">
+                            <h2 className="text-3xl md:text-5xl font-black font-roboto tracking-tight">
                                 Take the Next Step
                             </h2>
                             <p className="text-purple-100 text-lg md:text-xl font-medium leading-relaxed max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
@@ -198,7 +198,7 @@ export default function ServicesPage() {
                         {/* Right Column */}
                         <div className="space-y-8 md:space-y-10 pl-0 lg:pl-16 border-l-0 lg:border-l border-white/20">
                             <div className="space-y-6 md:space-y-8">
-                                <h3 className="text-2xl md:text-3xl font-black font-['Roboto',sans-serif] tracking-tight text-white text-center lg:text-left">
+                                <h3 className="text-2xl md:text-3xl font-black font-roboto tracking-tight text-white text-center lg:text-left">
                                     Is Elevare Connect Right for You?
                                 </h3>
                                 <div className="space-y-4 md:space-y-5">

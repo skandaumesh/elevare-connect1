@@ -53,7 +53,7 @@ export default function CollaborationsSection() {
                                 alt={`${partner.name} logo`}
                                 fill
                                 className="object-contain p-4 mix-blend-multiply"
-                            />
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div>
                     ))}
                 </motion.div>

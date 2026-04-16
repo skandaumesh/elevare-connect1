@@ -30,12 +30,17 @@ export default function AboutSection() {
                         transition={{ duration: 0.8 }}
                     >
                         <div className="text-[#1E293B] text-xs md:text-sm font-bold tracking-widest uppercase mb-4">About Us</div>
-                        <h2 className="text-[#1E293B] text-3xl md:text-5xl font-bold mb-6 tracking-tight leading-tight font-['Roboto',sans-serif]">
+                        <h2 className="text-[#1E293B] text-3xl md:text-5xl font-bold mb-6 tracking-tight leading-tight font-roboto">
                             Paving Path to Professional Excellence
                         </h2>
-                        <p className="text-[#52525B] text-base md:text-lg leading-relaxed mb-8 md:mb-10">
-                            With over 20 years of experience across corporate and academic environments, including her tenure at IBM, Wilma Merina D&apos;sa brings a practical, industry-driven approach to skill development. She has delivered 100+ workshops and worked with students across multiple institutions, focusing on communication, confidence, leadership, and employability skills. With a strong background in Human Resources, she ensures every session goes beyond theory and equips students with skills they can actually apply. Her work directly aligns with Elevare Connect&apos;s mission of bridging the gap between academic learning and real-world expectations, helping institutions build students who are not just qualified, but truly prepared.
-                        </p>
+                        <div className="text-[#52525B] text-base md:text-lg leading-relaxed mb-8 md:mb-10 space-y-4">
+                            <p>
+                                At Elevare Connect, we are passionate about partnering with institutions that share our vision of holistic student development. With a strong foundation in HR and academia, I founded Elevare Connect to support colleges in preparing students not just for jobs, but for confident, impactful careers.
+                            </p>
+                            <p>
+                                I warmly invite your institution to collaborate with us in equipping students with the essential soft skills, professional grooming, and career readiness they need to thrive beyond campus.
+                            </p>
+                        </div>
 
 
                         {/* Founder Card */}
@@ -57,12 +62,12 @@ export default function AboutSection() {
                     >
                         {/* Main Image (Large, Left) */}
                         <div className="absolute top-0 left-0 w-[85%] h-[85%] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl z-10 bg-[#FDFBFF] border-2 md:border-4 border-white">
-                            <Image src="/aboutbg.jpg" alt="Training Session" fill className="object-cover" />
+                            <Image src="/p1.jpg" alt="Training Session" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div>
 
                         {/* Overlapping Image (Smaller, Bottom Right) */}
                         <div className="absolute bottom-0 right-0 w-[65%] h-[55%] rounded-[24px] md:rounded-[32px] overflow-hidden shadow-2xl z-20 border-4 md:border-[10px] border-white bg-white">
-                            <Image src="/founder2.jpg" alt="Students Collaboration" fill className="object-cover" />
+                            <Image src="/founder2.jpg" alt="Students Collaboration" fill className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                         </div>
                     </motion.div>
 

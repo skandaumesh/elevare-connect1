@@ -55,7 +55,7 @@ export default function GalleryPage() {
                         <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] font-bold tracking-[0.3em] uppercase">
                             Visual Impact
                         </div>
-                        <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-7xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                        <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-7xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-roboto">
                             A Glimpse into <br className="hidden md:block" />
                             <span className="text-[#6E2690]">Our Impact.</span>
                         </h1>
@@ -84,7 +84,7 @@ export default function GalleryPage() {
                                 alt={item.title}
                                 fill
                                 className={`object-cover ${item.position || 'object-center'} transition-transform duration-[2s] ease-out group-hover:scale-110`}
-                            />
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
 
                             {/* Hover Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/80 via-[#0f172a]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 md:p-10">
@@ -114,7 +114,7 @@ export default function GalleryPage() {
                         transition={{ duration: 0.8 }}
                         className="rounded-[40px] md:rounded-[56px] bg-white border border-slate-100 p-10 md:p-24 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.04)]"
                     >
-                        <h2 className="text-[#1E293B] text-3xl md:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                        <h2 className="text-[#1E293B] text-3xl md:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-roboto">
                             Bring the Impact to <br className="hidden sm:block" />
                             <span className="text-[#6E2690]">Your Campus.</span>
                         </h2>
@@ -132,6 +132,7 @@ export default function GalleryPage() {
             <AnimatePresence>
                 {selectedImg && (
                     <motion.div
+                        key="gallery-lightbox"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
@@ -153,7 +154,7 @@ export default function GalleryPage() {
                                     fill
                                     className="object-contain"
                                     priority
-                                />
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                             </div>
 
                             <button

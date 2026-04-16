@@ -1,6 +1,7 @@
 export const metadata = {
     title: "Contact Us | Partner with Elevare Connect",
     description: "Get in touch with Elevare Connect for institutional training, career mentorship workshops, and student empowerment programs. Email us at info@elevareconnect.in. Based in Bengaluru, Karnataka, India.",
+    keywords: ["Partner with Elevare Connect", "Hire Career Coach Bengaluru", "Institutional Mentorship Training", "Contact Wilma Merina D'Sa", "Student Empowerment Program"],
     openGraph: {
         title: "Contact Elevare Connect",
         description: "Partner with us for transformative workshops and career readiness programs at your institution.",
@@ -51,6 +52,29 @@ export default function ContactLayout({ children }) {
                             ]
                         }
                     }),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://elevareconnect.in/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Contact",
+                                "item": "https://elevareconnect.in/contact"
+                            }
+                        ]
+                    })
                 }}
             />
             {children}

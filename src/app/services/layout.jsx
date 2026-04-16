@@ -1,6 +1,7 @@
 export const metadata = {
     title: "Services | Career Readiness, Skill Enhancement & Industry Bridge",
     description: "Explore Elevare Connect's professional services: Career Readiness training, Soft Skills Enhancement, and Academic to Industry Bridge programs. Tailored for colleges and institutions in Bengaluru and across India.",
+    keywords: ["Career Readiness Training", "Soft Skills Enhancement India", "Academic to Industry Bridge", "Mock Interviews", "Professional Grooming Workshops", "Corporate Transition"],
     openGraph: {
         title: "Our Services | Elevare Connect",
         description: "Career Readiness, Skill Enhancement, and Academic to Industry Bridge — comprehensive training programs for students and institutions.",
@@ -61,6 +62,29 @@ export default function ServicesLayout({ children }) {
                             ]
                         }
                     }),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://elevareconnect.in/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Our Services",
+                                "item": "https://elevareconnect.in/services"
+                            }
+                        ]
+                    })
                 }}
             />
             {children}

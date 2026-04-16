@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* Background Image - Neutral Premium Style (Softened) optimized for LCP */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/Hero_ultra_wide_students.png"
+          src="/hero1.png"
           alt="Elevare Connect Professional Mentorship background"
           fill
           priority

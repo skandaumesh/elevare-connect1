@@ -9,21 +9,21 @@ import { DM_Sans, Roboto, Instrument_Serif } from 'next/font/google';
 const dmSans = DM_Sans({ 
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-dm-sans',
+  variable: '--font-dm-sans-google',
 });
 
 const roboto = Roboto({
   weight: ['400', '700', '900'],
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-roboto',
+  variable: '--font-roboto-google',
 });
 
 const instrumentSerif = Instrument_Serif({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-instrument-serif',
+  variable: '--font-instrument-serif-google',
 });
 
 export const metadata = {

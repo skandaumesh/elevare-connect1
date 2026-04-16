@@ -33,7 +33,7 @@ export default function AboutPage() {
                             <span className="w-2 h-2 rounded-full bg-[#6E2690] animate-pulse"></span>
                             ABOUT ELEVARE CONNECT
                         </div>
-                        <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 md:mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                        <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 md:mb-8 leading-[1.1] font-roboto">
                             Empowering with <br className="hidden md:block" />
                             <span className="text-[#6E2690]">Human-Centric Skills.</span>
                         </h1>
@@ -69,17 +69,17 @@ export default function AboutPage() {
                             transition={{ duration: 0.8 }}
                             className="flex flex-col justify-center text-center lg:text-left"
                         >
-                            <h2 className="text-[#1E293B] text-3xl md:text-[46px] font-bold mb-8 md:mb-10 tracking-tight leading-[1.2] font-['Roboto',sans-serif]">
+                            <h2 className="text-[#1E293B] text-3xl md:text-[46px] font-bold mb-8 md:mb-10 tracking-tight leading-[1.2] font-roboto">
                                 The Heart <br className="hidden md:block" />
                                 <span className="text-[#6E2690]">Behind Elevare Connect</span>
                             </h2>
 
                             <div className="space-y-6 text-[#475569] text-base md:text-lg font-medium leading-relaxed max-w-xl mx-auto lg:mx-0">
                                 <p>
-                                    At Elevare Connect, we are passionate about partnering with institutions that share our vision of holistic student development. With a strong foundation in HR and academia, I founded Elevare Connect to support colleges in preparing students not just for jobs, but for confident, impactful careers.
+                                    With over 20 years of experience across corporate and academic environments, including her tenure at IBM, Wilma Merina D&apos;sa brings a practical, industry-driven approach to skill development. She has delivered 100+ workshops and worked with students across multiple institutions, focusing on communication, confidence, leadership, and employability skills.
                                 </p>
                                 <p>
-                                    I warmly invite your institution to collaborate with us in equipping students with the essential soft skills, professional grooming, and career readiness they need to thrive beyond campus.
+                                    With a strong background in Human Resources, she ensures every session goes beyond theory and equips students with skills they can actually apply. Her work directly aligns with Elevare Connect&apos;s mission of bridging the gap between academic learning and real-world expectations, helping institutions build students who are not just qualified, but truly prepared.
                                 </p>
                             </div>
 
@@ -110,7 +110,7 @@ export default function AboutPage() {
                                             fill
                                             className="object-cover object-top grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000"
                                             priority
-                                        />
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                         {/* Subtle vignette for high-end look */}
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0D0D0D]/40 opacity-40 group-hover:opacity-20 transition-opacity duration-1000" />
                                     </div>
@@ -149,7 +149,7 @@ export default function AboutPage() {
                             <span className="w-1.5 h-1.5 rounded-full bg-[#6E2690] animate-pulse"></span>
                             OUR PHILOSOPHY
                         </div>
-                        <h2 className="text-[#1E293B] text-4xl md:text-6xl font-black tracking-tight mb-6 font-['Roboto',sans-serif]">
+                        <h2 className="text-[#1E293B] text-4xl md:text-6xl font-black tracking-tight mb-6 font-roboto">
                             Why <span className="text-[#6E2690]">Elevare Connect.</span>
                         </h2>
                         <p className="text-[#52525B] text-lg md:text-xl font-medium leading-relaxed">
@@ -181,7 +181,7 @@ export default function AboutPage() {
                                     <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center bg-[#FDFBFF] text-[#1E293B] mb-6 md:mb-8 shadow-inner group-hover:bg-[#6E2690] group-hover:text-white transition-colors duration-500 relative z-10">
                                         <Icon className="w-6 h-6 md:w-8 md:h-8 transition-transform duration-500 group-hover:scale-110" strokeWidth={1.5} />
                                     </div>
-                                    <h4 className="font-bold text-xl md:text-[22px] tracking-tight text-[#1E293B] mb-4 font-['Roboto',sans-serif] relative z-10">{s.title}</h4>
+                                    <h4 className="font-bold text-xl md:text-[22px] tracking-tight text-[#1E293B] mb-4 font-roboto relative z-10">{s.title}</h4>
                                     <p className="text-[#52525B] text-sm md:text-[15px] font-medium leading-relaxed relative z-10">{s.desc}</p>
                                     
                                     {/* Decorative background shape in card */}
@@ -203,7 +203,7 @@ export default function AboutPage() {
                     transition={{ duration: 0.8 }}
                     className="max-w-4xl mx-auto text-center relative z-10"
                 >
-                    <h2 className="text-[#1E293B] text-4xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1] font-['Roboto',sans-serif]">
+                    <h2 className="text-[#1E293B] text-4xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1] font-roboto">
                         Collaborate <br />
                         <span className="text-[#6E2690]">with us today.</span>
                     </h2>

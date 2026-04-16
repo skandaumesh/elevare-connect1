@@ -8,7 +8,7 @@ export default function Footer() {
 
                 {/* Col 1 */}
                 <div className="text-center md:text-left">
-                    <Link href="/" className="flex items-center justify-center md:justify-start gap-2 text-2xl font-black text-white mb-6 font-['Roboto',sans-serif]">
+                    <Link href="/" className="flex items-center justify-center md:justify-start gap-2 text-2xl font-black text-white mb-6 font-roboto">
                         Elevare Connect
                     </Link>
                     <p className="text-white/60 leading-relaxed font-medium max-w-sm mx-auto md:mx-0">
