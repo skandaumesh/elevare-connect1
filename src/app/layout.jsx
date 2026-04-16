@@ -150,15 +150,16 @@ export default function RootLayout({ children }) {
               "foundingDate": "2020",
               "address": {
                 "@type": "PostalAddress",
+                "streetAddress": "Orchid Piccadilly E, 802, Thanisandra Main Rd",
                 "addressLocality": "Bengaluru",
                 "addressRegion": "Karnataka",
-                "postalCode": "560001",
+                "postalCode": "560077",
                 "addressCountry": "IN"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": 12.9716,
-                "longitude": 77.5946
+                "latitude": 13.0683,
+                "longitude": 77.6253
               },
               "contactPoint": {
                 "@type": "ContactPoint",
