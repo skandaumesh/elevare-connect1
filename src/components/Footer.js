@@ -48,7 +48,7 @@ export default function Footer() {
                         <a href="https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#6E2690] transition-all border border-white/10" aria-label="LinkedIn">
                             <Linkedin size={18} />
                         </a>
-                        <a href="https://www.instagram.com/skandaumesh/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#6E2690] transition-all border border-white/10" aria-label="Instagram">
+                        <a href="https://www.instagram.com/elevare_connect/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#6E2690] transition-all border border-white/10" aria-label="Instagram">
                             <Instagram size={18} />
                         </a>
                         <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#6E2690] transition-all border border-white/10" aria-label="Facebook">
