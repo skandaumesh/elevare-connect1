@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Contact Us | Partner with Elevare Connect",
+    title: "Contact Us | Partner with Us",
     description: "Get in touch with Elevare Connect for institutional training, career mentorship workshops, and student empowerment programs. Email us at info@elevareconnect.in. Based in Bengaluru, Karnataka, India.",
     keywords: ["Partner with Elevare Connect", "Hire Career Coach Bengaluru", "Institutional Mentorship Training", "Contact Wilma Merina D'Sa", "Student Empowerment Program"],
     openGraph: {

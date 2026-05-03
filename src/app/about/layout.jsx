@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "About Us | Wilma Merina D'Sa & Elevare Connect",
+    title: "About Us | Our Story, Mission & Founder",
     description: "Learn about Elevare Connect, founded by Wilma Merina D'Sa with 20+ years of HR and academic expertise. We empower students with human-centric skills, leadership training, and career readiness in Bengaluru, India.",
     keywords: ["Wilma Merina D'Sa", "Elevare Connect Founder", "HR Professional India", "Career Readiness Expert", "Campus Mentorship Bengaluru", "Leadership Training"],
     openGraph: {

@@ -30,7 +30,7 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "Elevare Connect",
   title: {
-    default: "Elevare Connect | Professional Mentorship & Career Readiness",
+    default: "Elevare Connect | Where Ambition Finds its Direction",
     template: "%s | Elevare Connect",
   },
   description:
@@ -128,8 +128,14 @@ const websiteSchema = {
   "@id": `${siteUrl}/#website`,
   "name": "Elevare Connect",
   "url": `${siteUrl}/`,
-  // ✅ REMOVED: alternateName "Elevare Academy"
-  // ✅ REMOVED: fake potentialAction / SearchAction
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": `${siteUrl}/?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 
 const organizationSchema = {
