@@ -14,6 +14,7 @@ export default function HeroSection() {
           alt="Elevare Connect Professional Mentorship background"
           fill
           priority
+          quality={75}
           sizes="(max-width: 768px) 100vw, 100vw"
           className="object-cover object-[75%] sm:object-[85%] md:object-center scale-105"
         />

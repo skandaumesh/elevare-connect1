@@ -90,7 +90,8 @@ export default function ProgramAddOnsSection() {
                                             alt={item.label}
                                             fill
                                             className="object-contain"
-                                            sizes="(max-w-768px) 100vw, 33vw"
+                                            sizes="(max-width: 768px) 100vw, 33vw"
+                                            quality={75}
                                         />
                                     </div>
                                 </div>

@@ -11,7 +11,7 @@ import TestimonialsSection from "@/components/home/TestimonialsSection";
 const siteUrl = "https://elevareconnect.in";
 
 export const metadata = {
-  title: "Where Ambition Finds its Direction",
+  title: "Elevare Connect | Where Ambition Finds its Direction",
   description:
     "Empowering students and institutions through expert-led soft skills training, career mentorship, and 1:1 coaching. 20+ partner colleges, 20000+ students trained. Based in Bengaluru, India.",
   keywords: [

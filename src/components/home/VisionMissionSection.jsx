@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function VisionMissionSection() {
     const cardsData = [
@@ -49,11 +50,15 @@ export default function VisionMissionSection() {
                             transition={{ duration: 0.6, delay: idx * 0.15 }}
                             className="relative w-full min-h-[440px] md:aspect-video rounded-[32px] overflow-hidden shadow-2xl group"
                         >
-                            {/* Background Image */}
-                            <div
-                                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                                style={{ backgroundImage: `url(${card.img})` }}
-                            ></div>
+                            {/* Background Image - using Next.js Image for optimization */}
+                            <Image
+                                src={card.img}
+                                alt={card.title}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                                quality={75}
+                            />
 
                             {/* Dark Gradient Overlay - Optimized for mobile top-to-bottom or left-to-right fade */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-r md:from-black/80 md:via-black/30 md:to-transparent"></div>
@@ -77,3 +82,4 @@ export default function VisionMissionSection() {
         </section>
     );
 }
+

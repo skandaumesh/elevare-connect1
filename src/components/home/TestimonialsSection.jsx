@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, X } from "lucide-react";
+import Image from "next/image";
 
 const HighlightText = ({ text }) => {
   const parts = text.split(/(Ms\. Wilma Merina D['’]sa)/gi);
@@ -38,8 +39,8 @@ const TestimonialCard = ({ test, onReadMore }) => {
           Read More
         </button>
         <div className="flex items-center gap-4">
-          <div className="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden border border-[rgba(0,0,0,0.07)]">
-            <img src={test.img} alt={test.name} className="w-full h-full object-cover" />
+          <div className="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden border border-[rgba(0,0,0,0.07)] relative">
+            <Image src={test.img} alt={test.name} fill className="object-cover" sizes="48px" />
           </div>
           <div>
             <h4 className="text-[#1E293B] font-bold">{test.name}</h4>
@@ -157,8 +158,8 @@ export default function TestimonialsSection() {
               </button>
 
               <div className="flex items-center gap-5 mb-8">
-                <div className="w-16 h-16 rounded-full overflow-hidden border border-[rgba(0,0,0,0.07)]">
-                  <img src={selectedTestimonial.img} alt={selectedTestimonial.name} className="w-full h-full object-cover" />
+                <div className="w-16 h-16 rounded-full overflow-hidden border border-[rgba(0,0,0,0.07)] relative">
+                  <Image src={selectedTestimonial.img} alt={selectedTestimonial.name} fill className="object-cover" sizes="64px" />
                 </div>
                 <div>
                   <h4 className="text-[#1E293B] text-xl font-bold">{selectedTestimonial.name}</h4>
