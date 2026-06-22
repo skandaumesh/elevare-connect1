@@ -127,15 +127,8 @@ const websiteSchema = {
   "@type": "WebSite",
   "@id": `${siteUrl}/#website`,
   "name": "Elevare Connect",
+  "alternateName": "Elevare",
   "url": `${siteUrl}/`,
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": `${siteUrl}/?q={search_term_string}`,
-    },
-    "query-input": "required name=search_term_string",
-  },
 };
 
 const organizationSchema = {
