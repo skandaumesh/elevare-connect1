@@ -199,13 +199,78 @@ const organizationSchema = {
 const navigationSchema = {
   "@context": "https://schema.org",
   "@type": "SiteNavigationElement",
+  "@id": `${siteUrl}/#navigation`,
   "name": "Main Navigation",
   "hasPart": [
-    { "@type": "WebPage", "name": "Home", "url": `${siteUrl}/` },
-    { "@type": "WebPage", "name": "About Us", "url": `${siteUrl}/about` },
-    { "@type": "WebPage", "name": "Our Services", "url": `${siteUrl}/services` },
-    { "@type": "WebPage", "name": "Gallery", "url": `${siteUrl}/gallery` },
-    { "@type": "WebPage", "name": "Contact", "url": `${siteUrl}/contact` },
+    {
+      "@type": "WebPage",
+      "name": "Home",
+      "url": `${siteUrl}/`,
+      "description": "Where Ambition Finds its Direction — empowering students with career mentorship and soft skills training.",
+    },
+    {
+      "@type": "WebPage",
+      "name": "About Us",
+      "url": `${siteUrl}/about`,
+      "description": "Our story, mission, and founder Wilma Merina D'Sa — 20+ years of HR and academic expertise.",
+    },
+    {
+      "@type": "WebPage",
+      "name": "Our Services",
+      "url": `${siteUrl}/services`,
+      "description": "Career Readiness, Skill Enhancement, and Academic to Industry Bridge programs for colleges and institutions.",
+    },
+    {
+      "@type": "WebPage",
+      "name": "Gallery",
+      "url": `${siteUrl}/gallery`,
+      "description": "Visual stories of transformation — workshops, campus engagements, and mentorship sessions.",
+    },
+    {
+      "@type": "WebPage",
+      "name": "Contact",
+      "url": `${siteUrl}/contact`,
+      "description": "Partner with Elevare Connect for institutional training and student empowerment programs.",
+    },
+  ],
+};
+
+const sitelinksSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Elevare Connect Site Pages",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "url": `${siteUrl}/`,
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About Us",
+      "url": `${siteUrl}/about`,
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Our Services",
+      "url": `${siteUrl}/services`,
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Gallery",
+      "url": `${siteUrl}/gallery`,
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Contact",
+      "url": `${siteUrl}/contact`,
+    },
   ],
 };
 
@@ -230,6 +295,12 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(navigationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(sitelinksSchema),
           }}
         />
         <Navbar />
