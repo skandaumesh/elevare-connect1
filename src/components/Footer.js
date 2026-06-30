@@ -45,14 +45,11 @@ export default function Footer() {
                     </ul>
 
                     <div className="flex justify-center md:justify-start gap-5">
-                        <a href="https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#6E2690] transition-all border border-white/10" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/" target="_blank" rel="noopener noreferrer me" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#6E2690] transition-all border border-white/10" aria-label="Wilma Merina D'Sa on LinkedIn">
                             <Linkedin size={18} />
                         </a>
-                        <a href="https://www.instagram.com/elevare_connect/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#6E2690] transition-all border border-white/10" aria-label="Instagram">
+                        <a href="https://www.instagram.com/elevare_connect/" target="_blank" rel="noopener noreferrer me" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#6E2690] transition-all border border-white/10" aria-label="Elevare Connect on Instagram">
                             <Instagram size={18} />
-                        </a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#6E2690] transition-all border border-white/10" aria-label="Facebook">
-                            <Facebook size={18} />
                         </a>
                     </div>
                 </div>

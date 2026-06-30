@@ -1,38 +1,37 @@
 export default function sitemap() {
   const baseUrl = "https://elevareconnect.in";
 
-  // Use fixed dates — new Date() makes every deploy look "just modified"
-  // which gives Google no real signal about what actually changed
+  // Updated dates to signal fresh content to Google
   return [
     {
       url: baseUrl,
-      lastModified: new Date("2026-05-23"), // your actual launch/last update date
-      changeFrequency: "monthly",
+      lastModified: new Date("2026-06-30"),
+      changeFrequency: "weekly",
       priority: 1.0,
     },
     {
       url: `${baseUrl}/services`,
-      lastModified: new Date("2026-05-23"),
-      changeFrequency: "monthly",
-      priority: 0.9, // ✅ highest after home — services is core
+      lastModified: new Date("2026-06-30"),
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date("2026-05-23"),
+      lastModified: new Date("2026-06-30"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date("2026-05-23"),
+      lastModified: new Date("2026-06-30"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/gallery`,
-      lastModified: new Date("2026-05-23"),
-      changeFrequency: "weekly", // gallery genuinely updates more often
-      priority: 0.6,
+      lastModified: new Date("2026-06-30"),
+      changeFrequency: "weekly",
+      priority: 0.7,
     },
   ];
 }

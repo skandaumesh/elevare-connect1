@@ -41,7 +41,6 @@ export const metadata = {
     "Career Mentorship Bengaluru",
     "Campus to Corporate",
     "Placement Readiness",
-    "Wilma Merina D'Sa",
     "Professional Grooming",
     "Institutional Training",
     "Student Empowerment",
@@ -53,7 +52,7 @@ export const metadata = {
     "Employability Skills India",
     "Career Coaching Karnataka",
   ],
-  authors: [{ name: "Wilma Merina D'Sa", url: siteUrl }],
+  authors: [{ name: "Elevare Connect", url: siteUrl }],
   creator: "Elevare Connect",
   publisher: "Elevare Connect",
   category: "Education",
@@ -120,151 +119,229 @@ export const metadata = {
   },
 };
 
-// ─── Structured Data ────────────────────────────────────────────────
+// ─── Structured Data (@graph — Google's preferred unified format) ───
 
-const websiteSchema = {
+const graphSchema = {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": `${siteUrl}/#website`,
-  "name": "Elevare Connect",
-  "alternateName": "Elevare",
-  "url": `${siteUrl}/`,
-};
-
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  "@id": `${siteUrl}/#organization`,
-  "name": "Elevare Connect",
-  // ✅ REMOVED: alternateName "Elevare Academy"
-  "url": siteUrl,
-  "logo": {
-    "@type": "ImageObject",
-    "url": `${siteUrl}/elevare.png`,
-    "width": 512,
-    "height": 512,
-  },
-  "description":
-    "Professional mentorship and career readiness consultancy that empowers students with soft skills, leadership, and employability training.",
-  "image": `${siteUrl}/elevare.png`,
-  "slogan": "Transform. Rise. Achieve.",
-  "foundingDate": "2020",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Orchid Piccadilly E, 802, Thanisandra Main Rd",
-    "addressLocality": "Bengaluru",
-    "addressRegion": "Karnataka",
-    "postalCode": "560077",
-    "addressCountry": "IN",
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 13.0683,
-    "longitude": 77.6253,
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Customer Service",
-    "email": "info@elevareconnect.in",
-    "availableLanguage": ["English", "Hindi", "Kannada"],
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Wilma Merina D'Sa",
-    "jobTitle": "Founder & Lead Trainer",
-    "image": `${siteUrl}/Founder.jpeg`,
-    "url": "https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/",
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "India",
-  },
-  "sameAs": [
-    "https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/",
-    "https://www.instagram.com/elevare_connect/", // ✅ FIXED: correct Instagram
-  ],
-  "numberOfEmployees": {
-    "@type": "QuantitativeValue",
-    "value": "1-10",
-  },
-};
-
-const navigationSchema = {
-  "@context": "https://schema.org",
-  "@type": "SiteNavigationElement",
-  "@id": `${siteUrl}/#navigation`,
-  "name": "Main Navigation",
-  "hasPart": [
+  "@graph": [
+    // ── WebSite ──
     {
-      "@type": "WebPage",
-      "name": "Home",
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      "name": "Elevare Connect",
+      "alternateName": ["Elevare", "elevareconnect.in"],
       "url": `${siteUrl}/`,
-      "description": "Where Ambition Finds its Direction — empowering students with career mentorship and soft skills training.",
+      "publisher": { "@id": `${siteUrl}/#organization` },
+      "inLanguage": "en-IN",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": `${siteUrl}/?s={search_term_string}`
+        },
+        "query-input": "required name=search_term_string"
+      }
     },
-    {
-      "@type": "WebPage",
-      "name": "About Us",
-      "url": `${siteUrl}/about`,
-      "description": "Our story, mission, and founder Wilma Merina D'Sa — 20+ years of HR and academic expertise.",
-    },
-    {
-      "@type": "WebPage",
-      "name": "Our Services",
-      "url": `${siteUrl}/services`,
-      "description": "Career Readiness, Skill Enhancement, and Academic to Industry Bridge programs for colleges and institutions.",
-    },
-    {
-      "@type": "WebPage",
-      "name": "Gallery",
-      "url": `${siteUrl}/gallery`,
-      "description": "Visual stories of transformation — workshops, campus engagements, and mentorship sessions.",
-    },
-    {
-      "@type": "WebPage",
-      "name": "Contact",
-      "url": `${siteUrl}/contact`,
-      "description": "Partner with Elevare Connect for institutional training and student empowerment programs.",
-    },
-  ],
-};
 
-const sitelinksSchema = {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Elevare Connect Site Pages",
-  "numberOfItems": 5,
-  "itemListElement": [
+    // ── Organization (Primary Entity) ──
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "url": `${siteUrl}/`,
+      "@type": ["EducationalOrganization", "LocalBusiness"],
+      "@id": `${siteUrl}/#organization`,
+      "name": "Elevare Connect",
+      "legalName": "Elevare Connect",
+      "alternateName": "Elevare",
+      "url": siteUrl,
+      "logo": {
+        "@type": "ImageObject",
+        "@id": `${siteUrl}/#logo`,
+        "url": `${siteUrl}/elevare.png`,
+        "contentUrl": `${siteUrl}/elevare.png`,
+        "width": 512,
+        "height": 512,
+        "caption": "Elevare Connect Logo"
+      },
+      "image": {
+        "@id": `${siteUrl}/#logo`
+      },
+      "description": "Elevare Connect is a professional mentorship and career readiness consultancy based in Bengaluru, India. We empower students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching. With 20+ partner colleges and 20000+ students trained.",
+      "slogan": "Where Ambition Finds its Direction",
+      "foundingDate": "2020",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Bengaluru, Karnataka, India"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Orchid Piccadilly E, 802, Thanisandra Main Rd, Thirumenahalli, Chokkanahalli",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "postalCode": "560064",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 13.0683,
+        "longitude": 77.6253
+      },
+      "hasMap": "https://maps.google.com/?q=Orchid+Piccadilly+E+802+Thanisandra+Main+Rd+Bengaluru",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "Customer Service",
+          "email": "info@elevareconnect.in",
+          "availableLanguage": ["English", "Hindi", "Kannada"],
+          "areaServed": "IN"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": `${siteUrl}/#founder`,
+        "name": "Wilma Merina D'Sa",
+        "givenName": "Wilma",
+        "familyName": "D'Sa",
+        "jobTitle": "Founder & Lead Trainer",
+        "description": "Seasoned HR Professional & Academician with 20+ years of experience across IBM and top academic institutions. Founder of Elevare Connect.",
+        "image": `${siteUrl}/Founder.jpeg`,
+        "url": "https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/",
+        "sameAs": [
+          "https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/"
+        ],
+        "worksFor": {
+          "@id": `${siteUrl}/#organization`
+        },
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "IBM"
+        },
+        "knowsAbout": [
+          "Human Resources",
+          "Soft Skills Training",
+          "Career Mentorship",
+          "Leadership Development",
+          "Campus to Corporate Training"
+        ]
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "India"
+        },
+        {
+          "@type": "State",
+          "name": "Karnataka"
+        },
+        {
+          "@type": "City",
+          "name": "Bengaluru"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/",
+        "https://www.instagram.com/elevare_connect/"
+      ],
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "1-10"
+      },
+      "knowsAbout": [
+        "Soft Skills Training",
+        "Career Readiness",
+        "Campus to Corporate Transition",
+        "Professional Grooming",
+        "Leadership Training",
+        "Placement Readiness",
+        "Interview Preparation"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Career Readiness Training",
+            "description": "Campus-to-corporate workshops, resume optimization, and mock interviews with actionable feedback."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Soft Skills Enhancement",
+            "description": "Communication, time management, workplace etiquette, and emotional intelligence training."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Academic to Industry Bridge",
+            "description": "Industry guest lectures, project mentoring, and aligning academic curriculum with industry practices."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "1:1 Career Mentorship",
+            "description": "Personalized mentorship, goal-setting, personal branding, and self-awareness coaching."
+          }
+        }
+      ]
     },
+
+    // ── SiteNavigation (Helps Google understand page hierarchy) ──
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "About Us",
-      "url": `${siteUrl}/about`,
+      "@type": "SiteNavigationElement",
+      "@id": `${siteUrl}/#navigation`,
+      "name": "Main Navigation",
+      "hasPart": [
+        {
+          "@type": "WebPage",
+          "name": "Home",
+          "url": `${siteUrl}/`,
+          "description": "Where Ambition Finds its Direction — empowering students with career mentorship and soft skills training."
+        },
+        {
+          "@type": "WebPage",
+          "name": "About Us",
+          "url": `${siteUrl}/about`,
+          "description": "Our story, mission, and founder — 20+ years of HR and academic expertise."
+        },
+        {
+          "@type": "WebPage",
+          "name": "Our Services",
+          "url": `${siteUrl}/services`,
+          "description": "Career Readiness, Skill Enhancement, and Academic to Industry Bridge programs for colleges and institutions."
+        },
+        {
+          "@type": "WebPage",
+          "name": "Gallery",
+          "url": `${siteUrl}/gallery`,
+          "description": "Visual stories of transformation — workshops, campus engagements, and mentorship sessions."
+        },
+        {
+          "@type": "WebPage",
+          "name": "Contact",
+          "url": `${siteUrl}/contact`,
+          "description": "Partner with Elevare Connect for institutional training and student empowerment programs."
+        }
+      ]
     },
+
+    // ── Sitelinks SearchBox helper ──
     {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Our Services",
-      "url": `${siteUrl}/services`,
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "Gallery",
-      "url": `${siteUrl}/gallery`,
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "name": "Contact",
-      "url": `${siteUrl}/contact`,
-    },
-  ],
+      "@type": "ItemList",
+      "@id": `${siteUrl}/#sitemap`,
+      "name": "Elevare Connect Pages",
+      "numberOfItems": 5,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "url": `${siteUrl}/` },
+        { "@type": "ListItem", "position": 2, "name": "About Us", "url": `${siteUrl}/about` },
+        { "@type": "ListItem", "position": 3, "name": "Our Services", "url": `${siteUrl}/services` },
+        { "@type": "ListItem", "position": 4, "name": "Gallery", "url": `${siteUrl}/gallery` },
+        { "@type": "ListItem", "position": 5, "name": "Contact", "url": `${siteUrl}/contact` }
+      ]
+    }
+  ]
 };
 
 // ─── Layout ─────────────────────────────────────────────────────────
@@ -274,6 +351,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="theme-color" content="#6E2690" />
+        <meta name="theme-color" content="#4A1561" media="(prefers-color-scheme: dark)" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body
         className={`flex flex-col min-h-screen antialiased overflow-x-hidden font-sans bg-[#FFFFFF] text-[#52525B] ${dmSans.variable} ${roboto.variable} ${instrumentSerif.variable}`}
@@ -281,19 +361,7 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([websiteSchema, organizationSchema]),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(navigationSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(sitelinksSchema),
+            __html: JSON.stringify(graphSchema),
           }}
         />
         <Navbar />

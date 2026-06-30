@@ -21,7 +21,6 @@ export const metadata = {
     "Campus to Corporate Program",
     "Student Empowerment Bengaluru",
     "Placement Readiness Training",
-    "Wilma Merina D'Sa",
     "Professional Development India",
   ],
 
@@ -66,9 +65,13 @@ const webPageSchema = {
   "url": siteUrl,
   "name": "Elevare Connect | Where Ambition Finds its Direction",
   "description":
-    "Empowering students and institutions through expert-led soft skills training, career mentorship, and 1:1 coaching.",
+    "Empowering students and institutions through expert-led soft skills training, career mentorship, and 1:1 coaching. 20+ partner colleges, 20000+ students trained.",
   "isPartOf": { "@id": `${siteUrl}/#website` },
   "about": { "@id": `${siteUrl}/#organization` },
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": `${siteUrl}/elevare.png`
+  },
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -82,6 +85,53 @@ const webPageSchema = {
   },
 };
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Elevare Connect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elevare Connect is a professional mentorship and career readiness consultancy based in Bengaluru, India. We empower students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching. With 20+ partner colleges and 20000+ students trained."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What services does Elevare Connect offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elevare Connect offers Career Readiness Training (resume optimization, mock interviews, campus-to-corporate workshops), Soft Skills Enhancement (communication, emotional intelligence, workplace etiquette), Academic to Industry Bridge programs (industry guest lectures, project mentoring), and 1:1 Career Mentorship (goal-setting, personal branding, self-awareness coaching)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who founded Elevare Connect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elevare Connect was founded by Wilma Merina D'Sa, a seasoned HR Professional and Academician with over 20 years of experience, including tenure at IBM. She bridges the gap between academic learning and industry expectations through personalized mentorship and training programs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is Elevare Connect located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elevare Connect is based in Bengaluru, Karnataka, India. Our office is located at Orchid Piccadilly E, 802, Thanisandra Main Rd, Thirumenahalli, Chokkanahalli, Bengaluru 560064. We serve educational institutions across India."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can institutions partner with Elevare Connect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Institutions can partner with Elevare Connect by reaching out via email at info@elevareconnect.in or through our Contact page. We offer customized training programs tailored to each institution's specific needs, including multi-day workshops, semester-long mentorship programs, and placement-oriented training modules."
+      }
+    }
+  ]
+};
+
 // ─── Page ────────────────────────────────────────────────────────
 
 export default function HomePage() {
@@ -90,6 +140,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <HeroSection />
       <AboutSection />
