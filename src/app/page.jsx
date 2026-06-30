@@ -85,51 +85,47 @@ const webPageSchema = {
   },
 };
 
+// Single source of truth — drives BOTH the FAQPage schema and the
+// visible FAQ section below, so structured data and on-page text always
+// match (required for Google FAQ rich results and accurate AI answers).
+const faqData = [
+  {
+    q: "What is Elevare Connect?",
+    a: "Elevare Connect is a soft skills and career readiness training company based in Bengaluru, Karnataka, India, founded in 2025 by Wilma Merina D'Sa. We work with students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching, with 20+ partner colleges and 20000+ students trained. The official website is elevareconnect.in.",
+  },
+  {
+    q: "Who is the founder of Elevare Connect?",
+    a: "Elevare Connect was founded by Wilma Merina D'Sa, a seasoned HR Professional and Academician with over 20 years of experience, including tenure at IBM. She bridges the gap between academic learning and industry expectations through personalized mentorship and training programs.",
+  },
+  {
+    q: "When was Elevare Connect founded?",
+    a: "Elevare Connect was founded in 2025 by Wilma Merina D'Sa, and is headquartered in Bengaluru, Karnataka, India.",
+  },
+  {
+    q: "What services does Elevare Connect offer?",
+    a: "Elevare Connect offers Career Readiness Training (resume optimization, mock interviews, campus-to-corporate workshops), Soft Skills Enhancement (communication, emotional intelligence, workplace etiquette), Academic to Industry Bridge programs (industry guest lectures, project mentoring), and 1:1 Career Mentorship (goal-setting, personal branding, self-awareness coaching).",
+  },
+  {
+    q: "Where is Elevare Connect located?",
+    a: "Elevare Connect is based in Bengaluru, Karnataka, India. Our office is located at Orchid Piccadilly E, 802, Thanisandra Main Rd, Thirumenahalli, Chokkanahalli, Bengaluru 560064. We serve educational institutions across India.",
+  },
+  {
+    q: "How can I contact Elevare Connect?",
+    a: "You can contact Elevare Connect by phone at +91 98457 89663, by email at info@elevareconnect.in, or through the Contact page on elevareconnect.in. We offer customized training programs tailored to each institution's specific needs, including multi-day workshops, semester-long mentorship programs, and placement-oriented training modules.",
+  },
+];
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Elevare Connect?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Elevare Connect is a professional mentorship and career readiness consultancy based in Bengaluru, India. We empower students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching. With 20+ partner colleges and 20000+ students trained."
-      }
+  "mainEntity": faqData.map((item) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a,
     },
-    {
-      "@type": "Question",
-      "name": "What services does Elevare Connect offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Elevare Connect offers Career Readiness Training (resume optimization, mock interviews, campus-to-corporate workshops), Soft Skills Enhancement (communication, emotional intelligence, workplace etiquette), Academic to Industry Bridge programs (industry guest lectures, project mentoring), and 1:1 Career Mentorship (goal-setting, personal branding, self-awareness coaching)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who founded Elevare Connect?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Elevare Connect was founded by Wilma Merina D'Sa, a seasoned HR Professional and Academician with over 20 years of experience, including tenure at IBM. She bridges the gap between academic learning and industry expectations through personalized mentorship and training programs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is Elevare Connect located?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Elevare Connect is based in Bengaluru, Karnataka, India. Our office is located at Orchid Piccadilly E, 802, Thanisandra Main Rd, Thirumenahalli, Chokkanahalli, Bengaluru 560064. We serve educational institutions across India."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can institutions partner with Elevare Connect?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Institutions can partner with Elevare Connect by reaching out via email at info@elevareconnect.in or through our Contact page. We offer customized training programs tailored to each institution's specific needs, including multi-day workshops, semester-long mentorship programs, and placement-oriented training modules."
-      }
-    }
-  ]
+  })),
 };
 
 // ─── Page ────────────────────────────────────────────────────────
@@ -154,6 +150,40 @@ export default function HomePage() {
       <ProgramAddOnsSection />
       <CollaborationsSection />
       <TestimonialsSection />
+
+      {/* ─── Visible FAQ (mirrors faqSchema for AI + Google rich results) ─── */}
+      <section className="px-6 py-20 md:py-28 bg-white" aria-labelledby="faq-heading">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12 md:mb-16">
+            <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] md:text-sm font-bold tracking-widest uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#6E2690]"></span>
+              Frequently Asked Questions
+            </div>
+            <h2
+              id="faq-heading"
+              className="text-[#1E293B] text-3xl md:text-5xl font-bold tracking-tight font-roboto"
+            >
+              About <span className="text-[#6E2690]">Elevare Connect</span>
+            </h2>
+          </div>
+
+          <div className="space-y-5">
+            {faqData.map((item, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border border-slate-100 bg-white p-6 md:p-8 shadow-[0_4px_20px_rgb(0,0,0,0.03)]"
+              >
+                <h3 className="text-[#1E293B] text-lg md:text-xl font-bold mb-3 font-roboto">
+                  {item.q}
+                </h3>
+                <p className="text-[#52525B] text-base leading-relaxed">
+                  {item.a}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }

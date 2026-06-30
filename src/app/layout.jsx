@@ -165,7 +165,8 @@ const graphSchema = {
       },
       "description": "Elevare Connect is a professional mentorship and career readiness consultancy based in Bengaluru, India. We empower students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching. With 20+ partner colleges and 20000+ students trained.",
       "slogan": "Where Ambition Finds its Direction",
-      "foundingDate": "2020",
+      "foundingDate": "2025",
+      "telephone": "+91-98457-89663",
       "foundingLocation": {
         "@type": "Place",
         "name": "Bengaluru, Karnataka, India"
@@ -188,6 +189,7 @@ const graphSchema = {
         {
           "@type": "ContactPoint",
           "contactType": "Customer Service",
+          "telephone": "+91-98457-89663",
           "email": "info@elevareconnect.in",
           "availableLanguage": ["English", "Hindi", "Kannada"],
           "areaServed": "IN"
