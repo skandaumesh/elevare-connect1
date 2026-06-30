@@ -2,6 +2,9 @@ export default function robots() {
   return {
     rules: [
       {
+        // Allow all crawlers — including AI search engines (GPTBot,
+        // ChatGPT-User, anthropic-ai, etc.) so they describe Elevare
+        // Connect correctly instead of pulling from other sources.
         userAgent: "*",
         allow: "/",
         disallow: [
@@ -9,19 +12,6 @@ export default function robots() {
           "/api/",          // API routes — never index these
           "/_vercel/",      // Vercel internals if hosted there
         ],
-      },
-      {
-        // Block AI training crawlers — protects your content
-        userAgent: [
-          "GPTBot",
-          "ChatGPT-User",
-          "CCBot",
-          "anthropic-ai",
-          "Claude-Web",
-          "Omgilibot",
-          "FacebookBot",
-        ],
-        disallow: "/",
       },
     ],
     sitemap: "https://elevareconnect.in/sitemap.xml",
