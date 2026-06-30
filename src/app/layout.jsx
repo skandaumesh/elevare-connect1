@@ -129,7 +129,7 @@ const graphSchema = {
       "@type": "WebSite",
       "@id": `${siteUrl}/#website`,
       "name": "Elevare Connect",
-      "alternateName": ["Elevare", "elevareconnect.in"],
+      "alternateName": "Elevare",
       "url": `${siteUrl}/`,
       "publisher": { "@id": `${siteUrl}/#organization` },
       "inLanguage": "en-IN",
