@@ -83,7 +83,7 @@ export default function TestimonialsSection() {
     {
       name: "Yashika Singh",
       role: "Financial Analyst, ABM Indore Pvt Ltd",
-      quote: "I had an opportunity to be a part of various sessions conducted by Ms. Wilma Merina D'sa, Founder of Elevare Academy, during my graduation days offered through my College. The sessions were very engaging, insightful and helped me personally to understand the importance of placement readiness, career planning, and developing the right professional skills for the modern finance sector. Her guidance and results-oriented approach played an important role in helping me secure my first job.",
+      quote: "I had an opportunity to be a part of various sessions conducted by Ms. Wilma Merina D'sa, Founder of Elevare Connect, during my graduation days offered through my College. The sessions were very engaging, insightful and helped me personally to understand the importance of placement readiness, career planning, and developing the right professional skills for the modern finance sector. Her guidance and results-oriented approach played an important role in helping me secure my first job.",
       img: "/testimonials/testimonial2.jpeg",
     },
     {

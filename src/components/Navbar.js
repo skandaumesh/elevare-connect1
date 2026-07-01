@@ -48,14 +48,14 @@ export default function Navbar() {
           </Link>
 
           {/* Nav Links - Desktop Only */}
-          <div className="hidden lg:flex items-center gap-8 xl:gap-10">
+          <div className="hidden md:flex items-center gap-4 lg:gap-8 xl:gap-10">
             {NAV_LINKS.map((link) => {
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-[14px] xl:text-[15px] font-bold transition-all duration-300 no-underline
+                  className={`text-[13px] lg:text-[14px] xl:text-[15px] font-bold transition-all duration-300 no-underline whitespace-nowrap
                     ${isActive
                       ? "text-[#1E293B]"
                       : "text-slate-600 hover:text-[#1E293B]"
@@ -70,7 +70,7 @@ export default function Navbar() {
           {/* Mobile Toggle Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden w-12 h-12 flex items-center justify-center text-slate-800 cursor-pointer border-none bg-slate-50 hover:bg-slate-100 rounded-xl transition-colors"
+            className="md:hidden w-12 h-12 flex items-center justify-center text-slate-800 cursor-pointer border-none bg-slate-50 hover:bg-slate-100 rounded-xl transition-colors"
             aria-label="Toggle Menu"
           >
             {menuOpen ? <X size={28} /> : <Menu size={28} />}

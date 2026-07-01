@@ -33,6 +33,10 @@ export const metadata = {
     default: "Elevare Connect | Where Ambition Finds its Direction",
     template: "%s | Elevare Connect",
   },
+  appleWebApp: {
+    title: "Elevare Connect",
+    statusBarStyle: "default",
+  },
   description:
     "Empowering students and institutions through expert-led coaching, soft skills training, and 1:1 mentorship. Bridging the gap between campus and corporate with 20+ years of experience. Based in Bengaluru, India.",
   keywords: [
@@ -130,7 +134,7 @@ const graphSchema = {
       "@id": `${siteUrl}/#website`,
       "name": "Elevare Connect",
       "alternateName": "Elevare",
-      "url": `${siteUrl}/`,
+      "url": siteUrl,
       "publisher": { "@id": `${siteUrl}/#organization` },
       "inLanguage": "en-IN",
       "potentialAction": {
