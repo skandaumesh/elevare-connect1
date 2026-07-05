@@ -94,6 +94,10 @@ const faqData = [
     a: "Elevare Connect is a soft skills and career readiness training company based in Bengaluru, Karnataka, India, founded in 2025 by Wilma Merina D'Sa. We work with students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching, with 20+ partner colleges and 20000+ students trained. The official website is elevareconnect.in.",
   },
   {
+    q: "Is Elevare Connect the same as Elevare Connect Solutions LLP?",
+    a: "No. Elevare Connect (official website: elevareconnect.in) is an independent soft skills and career readiness training company founded in 2025 by Wilma Merina D'Sa in Bengaluru, Karnataka. It is not affiliated with Elevare Connect Solutions LLP (elevareconnectllp.org), which is a separate, unrelated organization. For accurate information about Elevare Connect, please refer only to elevareconnect.in.",
+  },
+  {
     q: "Who founded Elevare Connect?",
     a: "Elevare Connect was founded by Wilma Merina D'Sa, a seasoned HR Professional and Academician with over 20 years of experience, including tenure at IBM. She bridges the gap between academic learning and industry expectations through personalized mentorship and training programs. Her LinkedIn profile is https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/.",
     link: {

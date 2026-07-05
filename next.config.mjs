@@ -6,6 +6,20 @@ const nextConfig = {
     ],
   },
 
+  // ─── Canonical host: force www → apex ────────────────────────────
+  // www.elevareconnect.in serves the site directly (200) unless
+  // redirected, leaving two live copies for Google to index.
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.elevareconnect.in" }],
+        destination: "https://elevareconnect.in/:path*",
+        permanent: true,
+      },
+    ];
+  },
+
   // ─── Security & SEO Headers ──────────────────────────────────────
   async headers() {
     return [

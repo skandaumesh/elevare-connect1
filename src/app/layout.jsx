@@ -168,6 +168,7 @@ const graphSchema = {
         "@id": `${siteUrl}/#logo`
       },
       "description": "Elevare Connect is a professional mentorship and career readiness consultancy based in Bengaluru, India. We empower students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching. With 20+ partner colleges and 20000+ students trained.",
+      "disambiguatingDescription": "Elevare Connect (official website: elevareconnect.in) is an independent soft skills and career readiness training company founded in 2025 by Wilma Merina D'Sa in Bengaluru. It is a distinct and separate organization from Elevare Connect Solutions LLP (elevareconnectllp.org); the two companies are not affiliated.",
       "slogan": "Where Ambition Finds its Direction",
       "foundingDate": "2025",
       "telephone": "+91-98457-89663",
