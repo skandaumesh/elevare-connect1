@@ -30,15 +30,16 @@ export default function ContactLayout({ children }) {
                             "email": "info@elevareconnect.in",
                             "address": {
                                 "@type": "PostalAddress",
+                                "streetAddress": "Orchid Piccadilly E, 802, Thanisandra Main Rd, Thirumenahalli, Chokkanahalli",
                                 "addressLocality": "Bengaluru",
                                 "addressRegion": "Karnataka",
-                                "postalCode": "560001",
+                                "postalCode": "560064",
                                 "addressCountry": "IN"
                             },
                             "geo": {
                                 "@type": "GeoCoordinates",
-                                "latitude": 12.9716,
-                                "longitude": 77.5946
+                                "latitude": 13.0683,
+                                "longitude": 77.6253
                             },
                             "areaServed": [
                                 {
