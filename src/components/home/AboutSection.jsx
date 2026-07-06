@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
     return (
-        <section id="about" className="py-16 md:py-24 bg-white relative overflow-hidden">
+        <section id="about" className="py-14 md:py-20 bg-white relative overflow-hidden">
             {/* Elegant Minimalist BG */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 {/* Soft Gradient Accent */}
@@ -35,10 +35,13 @@ export default function AboutSection() {
                         </h2>
                         <div className="text-[#52525B] text-base md:text-lg leading-relaxed mb-8 md:mb-10 space-y-4">
                             <p>
-                                At Elevare Connect, we are passionate about partnering with institutions that share our vision of holistic student development. With a strong foundation in HR and academia, I founded Elevare Connect to support colleges in preparing students not just for jobs, but for confident, impactful careers.
+                                At Elevare Connect, we are passionate about empowering students and partnering with educational institutions to bridge the gap between education and employment. With a strong foundation in HR and academia, I founded Elevare Connect to help students and young professionals develop the confidence, skills, and career readiness needed to thrive in today&apos;s competitive world.
                             </p>
                             <p>
-                                I warmly invite your institution to collaborate with us in equipping students with the essential soft skills, professional grooming, and career readiness they need to thrive beyond campus.
+                                Whether through institutional collaborations or individual mentoring and training programs, our mission is to transform potential into professional success.
+                            </p>
+                            <p>
+                                We welcome institutions, students, and young professionals to join us on this journey of growth, learning, and achievement.
                             </p>
                         </div>
 

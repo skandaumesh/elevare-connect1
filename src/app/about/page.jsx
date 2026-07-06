@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
     return (
-        <div className="relative min-h-screen bg-[#FFFFFF] overflow-hidden pt-20 md:pt-28">
+        <div className="relative min-h-screen bg-[#FFFFFF] overflow-hidden pt-16 md:pt-20">
 
             {/* Premium BG Design Layer */}
             <div className="absolute inset-0 z-0 pointer-events-none">
@@ -20,7 +20,7 @@ export default function AboutPage() {
             </div>
 
             {/* ─── SECTION 1: HERO ─── */}
-            <section className="relative pt-16 md:pt-20 pb-16 md:pb-24 overflow-hidden">
+            <section className="relative pt-8 md:pt-12 pb-12 md:pb-16 overflow-hidden">
                 <div className="max-w-6xl mx-auto px-6 relative z-10 text-center">
                     <motion.div
                         className="max-w-4xl mx-auto flex flex-col items-center"
@@ -45,7 +45,7 @@ export default function AboutPage() {
                             {[
                                 { v: "20+", l: "Partner Colleges" },
                                 { v: "20000+", l: "Students Trained" },
-                                { v: "50+", l: "Workshops Delivered" }
+                                { v: "100+", l: "Workshops Delivered" }
                             ].map((s, idx) => (
                                 <div key={idx} className="flex flex-col items-center">
                                     <p className="text-[#1E293B] text-4xl md:text-6xl font-black tracking-tight mb-1 md:mb-2">{s.v}</p>
@@ -58,7 +58,7 @@ export default function AboutPage() {
             </section>
 
             {/* ─── SECTION 2: FOUNDER ─── */}
-            <section className="py-20 md:py-28 relative bg-white overflow-hidden">
+            <section className="py-14 md:py-20 relative bg-white overflow-hidden">
                 <div className="max-w-7xl mx-auto relative z-10 px-6">
                     <div className="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
                         {/* LEFT COLUMN: Text */}
@@ -122,7 +122,7 @@ export default function AboutPage() {
             </section>
 
             {/* ─── SECTION 3: PHILOSOPHY ─── */}
-            <section className="px-6 py-20 md:py-32 relative bg-[#FFFFFF] overflow-hidden">
+            <section className="px-6 py-14 md:py-20 relative bg-[#FFFFFF] overflow-hidden">
                 {/* Decorative Background Elements */}
                 <div className="absolute inset-0 pointer-events-none z-0">
                     <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#6E2690]/5 rounded-full blur-[100px] md:blur-[150px]" />
@@ -194,7 +194,7 @@ export default function AboutPage() {
             </section>
 
             {/* ─── SECTION 4: CTA ─── */}
-            <section className="px-6 py-24 md:py-40 bg-white relative overflow-hidden">
+            <section className="px-6 py-16 md:py-24 bg-white relative overflow-hidden">
                 <div className="absolute top-0 right-[-10%] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#6E2690]/10 rounded-full blur-[100px] md:blur-[140px] pointer-events-none" />
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}

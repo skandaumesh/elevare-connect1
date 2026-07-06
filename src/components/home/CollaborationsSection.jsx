@@ -15,8 +15,24 @@ export default function CollaborationsSection() {
     const partners = [...originalPartners, ...originalPartners, ...originalPartners, ...originalPartners];
 
     return (
-        <section id="collaborate" className="py-20 bg-[#FFFFFF] overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6 mb-12">
+        <section id="collaborate" className="py-12 md:py-16 bg-[#FFFFFF] overflow-hidden relative">
+            {/* Subtle BG Design Layer */}
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <motion.div
+                    style={{ x: "-50%" }}
+                    animate={{ scale: [1, 1.15, 1], opacity: [1, 0.7, 1] }}
+                    transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute top-[-30%] left-1/2 w-[500px] md:w-[800px] h-[400px] bg-[#6E2690]/[0.05] rounded-full blur-[120px]"
+                />
+                <div className="absolute inset-0 opacity-[0.025]"
+                    style={{
+                        backgroundImage: 'radial-gradient(#6E2690 0.8px, transparent 0.8px)',
+                        backgroundSize: '36px 36px'
+                    }}
+                />
+            </div>
+
+            <div className="max-w-7xl mx-auto px-6 mb-12 relative z-10">
                 <motion.h2
                     className="text-center text-3xl font-medium text-[#1E293B] tracking-tight"
                     initial={{ opacity: 0, y: 20 }}

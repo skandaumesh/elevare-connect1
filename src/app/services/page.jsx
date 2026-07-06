@@ -67,9 +67,21 @@ const LowPolyBackground = () => (
 
 export default function ServicesPage() {
     return (
-        <div className="relative bg-white min-h-screen overflow-hidden pt-20 md:pt-28">
+        <div className="relative bg-white min-h-screen overflow-hidden pt-16 md:pt-20">
+            {/* Premium BG Design Layer */}
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <div className="absolute top-[15%] left-[-8%] w-[400px] md:w-[700px] h-[400px] md:h-[700px] bg-[#6E2690]/[0.05] rounded-full blur-[120px] md:blur-[150px]" />
+                <div className="absolute top-[55%] right-[-8%] w-[400px] md:w-[700px] h-[400px] md:h-[700px] bg-[#6E2690]/[0.05] rounded-full blur-[120px] md:blur-[150px]" />
+                <div className="absolute inset-0 opacity-[0.03]"
+                    style={{
+                        backgroundImage: 'radial-gradient(#6E2690 0.8px, transparent 0.8px)',
+                        backgroundSize: '40px 40px'
+                    }}
+                />
+            </div>
+
             {/* HERO SECTION */}
-            <section className="relative pt-16 md:pt-24 pb-12 md:pb-20 px-6 overflow-hidden border-b border-slate-100">
+            <section className="relative pt-8 md:pt-12 pb-10 md:pb-14 px-6 overflow-hidden border-b border-slate-100">
                 <LowPolyBackground />
                 <div className="max-w-5xl mx-auto text-center relative z-10">
                     <motion.div
@@ -93,7 +105,7 @@ export default function ServicesPage() {
             </section>
 
             {/* SERVICES LISTING */}
-            <section className="px-6 py-16 md:py-24 relative z-10 max-w-7xl mx-auto space-y-20 md:space-y-32">
+            <section className="px-6 py-12 md:py-16 relative z-10 max-w-7xl mx-auto space-y-14 md:space-y-20">
                 {services.map((s, idx) => {
                     const Icon = s.icon;
                     return (
@@ -179,7 +191,7 @@ export default function ServicesPage() {
             </section>
 
             {/* BENEFITS SECTION */}
-            <section className="px-6 pb-16 md:pb-32 relative z-10">
+            <section className="px-6 pb-12 md:pb-20 relative z-10">
                 <div className="max-w-7xl mx-auto overflow-hidden rounded-[32px] md:rounded-[48px] bg-[#6E2690] text-white p-8 md:p-20 shadow-2xl relative">
                     {/* Decorative Mesh */}
                     <div className="absolute top-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-white/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
@@ -229,7 +241,7 @@ export default function ServicesPage() {
             </section>
 
             {/* CTA SECTION */}
-            <section className="px-6 py-20 md:py-40 relative">
+            <section className="px-6 py-14 md:py-20 relative">
                 <div className="max-w-5xl mx-auto relative z-10 text-center">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.98 }}

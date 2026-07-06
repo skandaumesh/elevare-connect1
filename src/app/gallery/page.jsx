@@ -8,8 +8,8 @@ import Link from "next/link";
 const galleryItems = [
     { src: "/gallery/gallery19.jpg", title: "Personalized Coaching", type: "1:1 Mentorship", position: "object-top" },
     { src: "/gallery/gallery20.jpg", title: "Interactive Workshop", type: "Skill Development" },
-    { src: "/gallery/gallery17.jpeg", title: "Immersive Learning", type: "Impact Session" },
-    { src: "/gallery/gallery18.jpg", title: "Practical Application", type: "Knowledge Transfer" },
+    { src: "/gallery/gallery21.jpeg", title: "Immersive Learning", type: "Impact Session", position: "object-[65%_center]" },
+    { src: "/gallery/gallery22.jpeg", title: "Practical Application", type: "Knowledge Transfer" },
     { src: "/gallery/gallery1.jpeg", title: "Batch Convocation", type: "Program Finale" },
     { src: "/gallery/gallery3.jpeg", title: "Corporate Bridge", type: "Industry Readiness" },
     { src: "/gallery/gallery6.jpeg", title: "Leadership Series", type: "Executive Coaching" },
@@ -42,9 +42,21 @@ export default function GalleryPage() {
     const [selectedImg, setSelectedImg] = useState(null);
 
     return (
-        <div className="relative bg-[#FFFFFF] min-h-screen overflow-hidden pt-20 md:pt-28">
+        <div className="relative bg-[#FFFFFF] min-h-screen overflow-hidden pt-16 md:pt-20">
+            {/* Premium BG Design Layer */}
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <div className="absolute top-[25%] left-[-8%] w-[400px] md:w-[700px] h-[400px] md:h-[700px] bg-[#6E2690]/[0.05] rounded-full blur-[120px] md:blur-[150px]" />
+                <div className="absolute bottom-[5%] right-[-8%] w-[400px] md:w-[700px] h-[400px] md:h-[700px] bg-[#6E2690]/[0.05] rounded-full blur-[120px] md:blur-[150px]" />
+                <div className="absolute inset-0 opacity-[0.03]"
+                    style={{
+                        backgroundImage: 'radial-gradient(#6E2690 0.8px, transparent 0.8px)',
+                        backgroundSize: '40px 40px'
+                    }}
+                />
+            </div>
+
             {/* HERO SECTION with Textured Poly Background */}
-            <section className="relative pt-16 md:pt-20 pb-12 md:pb-16 px-6 overflow-hidden border-b border-slate-100">
+            <section className="relative pt-8 md:pt-12 pb-10 md:pb-14 px-6 overflow-hidden border-b border-slate-100">
                 <PremiumBackground />
                 <div className="max-w-5xl mx-auto text-center relative z-10">
                     <motion.div
@@ -67,7 +79,7 @@ export default function GalleryPage() {
             </section>
 
             {/* GALLERY GRID */}
-            <section className="px-6 py-12 md:py-20 relative z-10 max-w-7xl mx-auto">
+            <section className="px-6 py-10 md:py-14 relative z-10 max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
                     {galleryItems.map((item, idx) => (
                         <motion.div

@@ -50,7 +50,7 @@ export default function HeroSection() {
 
           {/* Subheading - Refined Spacing */}
           <p className="text-[#1E293B] md:text-[#52525B] text-base md:text-lg font-bold md:font-medium mb-10 leading-relaxed max-w-xl border-l-[3px] border-slate-200 pl-6 [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
-            Expert-led soft skills, campus-to-career mentoring and professional grooming for students and young professionals.
+            Expert-led soft skills training, campus-to-career mentoring, and professional grooming for students and young professionals.
           </p>
 
           {/* CTAs - Scaled Down */}

@@ -43,7 +43,7 @@ export default function OfferingsSection() {
     ];
 
     return (
-        <section id="services" className="py-24 relative bg-[#F8F9FA] overflow-hidden">
+        <section id="services" className="py-14 md:py-20 relative bg-[#F8F9FA] overflow-hidden">
 
             {/* Subtle light diagonal grid background */}
             <div

@@ -43,12 +43,57 @@ export default function ProgramAddOnsSection() {
     ];
 
     return (
-        <section className="py-24 bg-[#FFFFFF] relative overflow-hidden">
+        <section className="py-14 md:py-20 bg-gradient-to-b from-white via-[#FAF6FD] to-white relative overflow-hidden">
             {/* Design Background Elements */}
             <div className="absolute inset-0 z-0 pointer-events-none">
-                <div className="absolute top-[10%] left-[-5%] w-[400px] h-[400px] bg-[#6E2690]/[0.03] rounded-full blur-[120px]" />
-                <div className="absolute bottom-[10%] right-[-5%] w-[500px] h-[500px] bg-[#FDFBFF]0/[0.03] rounded-full blur-[140px]" />
-                <div className="absolute inset-0 opacity-[0.4]" style={{ backgroundImage: 'radial-gradient(#CBD5E1 0.8px, transparent 0.8px)', backgroundSize: '40px 40px' }} />
+                {/* Visible brand glows — slow drifting */}
+                <motion.div
+                    animate={{ y: [0, -40, 0], x: [0, 25, 0], scale: [1, 1.12, 1] }}
+                    transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute top-[5%] left-[-8%] w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-[#6E2690]/[0.08] rounded-full blur-[100px]"
+                />
+                <motion.div
+                    animate={{ y: [0, 35, 0], x: [0, -25, 0], scale: [1, 1.1, 1] }}
+                    transition={{ duration: 16, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                    className="absolute bottom-[0%] right-[-8%] w-[450px] md:w-[650px] h-[450px] md:h-[650px] bg-[#6E2690]/[0.07] rounded-full blur-[110px]"
+                />
+
+                {/* Purple dot texture */}
+                <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(#6E2690 1px, transparent 1px)', backgroundSize: '32px 32px' }} />
+
+                {/* Decorative dashed rings — slow spin + float */}
+                <motion.svg
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+                    className="absolute top-16 right-[6%] hidden lg:block" width="140" height="140" viewBox="0 0 140 140" fill="none"
+                >
+                    <circle cx="70" cy="70" r="64" stroke="#6E2690" strokeOpacity="0.15" strokeWidth="1.5" strokeDasharray="8 8" />
+                    <circle cx="70" cy="70" r="38" stroke="#6E2690" strokeOpacity="0.1" strokeWidth="1.5" />
+                </motion.svg>
+                <motion.svg
+                    animate={{ rotate: -360, y: [0, -15, 0] }}
+                    transition={{ rotate: { duration: 50, repeat: Infinity, ease: "linear" }, y: { duration: 8, repeat: Infinity, ease: "easeInOut" } }}
+                    className="absolute bottom-20 left-[4%] hidden lg:block" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                >
+                    <circle cx="50" cy="50" r="45" stroke="#6E2690" strokeOpacity="0.12" strokeWidth="1.5" strokeDasharray="6 6" />
+                </motion.svg>
+
+                {/* Floating accent dots */}
+                <motion.div
+                    animate={{ y: [0, -20, 0] }}
+                    transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute top-[30%] left-[8%] w-3 h-3 rounded-full bg-[#6E2690]/20 hidden md:block"
+                />
+                <motion.div
+                    animate={{ y: [0, 18, 0] }}
+                    transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                    className="absolute top-[15%] right-[20%] w-2 h-2 rounded-full bg-[#6E2690]/25 hidden md:block"
+                />
+                <motion.div
+                    animate={{ y: [0, -15, 0] }}
+                    transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                    className="absolute bottom-[25%] right-[10%] w-2.5 h-2.5 rounded-full bg-[#6E2690]/15 hidden md:block"
+                />
             </div>
 
             <div className="max-w-[1200px] mx-auto px-6 relative z-10">

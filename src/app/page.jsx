@@ -138,6 +138,11 @@ const faqSchema = {
 
 // ─── Page ────────────────────────────────────────────────────────
 
+// Toggle the visible FAQ section (faqSchema JSON-LD stays either way).
+// NOTE: Google's FAQ rich results require the answers to be visible on
+// the page, so keeping this false may forfeit that rich result.
+const SHOW_FAQ = false;
+
 export default function HomePage() {
   return (
     <>
@@ -160,8 +165,21 @@ export default function HomePage() {
       <TestimonialsSection />
 
       {/* ─── Visible FAQ (mirrors faqSchema for AI + Google rich results) ─── */}
-      <section className="px-6 py-20 md:py-28 bg-white" aria-labelledby="faq-heading">
-        <div className="max-w-3xl mx-auto">
+      {SHOW_FAQ && (
+      <section className="px-6 py-14 md:py-20 bg-white relative overflow-hidden" aria-labelledby="faq-heading">
+        {/* Subtle BG Design Layer */}
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <div className="absolute top-[-10%] right-[-10%] w-[350px] md:w-[600px] h-[350px] md:h-[600px] bg-[#6E2690]/[0.05] rounded-full blur-[120px]" />
+          <div className="absolute bottom-[-10%] left-[-10%] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#6E2690]/[0.04] rounded-full blur-[110px]" />
+          <div className="absolute inset-0 opacity-[0.03]"
+            style={{
+              backgroundImage: 'linear-gradient(#6E2690 1px, transparent 1px), linear-gradient(90deg, #6E2690 1px, transparent 1px)',
+              backgroundSize: '80px 80px'
+            }}
+          />
+        </div>
+
+        <div className="max-w-3xl mx-auto relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] md:text-sm font-bold tracking-widest uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6E2690]"></span>
@@ -203,6 +221,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      )}
     </>
   );
 }

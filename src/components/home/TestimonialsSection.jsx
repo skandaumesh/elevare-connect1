@@ -95,7 +95,27 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="py-24 bg-white overflow-hidden relative">
+    <section className="py-14 md:py-20 bg-white overflow-hidden relative">
+      {/* Subtle BG Design Layer */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <motion.div
+          animate={{ y: [0, -35, 0], scale: [1, 1.08, 1] }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-[10%] left-[-8%] w-[350px] md:w-[550px] h-[350px] md:h-[550px] bg-[#6E2690]/[0.05] rounded-full blur-[110px]"
+        />
+        <motion.div
+          animate={{ y: [0, 30, 0], scale: [1, 1.1, 1] }}
+          transition={{ duration: 14, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          className="absolute bottom-[5%] right-[-8%] w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#6E2690]/[0.05] rounded-full blur-[110px]"
+        />
+        <div className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: 'radial-gradient(#6E2690 0.8px, transparent 0.8px)',
+            backgroundSize: '40px 40px'
+          }}
+        />
+      </div>
+
       <div className="max-w-7xl mx-auto px-6 mb-16 relative z-10">
         <motion.div
           className="text-center"

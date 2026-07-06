@@ -4,8 +4,28 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 export default function ContactSection() {
     return (
-        <section id="contact" className="py-24 bg-[#FFFFFF]">
-            <div className="max-w-7xl mx-auto px-6">
+        <section id="contact" className="py-14 md:py-20 bg-[#FFFFFF] relative overflow-hidden">
+            {/* Subtle BG Design Layer */}
+            <div className="absolute inset-0 z-0 pointer-events-none">
+                <motion.div
+                    animate={{ y: [0, 30, 0], x: [0, 20, 0] }}
+                    transition={{ duration: 13, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute top-[-10%] left-[-10%] w-[350px] md:w-[550px] h-[350px] md:h-[550px] bg-[#6E2690]/[0.05] rounded-full blur-[100px]"
+                />
+                <motion.div
+                    animate={{ y: [0, -30, 0], x: [0, -20, 0] }}
+                    transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+                    className="absolute bottom-[-10%] right-[-10%] w-[350px] md:w-[550px] h-[350px] md:h-[550px] bg-[#6E2690]/[0.05] rounded-full blur-[100px]"
+                />
+                <div className="absolute inset-0 opacity-[0.03]"
+                    style={{
+                        backgroundImage: 'radial-gradient(#6E2690 0.8px, transparent 0.8px)',
+                        backgroundSize: '40px 40px'
+                    }}
+                />
+            </div>
+
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-16">
 
                     {/* Form */}

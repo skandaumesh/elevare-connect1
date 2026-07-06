@@ -28,7 +28,7 @@ const LowPolyBackground = () => (
 
 export default function ContactPage() {
     return (
-        <div className="relative min-h-screen pt-32 lg:pt-40 pb-20 overflow-hidden">
+        <div className="relative min-h-screen pt-24 lg:pt-28 pb-14 overflow-hidden">
             <LowPolyBackground />
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -45,7 +45,7 @@ export default function ContactPage() {
                                 Get in Touch With Us
                             </h1>
                             <p className="text-[#475569] text-lg md:text-xl font-medium leading-relaxed max-w-lg">
-                                Are you a Institute interested in empowering your students with communication, leadership, and workplace-ready skills? Fill the form and we&apos;ll be in touch!
+                                Are you an institute interested in empowering your students with communication, leadership, and workplace-ready skills? Fill out the form, and we&apos;ll be in touch!
                             </p>
                         </div>
 

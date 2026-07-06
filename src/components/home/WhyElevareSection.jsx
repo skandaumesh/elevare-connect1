@@ -23,7 +23,7 @@ export default function WhyElevareSection() {
     ];
 
     return (
-        <section className="py-24 bg-[#FFFFFF] relative overflow-hidden">
+        <section className="py-14 md:py-20 bg-[#FFFFFF] relative overflow-hidden">
             {/* Dynamic Background Elements */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 {/* Soft Mesh Gradient */}
