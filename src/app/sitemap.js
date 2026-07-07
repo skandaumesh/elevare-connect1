@@ -23,7 +23,7 @@ export default function sitemap() {
     },
     {
       url: `${baseUrl}/gallery`,
-      lastModified: new Date("2026-07-07"),
+      lastModified: new Date("2026-07-08"),
       changeFrequency: "weekly",
       priority: 0.7,
     },
