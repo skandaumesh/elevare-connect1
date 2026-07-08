@@ -55,15 +55,8 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 text-center">
-                <p className="text-white/40 text-xs font-bold tracking-widest uppercase mb-3">
-                    © {new Date().getFullYear()} Elevare Connect. All rights reserved.
-                </p>
-                <p className="text-white/30 text-[11px] font-medium leading-relaxed max-w-2xl mx-auto normal-case tracking-normal">
-                    Elevare Connect (elevareconnect.in) is an independent soft skills and career readiness
-                    training company founded in 2025 by Wilma Merina D&apos;Sa in Bengaluru. It is not
-                    affiliated with Elevare Connect Solutions LLP.
-                </p>
+            <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/5 text-center text-white/40 text-xs font-bold tracking-widest uppercase">
+                © {new Date().getFullYear()} Elevare Connect. All rights reserved.
             </div>
         </footer>
     );
