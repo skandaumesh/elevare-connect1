@@ -91,6 +91,12 @@ export default function TestimonialsSection() {
       role: "Sr. Executive – Talent Acquisition, Wipro",
       quote: "Ms. Wilma Merina D'sa's mentorship helped me take the right steps in the corporate world during a critical transition phase. Her guidance has been instrumental in my journey to becoming the youngest Senior Executive in my organization. She focuses not just on technical readiness but on the emotional intelligence and leadership qualities that truly set a candidate apart. Her ability to spot potential and nurture it through tailored feedback is exceptional.",
       img: "/testimonials/testimonial3.jpeg",
+    },
+    {
+      name: "Skanda",
+      role: "Founder, OneZeroLabs",
+      quote: "Building Elevare Connect's digital presence has been a rewarding experience. Their commitment to empowering individuals through mentorship, career guidance, and skill development is reflected in everything they do. It has been a privilege to translate their vision into a platform that inspires growth and creates meaningful opportunities.",
+      img: "/testimonials/skanda.jpeg",
     }
   ];
 
