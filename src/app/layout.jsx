@@ -243,6 +243,7 @@ const graphSchema = {
         }
       ],
       "sameAs": [
+        "https://www.linkedin.com/in/elevare-connect-791889379",
         "https://www.linkedin.com/in/wilma-merina-d-sa-462b2b101/",
         "https://www.instagram.com/elevare_connect/"
       ],
