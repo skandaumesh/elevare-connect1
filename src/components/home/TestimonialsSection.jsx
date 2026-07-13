@@ -45,6 +45,7 @@ const TestimonialCard = ({ test, onReadMore }) => {
           <div>
             <h4 className="text-[#1E293B] font-bold">{test.name}</h4>
             <p className="text-[#1E293B] text-sm font-medium">{test.role}</p>
+            <p className="text-[#52525B] text-sm font-medium">{test.company}</p>
           </div>
         </div>
       </div>
@@ -70,31 +71,36 @@ export default function TestimonialsSection() {
   const testimonials = [
     {
       name: "Gouthami Shivakumar",
-      role: "Placement Officer, MLA Academy of Higher Learning",
+      role: "Placement Officer",
+      company: "MLA Academy of Higher Learning, Bengaluru",
       quote: "I would like to express my sincere gratitude to Ms. Wilma Merina D'sa for conducting an insightful Training and Placement session at MLA Academy of Higher Learning. Her expertise brought a fresh perspective to our campus, and the session was very informative. It helped students understand the importance of placement readiness, career planning, and meticulous skill development. The feedback has been overwhelmingly positive, highlighting how her practical approach makes a difference.",
       img: "/testimonials/testimonial1.jpeg",
     },
     {
       name: "Dhruv Roy",
-      role: "Voyager Sales, Marriott International",
+      role: "Voyager Sales",
+      company: "Marriott International, Goa",
       quote: "Ms. Wilma Merina D'sa has been one of the most inspiring mentors in my life. Her guidance helped me build confidence, discipline, and a strong professional mindset, especially while preparing for interviews and entering the corporate world. The lessons, constant encouragement, and industry insights she gave during my college days continue to guide me in my career today. I owe much of my professional success to the foundational values she instilled in us.",
       img: "/testimonials/testimonial4.jpeg",
     },
     {
       name: "Yashika Singh",
-      role: "Financial Analyst, ABM Indore Pvt Ltd",
+      role: "Financial Analyst",
+      company: "ABM Indore Pvt Ltd, Indore",
       quote: "I had an opportunity to be a part of various sessions conducted by Ms. Wilma Merina D'sa, Founder of Elevare Connect, during my graduation days offered through my College. The sessions were very engaging, insightful and helped me personally to understand the importance of placement readiness, career planning, and developing the right professional skills for the modern finance sector. Her guidance and results-oriented approach played an important role in helping me secure my first job.",
       img: "/testimonials/testimonial2.jpeg",
     },
     {
       name: "Saksham Mathur",
-      role: "Sr. Executive – Talent Acquisition, Wipro",
+      role: "Sr. Executive – Talent Acquisition",
+      company: "Wipro, Pune",
       quote: "Ms. Wilma Merina D'sa's mentorship helped me take the right steps in the corporate world during a critical transition phase. Her guidance has been instrumental in my journey to becoming the youngest Senior Executive in my organization. She focuses not just on technical readiness but on the emotional intelligence and leadership qualities that truly set a candidate apart. Her ability to spot potential and nurture it through tailored feedback is exceptional.",
       img: "/testimonials/testimonial3.jpeg",
     },
     {
-      name: "Skanda",
-      role: "Founder, OneZeroLabs",
+      name: "Skanda Umesh",
+      role: "Founder",
+      company: "OneZeroLabs, Bengaluru",
       quote: "Building Elevare Connect's digital presence has been a rewarding experience. Their commitment to empowering individuals through mentorship, career guidance, and skill development is reflected in everything they do. It has been a privilege to translate their vision into a platform that inspires growth and creates meaningful opportunities.",
       img: "/testimonials/skanda.jpeg",
     }
@@ -190,6 +196,7 @@ export default function TestimonialsSection() {
                 <div>
                   <h4 className="text-[#1E293B] text-xl font-bold">{selectedTestimonial.name}</h4>
                   <p className="text-[#1E293B] text-sm md:text-base font-medium">{selectedTestimonial.role}</p>
+                  <p className="text-[#52525B] text-sm md:text-base font-medium">{selectedTestimonial.company}</p>
                 </div>
               </div>
 
