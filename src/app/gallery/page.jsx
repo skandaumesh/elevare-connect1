@@ -10,7 +10,7 @@ const galleryItems = [
     { src: "/gallery/gallery20.jpg", title: "Interactive Workshop", type: "Skill Development" },
     { src: "/gallery/gallery21.jpeg", title: "Immersive Learning", type: "Impact Session", position: "object-[65%_center]" },
     { src: "/gallery/gallery24.jpeg", title: "Industry Address", type: "Guest Speaker Session", position: "object-[60%_center]" },
-    { src: "/gallery/gallery25.jpeg", title: "Etiquette Masterclass", type: "Grooming Workshop" },
+    { src: "/gallery/gallery27.jpeg", title: "Etiquette Masterclass", type: "Grooming Workshop", position: "object-[center_70%]" },
     { src: "/gallery/gallery26.jpeg", title: "Felicitation Moment", type: "Recognition & Awards" },
     { src: "/gallery/gallery22.jpeg", title: "Practical Application", type: "Knowledge Transfer" },
     { src: "/gallery/gallery1.jpeg", title: "Batch Convocation", type: "Program Finale" },
