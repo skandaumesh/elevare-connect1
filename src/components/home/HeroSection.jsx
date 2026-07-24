@@ -37,8 +37,8 @@ export default function HeroSection() {
         >
           {/* Scaled Back Heading */}
           <h1 className="text-[#1E293B] text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] uppercase [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
-            Empowering Students <br className="hidden sm:block" />
-            <span className="text-[#6E2690]">Enabling <br className="hidden sm:block" />Futures</span>
+            Empowering Students <br />
+            <span className="text-[#6E2690]">Enabling <br />Futures</span>
           </h1>
 
           {/* Subheading - Refined Spacing */}
