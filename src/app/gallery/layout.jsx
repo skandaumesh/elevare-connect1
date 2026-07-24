@@ -4,7 +4,7 @@ export const metadata = {
     keywords: ["Elevare Connect Workshops", "Student Transformation Images", "Campus Mentorship Stories", "Career Coaching Events Bengaluru", "Professional Grooming Gallery"],
     openGraph: {
         title: "Gallery | Elevare Connect",
-        description: "Visual stories of career transformation and skill development across 20+ partner institutions.",
+        description: "Visual stories of career transformation and skill development across 50+ partner institutions.",
         images: [{ url: "/gallery/gallery17.jpeg", width: 1200, height: 630, alt: "Elevare Connect Workshop Session" }],
     },
     alternates: {

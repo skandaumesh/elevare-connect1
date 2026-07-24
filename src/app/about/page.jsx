@@ -29,21 +29,18 @@ export default function AboutPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-flex items-center gap-2 px-4 md:px-5 py-1.5 md:py-2 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] md:text-sm font-bold tracking-widest uppercase">
-                            <span className="w-2 h-2 rounded-full bg-[#6E2690] animate-pulse"></span>
-                            ABOUT ELEVARE CONNECT
-                        </div>
                         <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 md:mb-8 leading-[1.1] font-roboto">
                             Empowering with <br className="hidden md:block" />
-                            <span className="text-[#6E2690]">Human-Centric Skills.</span>
+                            <span className="text-[#6E2690]">Human-Centric Skills</span>
                         </h1>
                         <p className="text-[#52525B] text-base md:text-xl font-medium mb-10 md:mb-16 leading-relaxed max-w-2xl mx-auto">
-                            We partner with institutions to unlock every student&apos;s potential — enhancing communication, leadership, and emotional intelligence.
+                            We partner with institutions to unlock every student&apos;s potential <br className="hidden sm:block" />
+                            by developing communication, leadership, and emotional intelligence.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-20 justify-center w-full max-w-3xl">
                             {[
-                                { v: "20+", l: "Partner Colleges" },
+                                { v: "50+", l: "Partner Colleges" },
                                 { v: "20000+", l: "Students Trained" },
                                 { v: "100+", l: "Workshops Delivered" }
                             ].map((s, idx) => (
@@ -95,7 +92,7 @@ export default function AboutPage() {
                             whileInView={{ opacity: 1, scale: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                            className="flex items-center justify-center lg:justify-end py-6"
+                            className="flex items-center justify-center py-6"
                         >
                             <div className="relative">
                                 {/* Clean Premium Outer Shadow/Glow */}
@@ -108,7 +105,7 @@ export default function AboutPage() {
                                             src="/founder.jpeg"
                                             alt="Wilma Merina D'Sa"
                                             fill
-                                            className="object-cover object-top grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000"
+                                            className="object-cover object-center grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000"
                                             priority
                                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                                         {/* Subtle vignette for high-end look */}
@@ -145,12 +142,8 @@ export default function AboutPage() {
                         transition={{ duration: 0.8 }}
                         className="text-center max-w-3xl mx-auto mb-16 md:mb-20"
                     >
-                        <div className="inline-flex items-center gap-2 px-5 py-2 mb-6 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] md:text-sm font-bold tracking-widest uppercase shadow-sm">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#6E2690] animate-pulse"></span>
-                            OUR PHILOSOPHY
-                        </div>
                         <h2 className="text-[#1E293B] text-4xl md:text-6xl font-black tracking-tight mb-6 font-roboto">
-                            Why <span className="text-[#6E2690]">Elevare Connect.</span>
+                            Why <span className="text-[#6E2690]">Elevare Connect</span>
                         </h2>
                         <p className="text-[#52525B] text-lg md:text-xl font-medium leading-relaxed">
                             High-performance methodology combined with deep academic empathy.
@@ -205,7 +198,7 @@ export default function AboutPage() {
                 >
                     <h2 className="text-[#1E293B] text-4xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1] font-roboto">
                         Collaborate <br />
-                        <span className="text-[#6E2690]">with us today.</span>
+                        <span className="text-[#6E2690]">with us today</span>
                     </h2>
                     <p className="text-[#52525B] font-medium text-lg md:text-xl leading-relaxed max-w-lg mx-auto mb-12">
                         Let&apos;s shape the next generation of confident, career-ready professionals together.

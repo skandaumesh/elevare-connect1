@@ -11,7 +11,7 @@ export default function VisionMissionSection() {
         },
         {
             title: "Our Vision",
-            desc: "To be a trusted catalyst in shaping the next generation of career-ready, emotionally intelligent, and socially responsible professionals.",
+            desc: "To be a trusted catalyst in shaping career-ready, emotionally intelligent professionals.",
             img: "/vision.png",
         }
     ];

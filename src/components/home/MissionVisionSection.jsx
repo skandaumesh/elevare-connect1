@@ -10,19 +10,17 @@ export default function MissionVisionSection() {
   const sections = [
     {
       label: "Mission",
-      title: "Elevate every student's potential.",
+      title: "Elevate every student's potential",
       desc: "Providing personalized coaching, interactive learning, and expert guidance that bridges academia and a thriving career.",
       img: "/mission.png",
-      icon: <Target className="w-6 h-6" />,
-      tag: "THE IMPACT"
+      icon: <Target className="w-6 h-6" />
     },
     {
       label: "Vision",
-      title: "Shape the next generation.",
+      title: "Shape the next generation",
       desc: "Becoming a trusted catalyst for building career-ready, emotionally intelligent, and socially responsible professionals.",
       img: "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=1200",
-      icon: <Eye className="w-6 h-6" />,
-      tag: "THE FUTURE"
+      icon: <Eye className="w-6 h-6" />
     }
   ];
 
@@ -59,12 +57,8 @@ export default function MissionVisionSection() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#2B124C]/5 border border-[#2B124C]/10 text-[#2B124C] text-[11px] font-bold tracking-[0.3em] uppercase mb-8">
-            <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M10 2L11 8L17 9L11 10L10 16L9 10L3 9L9 8L10 2Z" fill="#A87ED7" /></svg>
-            OUR FOUNDATION
-          </div>
           <h2 className="font-instrument-serif text-[#2B124C] tracking-wide text-4xl md:text-6xl lg:text-7xl leading-none">
-            Vision & <span className="bg-gradient-to-r from-[#A87ED7] to-[#2B124C] bg-clip-text text-transparent">Mission.</span>
+            Vision & <span className="bg-gradient-to-r from-[#A87ED7] to-[#2B124C] bg-clip-text text-transparent">Mission</span>
           </h2>
           <p className="mt-8 text-gray-500 font-medium text-lg leading-relaxed max-w-2xl mx-auto">
             At Elevare Connect, we are driven by a singular purpose: to transform potential into professional excellence through human-centric growth.
@@ -104,9 +98,6 @@ export default function MissionVisionSection() {
 
               {/* Text Column */}
               <div className="w-full md:w-1/2 space-y-8">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#2B124C]/5 border border-[#2B124C]/10 text-[#2B124C] text-[11px] font-bold tracking-[0.15em] uppercase">
-                  {section.tag}
-                </div>
                 <div className="space-y-4">
                   <span className="text-[#A87ED7] text-sm font-bold tracking-[0.2em] uppercase">0{idx + 1} / {section.label}</span>
                   <h3 className="font-instrument-serif text-4xl md:text-5xl text-[#2B124C] tracking-wide leading-[1.1]">

@@ -64,7 +64,7 @@ export default function StatsSection() {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
-        <StatItem icon={<Building2 size={42} strokeWidth={1.5} />} target={20} suffix="+" label="Colleges Impacted" />
+        <StatItem icon={<Building2 size={42} strokeWidth={1.5} />} target={50} suffix="+" label="Colleges Impacted" />
         <StatItem icon={<GraduationCap size={42} strokeWidth={1.5} />} target={20000} suffix="+" label="Students Trained" />
         <StatItem icon={<Users size={42} strokeWidth={1.5} />} target={10} suffix="+" label="Industry Experts" />
         <StatItem icon={<Handshake size={42} strokeWidth={1.5} />} target={100} suffix="+" label="Programs Delivered" />

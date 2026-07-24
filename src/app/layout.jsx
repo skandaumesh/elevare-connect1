@@ -78,7 +78,7 @@ export const metadata = {
   openGraph: {
     title: "Elevare Connect | Where Ambition Finds its Direction",
     description:
-      "Expert mentorship to transform students into career-ready professionals. 20+ partner colleges, 20000+ students trained.",
+      "Expert mentorship to transform students into career-ready professionals. 50+ partner colleges, 20000+ students trained.",
     url: siteUrl,
     siteName: "Elevare Connect",
     images: [
@@ -167,7 +167,7 @@ const graphSchema = {
       "image": {
         "@id": `${siteUrl}/#logo`
       },
-      "description": "Elevare Connect is a professional mentorship and career readiness consultancy based in Bengaluru, India. We empower students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching. With 20+ partner colleges and 20000+ students trained.",
+      "description": "Elevare Connect is a professional mentorship and career readiness consultancy based in Bengaluru, India. We empower students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching. With 50+ partner colleges and 20000+ students trained.",
       "disambiguatingDescription": "Elevare Connect (official website: elevareconnect.in) is an independent soft skills and career readiness training company founded in 2025 by Wilma Merina D'Sa in Bengaluru. It is a distinct and separate organization from Elevare Connect Solutions LLP (elevareconnectllp.org); the two companies are not affiliated.",
       "slogan": "Where Ambition Finds its Direction",
       "foundingDate": "2025",

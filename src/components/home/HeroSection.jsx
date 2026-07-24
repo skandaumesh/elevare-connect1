@@ -35,17 +35,10 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          {/* Eyebrow - High-Impact Highlighted Badge */}
-          <div className="inline-flex mb-8">
-            <span className="px-5 py-2.5 rounded-full bg-[#6E2690] text-white text-[10px] md:text-sm font-black tracking-[0.15em] uppercase shadow-xl shadow-[#6E2690]/20">
-              Elevare Connect
-            </span>
-          </div>
-
           {/* Scaled Back Heading */}
           <h1 className="text-[#1E293B] text-3xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-[1.1] uppercase [text-shadow:0_1px_2px_rgba(255,255,255,0.8)]">
-            Empowering Students. <br className="hidden sm:block" />
-            <span className="text-[#6E2690]">Enabling Futures.</span>
+            Empowering Students <br className="hidden sm:block" />
+            <span className="text-[#6E2690]">Enabling <br className="hidden sm:block" />Futures</span>
           </h1>
 
           {/* Subheading - Refined Spacing */}

@@ -90,12 +90,9 @@ export default function ServicesPage() {
                         transition={{ duration: 0.8 }}
                         className="flex flex-col items-center"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] font-bold tracking-[0.3em] uppercase">
-                            Impact Programs
-                        </div>
                         <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-roboto">
                             Elevating <br className="hidden md:block" />
-                            <span className="text-[#6E2690]">Professional</span> Futures.
+                            <span className="text-[#6E2690]">Professional</span> Futures
                         </h1>
                         <p className="text-[#475569] text-base md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
                             A comprehensive roadmap designed to align institutional potential with global industry standards.
@@ -115,7 +112,7 @@ export default function ServicesPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 0.8 }}
-                            className={`flex flex-col lg:flex-row gap-8 md:gap-16 items-center ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
+                            className={`flex flex-col lg:flex-row gap-8 md:gap-16 items-stretch ${idx % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
                         >
                             {/* Image Container */}
                             <motion.div
@@ -123,7 +120,7 @@ export default function ServicesPage() {
                                 whileInView={{ scale: 1, opacity: 1 }}
                                 transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                                 viewport={{ once: true }}
-                                className="w-full lg:w-1/2 relative aspect-[16/10] rounded-[32px] md:rounded-[48px] overflow-hidden group shadow-[0_40px_80px_-20px_rgba(15,23,42,0.08)]"
+                                className="w-full lg:w-1/2 relative aspect-[16/10] lg:aspect-auto min-h-[280px] md:min-h-[360px] rounded-[32px] md:rounded-[48px] overflow-hidden group shadow-[0_40px_80px_-20px_rgba(15,23,42,0.08)]"
                             >
                                 <Image
                                     src={s.image}

@@ -73,11 +73,8 @@ export default function WhyElevareSection() {
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
                 >
-                    <div className="inline-block px-4 py-1.5 mb-4 text-[#6E2690] text-xs font-bold tracking-[0.2em] uppercase bg-[#6E2690]/10 rounded-full">
-                        Why Choose Us
-                    </div>
                     <h2 className="text-[#1E293B] text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
-                        Why <span className="text-[#6E2690]">Elevare Connect.</span>
+                        Why <span className="text-[#6E2690]">Elevare Connect</span>
                     </h2>
                 </motion.div>
 

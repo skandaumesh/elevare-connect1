@@ -9,20 +9,20 @@ const galleryItems = [
     { src: "/gallery/gallery19.jpg", title: "Personalized Coaching", type: "1:1 Mentorship", position: "object-top" },
     { src: "/gallery/gallery20.jpg", title: "Interactive Workshop", type: "Skill Development" },
     { src: "/gallery/gallery21.jpeg", title: "Immersive Learning", type: "Impact Session", position: "object-[65%_center]" },
+    { src: "/gallery/gallery6.jpeg", title: "Leadership Series", type: "Executive Coaching" },
+    { src: "/gallery/gallery5.jpeg", title: "Mentorship Circle", type: "Guided Growth" },
+    { src: "/gallery/gallery28.jpeg", title: "Batch Celebration", type: "Program Wrap-Up" },
     { src: "/gallery/gallery24.jpeg", title: "Industry Address", type: "Guest Speaker Session", position: "object-[60%_center]" },
     { src: "/gallery/gallery27.jpeg", title: "Etiquette Masterclass", type: "Grooming Workshop", position: "object-[center_70%]" },
-    { src: "/gallery/gallery26.jpeg", title: "Felicitation Moment", type: "Recognition & Awards" },
     { src: "/gallery/gallery22.jpeg", title: "Practical Application", type: "Knowledge Transfer" },
     { src: "/gallery/gallery1.jpeg", title: "Batch Convocation", type: "Program Finale" },
     { src: "/gallery/gallery3.jpeg", title: "Corporate Bridge", type: "Industry Readiness" },
-    { src: "/gallery/gallery6.jpeg", title: "Leadership Series", type: "Executive Coaching" },
     { src: "/gallery/gallery7.jpeg", title: "Team Dynamics", type: "Collaborative Learning" },
     { src: "/gallery/gallery13.jpeg", title: "Achievement Awards", type: "Certification", position: "object-top" },
     { src: "/gallery/gallery14.jpeg", title: "Dynamic Future", type: "Empowerment Program" },
     { src: "/gallery/gallery15.jpg", title: "Professional Grooming", type: "Career Polish" },
     { src: "/gallery/gallery9.jpeg", title: "Institutional Impact", type: "Campus Drive" },
     { src: "/gallery/gallery11.jpeg", title: "Peer Empowerment", type: "Collaborative Growth" },
-    { src: "/gallery/gallery5.jpeg", title: "Mentorship Circle", type: "Guided Growth" },
     { src: "/gallery/gallery8.jpeg", title: "Strategic Vision", type: "Impact Planning" },
 ];
 
@@ -67,12 +67,9 @@ export default function GalleryPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 md:mb-8 rounded-full bg-[#6E2690]/10 text-[#1E293B] text-[10px] font-bold tracking-[0.3em] uppercase">
-                            Visual Impact
-                        </div>
                         <h1 className="text-[#1E293B] text-3xl md:text-5xl lg:text-7xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-roboto">
                             A Glimpse into <br className="hidden md:block" />
-                            <span className="text-[#6E2690]">Our Impact.</span>
+                            <span className="text-[#6E2690]">Our Impact</span>
                         </h1>
                         <p className="text-[#475569] text-base md:text-xl lg:text-2xl font-medium max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12">
                             From vibrant workshops to campus engagements, each snapshot tells a story of transformation, collaboration, and growth.
@@ -131,7 +128,7 @@ export default function GalleryPage() {
                     >
                         <h2 className="text-[#1E293B] text-3xl md:text-6xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] font-roboto">
                             Bring the Impact to <br className="hidden sm:block" />
-                            <span className="text-[#6E2690]">Your Campus.</span>
+                            <span className="text-[#6E2690]">Your Campus</span>
                         </h2>
                         <p className="text-[#475569] text-base md:text-xl font-medium max-w-lg mx-auto mb-10 md:mb-12 leading-relaxed">
                             Empower your students with industry-standard skills and professional grooming. Let&apos;s build the future together.
