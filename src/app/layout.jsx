@@ -171,6 +171,11 @@ const graphSchema = {
       "disambiguatingDescription": "Elevare Connect (official website: elevareconnect.in) is an independent soft skills and career readiness training company founded in 2025 by Wilma Merina D'Sa in Bengaluru. It is a distinct and separate organization from Elevare Connect Solutions LLP (elevareconnectllp.org); the two companies are not affiliated.",
       "slogan": "Where Ambition Finds its Direction",
       "foundingDate": "2025",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "Udyam Registration Number",
+        "value": "UDYAM-KR-03-0723030"
+      },
       "telephone": "+91-98457-89663",
       "foundingLocation": {
         "@type": "Place",
