@@ -11,7 +11,7 @@ import TestimonialsSection from "@/components/home/TestimonialsSection";
 const siteUrl = "https://elevareconnect.in";
 
 export const metadata = {
-  title: "Elevare Connect | Where Ambition Finds its Direction",
+  title: "Elevare Connect | Empowering Students Enabling Futures",
   description:
     "Empowering students and institutions through expert-led soft skills training, career mentorship, and 1:1 coaching. 50+ partner colleges, 20000+ students trained. Based in Bengaluru, India.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Elevare Connect | Where Ambition Finds its Direction",
+    title: "Elevare Connect | Empowering Students Enabling Futures",
     description:
       "Expert mentorship to transform students into career-ready professionals. 50+ partner colleges, 20000+ students trained. Based in Bengaluru, India.",
     url: siteUrl,
@@ -49,7 +49,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Elevare Connect | Where Ambition Finds its Direction",
+    title: "Elevare Connect | Empowering Students Enabling Futures",
     description:
       "Expert mentorship to transform students into career-ready professionals. Based in Bengaluru, India.",
     images: [`${siteUrl}/elevare.png`],
@@ -63,7 +63,7 @@ const webPageSchema = {
   "@type": "WebPage",
   "@id": `${siteUrl}/#webpage`,
   "url": siteUrl,
-  "name": "Elevare Connect | Where Ambition Finds its Direction",
+  "name": "Elevare Connect | Empowering Students Enabling Futures",
   "description":
     "Empowering students and institutions through expert-led soft skills training, career mentorship, and 1:1 coaching. 50+ partner colleges, 20000+ students trained.",
   "isPartOf": { "@id": `${siteUrl}/#website` },

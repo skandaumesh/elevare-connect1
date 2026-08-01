@@ -101,7 +101,7 @@ export default function TestimonialsSection() {
       name: "Skanda Umesh",
       role: "Founder",
       company: "OneZeroLabs, Bengaluru",
-      quote: "Building Elevare Connect's digital presence has been a rewarding experience. Their commitment to empowering individuals through mentorship, career guidance, and skill development is reflected in everything they do. It has been a privilege to translate their vision into a platform that inspires growth and creates meaningful opportunities.",
+      quote: "Building Elevare Connect's digital presence has been a rewarding experience. Ms. Wilma Merina D'sa's commitment to empowering individuals through mentorship, career guidance, and skill development is reflected in everything she does. It has been a privilege to translate her vision into a platform that inspires growth and creates meaningful opportunities.",
       img: "/testimonials/skanda.jpeg",
     }
   ];

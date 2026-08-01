@@ -30,7 +30,7 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: "Elevare Connect",
   title: {
-    default: "Elevare Connect | Where Ambition Finds its Direction",
+    default: "Elevare Connect | Empowering Students Enabling Futures",
     template: "%s | Elevare Connect",
   },
   appleWebApp: {
@@ -76,7 +76,7 @@ export const metadata = {
   },
   manifest: "/manifest.webmanifest",
   openGraph: {
-    title: "Elevare Connect | Where Ambition Finds its Direction",
+    title: "Elevare Connect | Empowering Students Enabling Futures",
     description:
       "Expert mentorship to transform students into career-ready professionals. 50+ partner colleges, 20000+ students trained.",
     url: siteUrl,
@@ -169,7 +169,7 @@ const graphSchema = {
       },
       "description": "Elevare Connect is a professional mentorship and career readiness consultancy based in Bengaluru, India. We empower students and institutions through expert-led soft skills training, leadership development, campus-to-corporate workshops, and 1:1 career coaching. With 50+ partner colleges and 20000+ students trained.",
       "disambiguatingDescription": "Elevare Connect (official website: elevareconnect.in) is an independent soft skills and career readiness training company founded in 2025 by Wilma Merina D'Sa in Bengaluru. It is a distinct and separate organization from Elevare Connect Solutions LLP (elevareconnectllp.org); the two companies are not affiliated.",
-      "slogan": "Where Ambition Finds its Direction",
+      "slogan": "Empowering Students Enabling Futures",
       "foundingDate": "2025",
       "identifier": {
         "@type": "PropertyValue",
@@ -311,7 +311,7 @@ const graphSchema = {
           "@type": "WebPage",
           "name": "Home",
           "url": `${siteUrl}/`,
-          "description": "Where Ambition Finds its Direction — empowering students with career mentorship and soft skills training."
+          "description": "Empowering Students Enabling Futures — career mentorship and soft skills training for students and young professionals."
         },
         {
           "@type": "WebPage",
